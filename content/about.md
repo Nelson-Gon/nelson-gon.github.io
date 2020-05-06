@@ -8,6 +8,6 @@ Nelson Gonzabato, known online as NelsonGon, is currently a third year Biomedica
 Outside class, Nelson continually seeks ways of advancing his programming skills and knowledge. To do this, Nelson contributes frequently to the `R` tag on [StackOverflow](https://stackoverflow.com/users/10323798/nelsongon) where he has learnt a lot from some of the very best R programmers. Nelson has been lucky enough to contribute a few open source packages and would love to hear from you about his work. You can find some of his work [here](https://github.com/Nelson-Gon/). While he has spent a lot of time learning `R`, Nelson loves exploring and is currently learning as much `python` and `bash` as possible.  
 
 
-To contact Nelson about any of his work or provide research/internship opportunities, please reach out to him using any one of the links above. Alternatively, you can email him using the by running this one liner in a Terminal(Git Bash on Windows):
+To contact Nelson about any of his work or provide research/internship opportunities, please reach out to him using any one of the links above. Alternatively, you can email him by running this one liner in a Terminal or Git Bash on Windows:
 
 `echo tbamnongb@ubgznvy.pbz | tr a-zA-Z n-za-mN-ZA-M`

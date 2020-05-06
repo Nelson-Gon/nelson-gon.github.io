@@ -1,36 +1,31 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Beginner's Guide to Automated Data Exploration"
+title = "Automate the Data Exploration Pipeline"
 theme = "blackburn"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+# enable SEO search
+enableRobotsTXT= true
+canonifyURLs = true
 
+[permalinks]
 
+post = "/:day/:month/:year/:slug/"
 
 [[menu.main]]
     name= "About"
     url = "/about/"
     weight = 1
+
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/Nelson-Gon"
+    name="Projects"
+    url="/post"
     weight = 2
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/neuronelsongon"
-    weight = 4
-[[menu.main]]
-    name = "StackOverflow"
-    url  = "https://stackoverflow.com/users/10323798/nelsongon"
-    weight = 3
-[[menu.main]]
-    name = "Kaggle"
-    url = "https://www.kaggle.com/gonnel"
-    weight = 5
+
 
 [params]
-    description = "NelsonGon's personal wesbite"
+    description = "A Beginner's Guide to Automated Data Analysis with R and Python"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
@@ -50,3 +45,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     height = 50
     alt = "Logo"
 
+[Social]
+
+twitter = "neuronelsongon"
+github = "Nelson-Gon"
+stackoverflow = "https://stackoverflow.com/users/10323798/nelsongon"
