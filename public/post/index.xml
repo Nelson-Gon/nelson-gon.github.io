@@ -12,6 +12,22 @@
     
     
     <item>
+      <title>Automated Image Processing with pyautocv in Python</title>
+      <link>/06/05/2020/automated-image-processing-with-pyautocv-in-python/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/06/05/2020/automated-image-processing-with-pyautocv-in-python/</guid>
+      <description>pyautocv: (Semi) Automated Image Processing
+
+Project Aims
+The goal of pyautocv is to provide a simple computer vision(cv) workflow that enables one to automateor at least reduce the time spent in image (pre)-processing.
+Installing the package
+From pypi:
+pip install pyautocvFrom GitHub
+pip install pip install git+https://github.com/Nelson-Gon/pyautocv.git#or# clone the repogit clone https://www.</description>
+    </item>
+    
+    <item>
       <title>manymodelr: Build and Tune Several Models</title>
       <link>/06/05/2020/manymodelr-build-and-tune-several-models/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>

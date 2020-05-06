@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>computer vision</title>
+      <link>/categories/computer-vision/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Analysis</title>
       <link>/categories/data-analysis/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
@@ -35,6 +44,24 @@
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image analysis</title>
+      <link>/categories/image-analysis/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/image-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image processing</title>
+      <link>/categories/image-processing/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/image-processing/</guid>
       <description></description>
     </item>
     
