@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nelson Gonzabato</title>
+    <link>/</link>
+    <description>Recent content on Nelson Gonzabato</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/2020/05/06/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/06/</guid>
+      <description>manymodelr: Build and Tune Several Models
+In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
+Installing the package
+install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Nelson Gonzabato, known online as NelsonGon, is currently a third year Biomedical Sciences student at the Zhejiang University-University of Edinburgh Institute. Over the duration of his degree, Nelson has developed interest in neuroscience and pharmacology and how computational tools could be used to aid research in these areas. Recently, he has been fascinated by mixed effects models and how powerful these are.
+Outside class, Nelson continually seeks ways of advancing his programming skills and knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>
