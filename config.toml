@@ -13,19 +13,23 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 1
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/Nelson-Gon"
+    weight = 2
 [[menu.main]]
     name = "Twitter"
     url = "https://twitter.com/neuronelsongon"
+    weight = 4
 [[menu.main]]
     name = "StackOverflow"
     url  = "https://stackoverflow.com/users/10323798/nelsongon"
+    weight = 3
 [[menu.main]]
     name = "Kaggle"
     url = "https://www.kaggle.com/gonnel"
-    
+    weight = 5
 
 [params]
     description = "A website built through Hugo and blogdown."
