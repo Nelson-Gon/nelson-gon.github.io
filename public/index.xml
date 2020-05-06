@@ -13,10 +13,10 @@
     
     <item>
       <title></title>
-      <link>/2020/05/06/</link>
+      <link>/post/manymodelr_vignette/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/05/06/</guid>
+      <guid>/post/manymodelr_vignette/</guid>
       <description>manymodelr: Build and Tune Several Models
 In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
 Installing the package
