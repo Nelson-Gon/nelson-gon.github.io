@@ -46,7 +46,7 @@ I did not edit the icon further because all I needed was to have it displayed, n
 
 To add the icon to the blog, we edit the file `themes/blackburn/layouts/partials/social.html` to include our need icon. For Kaggle, this becomes:
 
-```
+```html
 
 <!-- Kaggle -->
 {{ with .Site.Social.kaggle}}
@@ -63,7 +63,7 @@ As someone not very much into Web development, I found the above syntax interest
 
 Having added the above, we can proceed to adding our new section to the `[social]` section of our **TOML** file(`config.toml`) in the project home. This would then look like:
 
-```
+```html
 
 [Social]
 

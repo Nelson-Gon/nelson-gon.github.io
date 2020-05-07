@@ -70,13 +70,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../../../about/">About</a>
+          <a class="pure-menu-link" href="../../../../"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../../../post">Projects</a>
+          <a class="pure-menu-link" href="../../../../about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="../../../../post"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
@@ -187,7 +193,7 @@
 
   <div>
   <div class="small-print">
-    <small></small>
+    <small>&copy; 2020. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -197,6 +203,7 @@
 
 </div>
 
+  
 
   <div id="main">
 
@@ -261,26 +268,26 @@ kaggle_icon <span style="color:#f92672">%&gt;%</span>
 </code></pre></div><p>I did not edit the icon further because all I needed was to have it displayed, nothing more.</p>
 <p><strong>Adding the icon to the blog</strong></p>
 <p>To add the icon to the blog, we edit the file <code>themes/blackburn/layouts/partials/social.html</code> to include our need icon. For Kaggle, this becomes:</p>
-<pre><code>
-&lt;!-- Kaggle --&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+<span style="color:#75715e">&lt;!-- Kaggle --&gt;</span>
 {{ with .Site.Social.kaggle}}
-&lt;li class=&quot;pure-menu-item&quot;&gt;
-  &lt;a class=&quot;pure-menu-link&quot; href=&quot;https://Kaggle.com/{{ . }}&quot; target=&quot;_blank&quot;&gt;&lt;img src = &quot;/images/kaggle_icon.png&quot; id = &quot;community-icon&quot;&gt;Kaggle&lt;/a&gt;
-&lt;/li&gt;
+&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-item&#34;</span>&gt;
+  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> <span style="color:#a6e22e">id </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;community-icon&#34;</span>&gt;Kaggle&lt;/<span style="color:#f92672">a</span>&gt;
+&lt;/<span style="color:#f92672">li</span>&gt;
 {{ end }}
 
-</code></pre><p>As someone not very much into Web development, I found the above syntax interesting, especially with respect to its similarity to <code>rlang</code>'s recent <code>{{}}</code> syntax. If you&rsquo;re not familar with the latter, please see <a href="https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/">this site</a>.</p>
+</code></pre></div><p>As someone not very much into Web development, I found the above syntax interesting, especially with respect to its similarity to <code>rlang</code>'s recent <code>{{}}</code> syntax. If you&rsquo;re not familar with the latter, please see <a href="https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/">this site</a>.</p>
 <p><strong>Finishing up</strong></p>
 <p>Having added the above, we can proceed to adding our new section to the <code>[social]</code> section of our <strong>TOML</strong> file(<code>config.toml</code>) in the project home. This would then look like:</p>
-<pre><code>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
 [Social]
 
-twitter = &quot;name here&quot;
-github = &quot;name here&quot;
-stackoverflow = &quot;id/name&quot;
-kaggle = &quot;name&quot;
+twitter = &#34;name here&#34;
+github = &#34;name here&#34;
+stackoverflow = &#34;id/name&#34;
+kaggle = &#34;name&#34;
 
-</code></pre><p><strong>Finally</strong></p>
+</code></pre></div><p><strong>Finally</strong></p>
 <p>To see our changes, we can serve our site locally(I do, might need to do remote instead). As of today, I am still deploying locally until I figure out how to solve an issue with integrating disqus.</p>
 <p>To serve our site, we call <code>serve_site</code> from <code>blogdown</code>:</p>
 <p><code>blogdown::serve_site()</code></p>
@@ -365,7 +372,16 @@ kaggle = &quot;name&quot;
 
 
 
-  
+  <div id="disqus_thread"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'nelsongon.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </div>
 

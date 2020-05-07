@@ -2,6 +2,8 @@ baseurl = "https://nelson-gon.github.io/"
 languageCode = "en-us"
 title = "Automate the Data Exploration Pipeline"
 theme = "blackburn"
+author = "Nelsnon Gonzabato"
+copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = ""
 publishDir = "../nelson-gon.github.io"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -9,20 +11,35 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 enableRobotsTXT= true
 canonifyURLs = true
 relativeURLs = true
+# disable rss
+disableKinds = ["RSS"] 
 
 [permalinks]
 
 post = "/:day/:month/:year/:slug/"
 
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+
 [[menu.main]]
     name= "About"
     url = "/about/"
-    weight = 1
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 2
+    identifier="about"
 
 [[menu.main]]
-    name="Projects"
+    name="Posts"
     url="/post"
-    weight = 2
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    identifier = "psot"
+    weight = 3
 
 
 [params]
