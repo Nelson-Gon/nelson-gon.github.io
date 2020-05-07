@@ -1,13 +1,14 @@
-baseurl = "/"
+baseurl = "https://nelson-gon.github.io/"
 languageCode = "en-us"
 title = "Automate the Data Exploration Pipeline"
 theme = "blackburn"
 googleAnalytics = ""
-disqusShortname = ""
+publishDir = "../nelson-gon.github.io"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # enable SEO search
 enableRobotsTXT= true
 canonifyURLs = true
+relativeURLs = true
 
 [permalinks]
 

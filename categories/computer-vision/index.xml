@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer vision on Automate the Data Exploration Pipeline</title>
+    <link>/categories/computer-vision/</link>
+    <description>Recent content in computer vision on Automate the Data Exploration Pipeline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated Image Processing with pyautocv in Python</title>
+      <link>/07/05/2020/automated-image-processing-with-pyautocv-in-python/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/07/05/2020/automated-image-processing-with-pyautocv-in-python/</guid>
+      <description>pyautocv: (Semi) Automated Image Processing
+
+Project Aims
+The goal of pyautocv is to provide a simple computer vision(cv) workflow that enables one to automateor at least reduce the time spent in image (pre)-processing.
+Installing the package
+From pypi:
+pip install pyautocvFrom GitHub
+pip install pip install git+https://github.com/Nelson-Gon/pyautocv.git#or# clone the repogit clone https://www.</description>
+    </item>
+    
+  </channel>
+</rss>
