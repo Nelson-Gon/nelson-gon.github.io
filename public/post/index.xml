@@ -1,86 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Automate the Data Exploration Pipeline</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Automate the Data Exploration Pipeline</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</title>
-      <link>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
-      <description>In this short article, I show how I added a Kaggle favicon to the site.
-Prerequisites:
-R packages
-  magrittr
-  magick
-  Why did I need to create a custom favicon?
-I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&amp;rsquo;ve found the site to be less enjoyable as it used to be but that&amp;rsquo;s a post for another day.</description>
-    </item>
-    
-    <item>
-      <title>Missing Data Explorer</title>
-      <link>/07/05/2020/missing-data-explorer/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/07/05/2020/missing-data-explorer/</guid>
-      <description>This is the development version of mde. The acronym mde stands for Missing Data Explorer, a package that is intended to make missing data exploration as smooth and easy as possible.
-The goal of mde is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.
-Installation
-CRAN releaseinstall.</description>
-    </item>
-    
-    <item>
-      <title>Automated Image Processing with pyautocv in Python</title>
-      <link>/06/05/2020/automated-image-processing-with-pyautocv-in-python/</link>
-      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/06/05/2020/automated-image-processing-with-pyautocv-in-python/</guid>
-      <description>pyautocv: (Semi) Automated Image Processing
-
-Project Aims
-The goal of pyautocv is to provide a simple computer vision(cv) workflow that enables one to automateor at least reduce the time spent in image (pre)-processing.
-Installing the package
-From pypi:
-pip install pyautocvFrom GitHub
-pip install pip install git+https://github.com/Nelson-Gon/pyautocv.git#or# clone the repogit clone https://www.</description>
-    </item>
-    
-    <item>
-      <title>manymodelr: Build and Tune Several Models</title>
-      <link>/06/05/2020/manymodelr-build-and-tune-several-models/</link>
-      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/06/05/2020/manymodelr-build-and-tune-several-models/</guid>
-      <description>manymodelr: Build and Tune Several Models
-In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
-Installing the package
-install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.</description>
-    </item>
-    
-    <item>
-      <title>pyfdc: A python interface to FoodDataCentral</title>
-      <link>/06/05/2020/pyfdc-a-python-interface-to-fooddatacentral/</link>
-      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/06/05/2020/pyfdc-a-python-interface-to-fooddatacentral/</guid>
-      <description>pyfdc: A python interface to FoodDataCentral
-
-Installation
-The simplest way to install the latest release is as follows:
-pip install pyfdcTo install the development version:
-Open the Terminal/CMD/Git bash/shell and enter
-pip install git+https://github.com/Nelson-Gon/pyfdc.git# or for the less stable dev versionpip install git+https://github.com/Nelson-Gon/pyfdc.git@developOtherwise:
-# clone the repogit clone https://www.github.com/Nelson-Gon/pyfdc.gitcd pyfdcpython3 setup.</description>
-    </item>
-    
-  </channel>
-</rss>
