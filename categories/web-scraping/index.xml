@@ -1,31 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Web Scraping on Automate the Data Exploration Pipeline</title>
-    <link>/categories/web-scraping/</link>
-    <description>Recent content in Web Scraping on Automate the Data Exploration Pipeline</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/web-scraping/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>pyfdc: A python interface to FoodDataCentral</title>
-      <link>/07/05/2020/pyfdc-a-python-interface-to-fooddatacentral/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/07/05/2020/pyfdc-a-python-interface-to-fooddatacentral/</guid>
-      <description>pyfdc: A python interface to FoodDataCentral
-
-Installation
-The simplest way to install the latest release is as follows:
-pip install pyfdcTo install the development version:
-Open the Terminal/CMD/Git bash/shell and enter
-pip install git+https://github.com/Nelson-Gon/pyfdc.git# or for the less stable dev versionpip install git+https://github.com/Nelson-Gon/pyfdc.git@developOtherwise:
-# clone the repogit clone https://www.github.com/Nelson-Gon/pyfdc.gitcd pyfdcpython3 setup.</description>
-    </item>
-    
-  </channel>
-</rss>
