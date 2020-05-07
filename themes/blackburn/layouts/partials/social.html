@@ -150,11 +150,20 @@
     </li>
     {{ end }}
 
+<!-- Kaggle -->
+{{ with .Site.Social.kaggle}}
+<li class="pure-menu-item">
+  <a class="pure-menu-link" href="https://Kaggle.com/{{ . }}" target="_blank"><img src = "/images/kaggle_icon.png" id = "community-icon">Kaggle</a>
+</li>
+{{ end }}
+    
+
     {{ with .Site.Social.serverfault }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://serverfault.com/users/{{ . }}" rel="me" target="_blank"><i class="fab fa-server fa-fw"></i>Server Fault</a>
     </li>
     {{ end }}
+    
 
     <!-- Gaming -->
 

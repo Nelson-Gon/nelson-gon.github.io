@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>missing data on Automate the Data Exploration Pipeline</title>
+    <link>/tags/missing-data/</link>
+    <description>Recent content in missing data on Automate the Data Exploration Pipeline</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/missing-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Missing Data Explorer</title>
+      <link>/07/05/2020/missing-data-explorer/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/07/05/2020/missing-data-explorer/</guid>
+      <description>This is the development version of mde. The acronym mde stands for Missing Data Explorer, a package that is intended to make missing data exploration as smooth and easy as possible.
+The goal of mde is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.
+Installation
+CRAN releaseinstall.</description>
+    </item>
+    
+  </channel>
+</rss>
