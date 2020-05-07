@@ -37,3 +37,18 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+# extend ignore for hugo
+.gitignore:
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.gitignore
+.gitkeep
+/**/*.Rmd
+config.toml
+nelson-gon.github.io.Rproj
+content/
+static/
+themes/
