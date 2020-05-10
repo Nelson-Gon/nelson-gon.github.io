@@ -163,7 +163,7 @@
 
 
 <li class="pure-menu-item">
-  <a class="pure-menu-link" href="https://Kaggle.com/gonnel" target="_blank"><img src = "/images/kaggle_icon.png" id = "community-icon">Kaggle</a>
+  <a class="pure-menu-link" href="https://Kaggle.com/gonnel" target="_blank"><img src = "/images/kaggle_icon.png" id = "kaggle-icon">Kaggle</a>
 </li>
 
     
@@ -253,10 +253,10 @@
 </li>
 </ul>
 <p><strong>Why did I need to create a custom favicon?</strong></p>
-<p>I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&rsquo;ve found the site to be less enjoyable as it used to be but that&rsquo;s a post for another day.</p>
-<p>The real reason for the need to create a custom icon to use on the side bar was the desire to include Kaggle under the social media space of the side bar. However, Hugo only provides &ldquo;out of the box&rdquo; configurations for popular &ldquo;social&rdquo; sites.</p>
+<p>I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&rsquo;ve found the site to be less enjoyable but that&rsquo;s a post for another day.</p>
+<p>The real reason for the need to create a custom icon was the desire to include Kaggle under the  side bar. However, Hugo only provides &ldquo;out of the box&rdquo; configurations for popular &ldquo;social&rdquo; sites.</p>
 <p><strong>Creating the Favicon</strong></p>
-<p>I have to first give credit to <a href="https://tbradley1013.github.io/">goonR</a>. Ironically or rather coincidentally, I just found out that the blog owner is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog <a href="https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/">entry</a> which deals with RStudio Community.</p>
+<p>I have to first give credit to <a href="https://tbradley1013.github.io/">goonR</a>. Coincidentally, I found out that the blog author is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog <a href="https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/">entry</a> which deals with RStudio Community.</p>
 <p>To create the icon, I used code from that blog(I know, I was too lazy to create it and why do it if someone else already has?! DRY, remember?):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">
 kaggle_icon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">image_read</span>(<span style="color:#e6db74">&#34;https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/189_Kaggle-512.png&#34;</span>)
@@ -272,13 +272,13 @@ kaggle_icon <span style="color:#f92672">%&gt;%</span>
 <span style="color:#75715e">&lt;!-- Kaggle --&gt;</span>
 {{ with .Site.Social.kaggle}}
 &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-item&#34;</span>&gt;
-  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> <span style="color:#a6e22e">id </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;community-icon&#34;</span>&gt;Kaggle&lt;/<span style="color:#f92672">a</span>&gt;
+  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> <span style="color:#a6e22e">id </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kaggle-icon&#34;</span>&gt;Kaggle&lt;/<span style="color:#f92672">a</span>&gt;
 &lt;/<span style="color:#f92672">li</span>&gt;
 {{ end }}
 
 </code></pre></div><p>As someone not very much into Web development, I found the above syntax interesting, especially with respect to its similarity to <code>rlang</code>'s recent <code>{{}}</code> syntax. If you&rsquo;re not familar with the latter, please see <a href="https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/">this site</a>.</p>
 <p><strong>Finishing up</strong></p>
-<p>Having added the above, we can proceed to adding our new section to the <code>[social]</code> section of our <strong>TOML</strong> file(<code>config.toml</code>) in the project home. This would then look like:</p>
+<p>Having added the above, we can add our new section to the <code>[social]</code> section of our <strong>TOML</strong> file(<code>config.toml</code>) in the project home. This would then look like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
 [Social]
 
@@ -288,7 +288,7 @@ stackoverflow = &#34;id/name&#34;
 kaggle = &#34;name&#34;
 
 </code></pre></div><p><strong>Finally</strong></p>
-<p>To see our changes, we can serve our site locally(I do, might need to do remote instead). As of today, I am still deploying locally until I figure out how to solve an issue with integrating disqus.</p>
+<p>To see our changes, we can serve our site.</p>
 <p>To serve our site, we call <code>serve_site</code> from <code>blogdown</code>:</p>
 <p><code>blogdown::serve_site()</code></p>
 <p>Finally, our site now has a link to <code>Kaggle</code>. The beauty about this is that you can use it to add any site, which is awesome. Let me know what you think.</p>

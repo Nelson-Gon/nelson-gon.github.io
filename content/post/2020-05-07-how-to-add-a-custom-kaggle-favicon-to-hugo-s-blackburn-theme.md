@@ -20,13 +20,13 @@ Prerequisites:
 
 **Why did I need to create a custom favicon?**
 
-I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I've found the site to be less enjoyable as it used to be but that's a post for another day. 
+I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I've found the site to be less enjoyable but that's a post for another day. 
 
-The real reason for the need to create a custom icon to use on the side bar was the desire to include Kaggle under the social media space of the side bar. However, Hugo only provides "out of the box" configurations for popular "social" sites.
+The real reason for the need to create a custom icon was the desire to include Kaggle under the  side bar. However, Hugo only provides "out of the box" configurations for popular "social" sites.
 
 **Creating the Favicon**
 
-I have to first give credit to [goonR](https://tbradley1013.github.io/). Ironically or rather coincidentally, I just found out that the blog owner is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog [entry](https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/) which deals with RStudio Community.
+I have to first give credit to [goonR](https://tbradley1013.github.io/). Coincidentally, I found out that the blog author is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog [entry](https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/) which deals with RStudio Community.
 
 To create the icon, I used code from that blog(I know, I was too lazy to create it and why do it if someone else already has?! DRY, remember?):
 
@@ -51,7 +51,7 @@ To add the icon to the blog, we edit the file `themes/blackburn/layouts/partials
 <!-- Kaggle -->
 {{ with .Site.Social.kaggle}}
 <li class="pure-menu-item">
-  <a class="pure-menu-link" href="https://Kaggle.com/{{ . }}" target="_blank"><img src = "/images/kaggle_icon.png" id = "community-icon">Kaggle</a>
+  <a class="pure-menu-link" href="https://Kaggle.com/{{ . }}" target="_blank"><img src = "/images/kaggle_icon.png" id = "kaggle-icon">Kaggle</a>
 </li>
 {{ end }}
 
@@ -61,7 +61,7 @@ As someone not very much into Web development, I found the above syntax interest
 
 **Finishing up**
 
-Having added the above, we can proceed to adding our new section to the `[social]` section of our **TOML** file(`config.toml`) in the project home. This would then look like:
+Having added the above, we can add our new section to the `[social]` section of our **TOML** file(`config.toml`) in the project home. This would then look like:
 
 ```html
 
@@ -76,7 +76,7 @@ kaggle = "name"
 
 **Finally**
 
-To see our changes, we can serve our site locally(I do, might need to do remote instead). As of today, I am still deploying locally until I figure out how to solve an issue with integrating disqus.
+To see our changes, we can serve our site.
 
 To serve our site, we call `serve_site` from `blogdown`:
 

@@ -5,6 +5,7 @@ theme = "blackburn"
 author = "Nelsnon Gonzabato"
 copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = ""
+disqusShortname="nelsongon"
 publishDir = "../nelson-gon.github.io"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # enable SEO search
@@ -18,9 +19,7 @@ disableKinds = ["RSS"]
 
 post = "/:day/:month/:year/:slug/"
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
+[[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
     weight = 1
