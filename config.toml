@@ -24,10 +24,10 @@ post = "/:day/:month/:year/:slug/"
 
 
 [[menu.main]]
-    name="Posts"
-    url="/post"
+    name="About"
+    url="/about"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    identifier = "psot"
+    identifier = "about"
     weight = 1
 
 
