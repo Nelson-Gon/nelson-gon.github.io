@@ -1,7 +1,7 @@
 baseurl = "https://nelson-gon.github.io/"
 languageCode = "en-us"
 title = "A Zero to Hero Programmer Pathway"
-theme = "ghostwriter"
+theme = "blackburn"
 author = "Nelson Gonzabato"
 copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = ""
