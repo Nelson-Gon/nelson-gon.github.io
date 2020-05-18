@@ -1,7 +1,7 @@
 baseurl = "https://nelson-gon.github.io/"
 languageCode = "en-us"
-title = "Automate the Data Exploration Pipeline"
-theme = "blackburn"
+title = "A Zero to Hero Programmer Pathway"
+theme = "ghostwriter"
 author = "Nelson Gonzabato"
 copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = ""
@@ -21,14 +21,25 @@ post = "/:day/:month/:year/:slug/"
 
 
 
-
-
+[[menu.main]]
+    name="Blog"
+    url="/"
+    pre="<i class='fa fa-list fa-fw'></i>"
+    identifier="home"
+    weight=1
 [[menu.main]]
     name="About"
     url="/about"
     pre = "<i class='fa fa-list fa-fw'></i>"
     identifier = "about"
-    weight = 1
+    weight = 2
+[[menu.main]]
+    name="Projects"
+    url="/projects"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    identifier = "projects"
+    weight = 3
+   
 
 
 [params]
