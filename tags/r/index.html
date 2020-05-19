@@ -1,384 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>r &middot; </title>
+        <meta name="description" content="A Beginner&#39;s Guide to Automated Data Analysis with R and Python">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.69.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../dist/site.css">
+        <link rel="stylesheet" href="../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A Beginner&#39;s Guide to Automated Data Analysis with R and Python">
-  <meta name="generator" content="Hugo 0.69.2" />
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
 
-  <title>r &middot; A Zero to Hero Programmer Pathway</title>
-
-    
-
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
-  <!--<![endif]-->
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="../../css/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="../../css/side-menu.css">
-  <!--<![endif]-->
-
-  <link rel="stylesheet" href="../../css/blackburn.css">
-
-  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
- 
-  
-
-  
-
-  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
-
-  
-  
-
-</head>
-
-
-<body>
-<div id="layout">
-
-  
-<a href="#menu" id="menuLink" class="menu-link">
-  
-  <span></span>
-</a>
-<div id="menu">
-
-  
-
-  <div class="pure-menu">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../"><i class='fa fa-list fa-fw'></i>Blog</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../about"><i class='fa fa-list fa-fw'></i>About</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="../../projects"><i class='fa fa-list fa-fw'></i>Projects</a>
-      
-        </li>
-      
-    </ul>
-  </div>
-
-  <div class="pure-menu social">
-  <ul class="pure-menu-list">
-
-    
-
-    
-
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://twitter.com/neuronelsongon" rel="me" target="_blank"><i class="fab fa-twitter-square fa-fw"></i>Twitter</a>
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../">Blog</a>
     </li>
-    
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/Nelson-Gon" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    <li class="site-nav-item">
+        <a title="About" href="../../about">About</a>
     </li>
-    
 
-    
-
-    
-
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    <li class="site-nav-item">
+        <a title="Projects" href="../../projects">Projects</a>
     </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div id="post-index" class="container">
     
 
 
-
-<li class="pure-menu-item">
-  <a class="pure-menu-link" href="https://Kaggle.com/gonnel" target="_blank"><img src = "/images/kaggle_icon.png" id = "kaggle-icon">Kaggle</a>
+    <ol class="post-list tag-list">
+        
+        
+            <li class="post-stub">
+    <a href="../../07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/">
+        <h4 class="post-stub-title">How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</h4>
+        
+            <p class="post-stub-description">Adding a Custom Kaggle Favicon with R</p>
+        
+        
+    </a>
 </li>
+        
+            <li class="post-stub">
+    <a href="../../07/05/2020/manymodelr-build-and-tune-several-models/">
+        <h4 class="post-stub-title">manymodelr: Build and Tune Several Models</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="../../07/05/2020/missing-data-explorer/">
+        <h4 class="post-stub-title">Missing Data Explorer</h4>
+        
+        
+    </a>
+</li>
+        
+    </ol>
 
-    
+    <div class="post-navigation tag-navigation">
+        
 
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  </ul>
+    </div>
 </div>
 
+            </div>
+        </div>
 
-  <div>
-  <div class="small-print">
-    <small>&copy; 2020. All rights reserved.</small>
-  </div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
-  </div>
-</div>
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="A Zero to Hero Programmer Pathway" href="../../">A Zero to Hero Programmer Pathway</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
 
-</div>
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
 
-  
-
-  <div id="main">
-
-
-<div class="header">
-  <h1>r</h1>
-</div>
-
-<div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="../../07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/">How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>07 May 2020, 00:00</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="../../tags/r">r</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../tags/kaggle">kaggle</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  In this short article, I show how I added a Kaggle favicon to the site.
-Prerequisites:
-R packages
-  magrittr
-  magick
-  Why did I need to create a custom favicon?
-I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&rsquo;ve found the site to be less enjoyable but that&rsquo;s a post for another day.
-The real reason for the need to create a custom icon was the desire to include Kaggle under the side bar.
-  </p>
-
-  
-  <footer>
-    <a href="../../07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="../../07/05/2020/manymodelr-build-and-tune-several-models/">manymodelr: Build and Tune Several Models</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>07 May 2020, 00:00</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="../../tags/r">r</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../tags/modeling">modeling</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../tags/ml">ml</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  manymodelr: Build and Tune Several Models
-In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
-Installing the package
-install.packages(&quot;manymodelr&quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.
-  </p>
-
-  
-  <footer>
-    <a href="../../07/05/2020/manymodelr-build-and-tune-several-models/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="../../07/05/2020/missing-data-explorer/">Missing Data Explorer</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>07 May 2020, 00:00</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="../../tags/r">r</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../tags/missing-data">missing data</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="../../tags/data-exploration">data exploration</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  This is the development version of mde. The acronym mde stands for Missing Data Explorer, a package that is intended to make missing data exploration as smooth and easy as possible.
-The goal of mde is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.
-Installation
-CRAN releaseinstall.
-  </p>
-
-  
-  <footer>
-    <a href="../../07/05/2020/missing-data-explorer/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-</div>
-
-</div>
-</div>
-<script src="../../js/ui.js"></script>
-<script src="../../js/menus.js"></script>
-
-
-
-
-
-
-
-
-</body>
+        <script src="../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../js/jquery.fitvids.js"></script>
+        <script src="../../js/scripts.js"></script>
+    </body>
 </html>

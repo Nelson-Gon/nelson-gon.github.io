@@ -1,7 +1,9 @@
+[markup.goldmark.renderer]
+unsafe = true
 baseurl = "https://nelson-gon.github.io/"
 languageCode = "en-us"
 title = "A Zero to Hero Programmer Pathway"
-theme = "blackburn"
+theme = "ghostwriter"
 author = "Nelson Gonzabato"
 copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = ""
@@ -39,6 +41,12 @@ post = "/:day/:month/:year/:slug/"
     pre = "<i class='fa fa-list fa-fw'></i>"
     identifier = "projects"
     weight = 3
+[[menu.main]]
+    name="Contact"
+    url="/social"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    identifier = "social"
+    weight = 4
    
 
 
