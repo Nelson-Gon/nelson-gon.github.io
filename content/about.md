@@ -8,3 +8,30 @@ Nelson Gonzabato, known online as NelsonGon, is currently a third year Biomedica
 
 Outside class, Nelson continually seeks ways of advancing his programming skills and knowledge. To do this, Nelson contributes frequently to the `R` tag on [StackOverflow](https://stackoverflow.com/users/10323798/nelsongon) where he has learnt a lot from some of the very best R programmers. Nelson has been lucky enough to contribute a few open source packages and would love to hear from you about his work. You can find some of his work [here](https://github.com/Nelson-Gon/). While he has spent a lot of time learning `R`, Nelson loves exploring and is currently learning as much `python` and `bash` as possible. Some of his answers are summarised here:
 
+
+---
+date: "2020-05-18"
+description: Contact the Author
+type: social
+---
+
+To contact NelsonGon, please use any of the following:
+
+
+[Send Email](mailto://gonzabato@hotmail.com) | <a class="twitter-follow-button" href="https://github.com/Nelson-Gon" data-size="large" aria-label="Follow @Nelson-Gon on GitHub">Nelson-Gon on GitHub</a> | 
+<a href="http://twitter.com/neuronelsongon" class="twitter-follow-button" data-show-count="false">Follow NelsonGon</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script> 
+
+
+
+
+**NelsonGon on StackOverflow**
+
+[![NelsonGon on StackOverflow](https://stackoverflow.com/users/flair/10323798.png)](https://stackoverflow.com/users/10323798/nelsongon?tab=profile) 
+
+[NelsonGon on Kaggle](https://www.kaggle.com/gonnel)
+
+
+
+
+

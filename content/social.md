@@ -1,6 +1,7 @@
 ---
 date: "2020-05-18"
 description: Contact the Author
+type: social
 ---
 
 To contact NelsonGon, please use any of the following:
