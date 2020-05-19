@@ -1,5 +1,3 @@
-[markup.goldmark.renderer]
-unsafe = true
 baseurl = "https://nelson-gon.github.io/"
 languageCode = "en-us"
 title = "A Zero to Hero Programmer Pathway"
@@ -77,3 +75,6 @@ twitter = "neuronelsongon"
 github = "Nelson-Gon"
 stackoverflow = "10323798/nelsongon"
 kaggle = "gonnel"
+
+[markup.goldmark.renderer]
+unsafe = true
