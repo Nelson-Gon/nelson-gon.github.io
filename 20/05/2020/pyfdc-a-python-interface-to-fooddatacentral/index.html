@@ -5,21 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>pyfdc: A python interface to FoodDataCentral &middot; </title>
         <meta name="description" content="pyfdc: A python interface to FoodDataCentral
-
 Installation
 The simplest way to install the latest release is as follows:
 pip install pyfdcTo install the development version:
 Open the Terminal/CMD/Git bash/shell and enter
 pip install git&#43;https://github.com/Nelson-Gon/pyfdc.git# or for the less stable dev versionpip install git&#43;https://github.com/Nelson-Gon/pyfdc.git@developOtherwise:
-# clone the repogit clone https://www.github.com/Nelson-Gon/pyfdc.gitcd pyfdcpython3 setup.">
+# clone the repogit clone https://www.github.com/Nelson-Gon/pyfdc.gitcd pyfdcpython3 setup.py installBuilding documentation
+# The Makefile here is Windows specificcd docspython -m m2r .">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.69.2" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="/dist/site.css">
-        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
@@ -39,11 +39,27 @@ pip install git&#43;https://github.com/Nelson-Gon/pyfdc.git# or for the less st
                                 <img src="#ZgotmplZ" alt="" />
                             </a>
                         
-                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/neuronelsongon" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
                         
                         
                         
+                            <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="https://gitlab.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-gitlab"></i>
+                            </a>
                         
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
                         
                         
                         
@@ -52,19 +68,19 @@ pip install git&#43;https://github.com/Nelson-Gon/pyfdc.git# or for the less st
                     <ul class="site-nav">
                         
     <li class="site-nav-item">
-        <a title="Blog" href="/">Blog</a>
+        <a title="Blog" href="../../../../">Blog</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="About" href="/about">About</a>
+        <a title="About" href="../../../../about">About</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Projects" href="/projects">Projects</a>
+        <a title="Projects" href="../../../../projects">Projects</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Contact" href="/social">Contact</a>
+        <a title="Contact" href="../../../../social">Contact</a>
     </li>
 
                     </ul>
@@ -80,7 +96,7 @@ pip install git&#43;https://github.com/Nelson-Gon/pyfdc.git# or for the less st
     <h1 class="post-title" itemprop="name headline">pyfdc: A python interface to FoodDataCentral</h1>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-05-07" itemprop="datePublished">Thu, May 7, 2020</time></span>
+        <span>Published <time datetime="2020-05-20" itemprop="datePublished">Wed, May 20, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -95,24 +111,10 @@ pip install git&#43;https://github.com/Nelson-Gon/pyfdc.git# or for the less st
     
 
     
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p><code>pyfdc</code>: A python interface to FoodDataCentral</p>
-<p><a href="https://doi.org/10.5281/zenodo.3764453"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3764453.svg" alt="DOI" /></a>
-<img src="https://travis-ci.com/Nelson-Gon/pyfdc.svg?branch=master" alt="Travis Build" />
-<img src="https://github.com/Nelson-Gon/pyfdc/workflows/Test-Package/badge.svg" alt="Test-Package" />
-<a href="https://GitHub.com/Nelson-Gon/pyfdc/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a>
-<a href="https://pypi.python.org/pypi/pyfdc/"><img src="https://badge.fury.io/py/pyfdc.svg" alt="PyPI version fury.io" /></a>
-<a href="https://pypi.python.org/pypi/pyfdc/"><img src="https://img.shields.io/pypi/l/pyfdc.svg" alt="PyPI license" /></a>
-<a href="https://pypi.python.org/pypi/pyfdc/"><img src="https://img.shields.io/pypi/dm/pyfdc.svg" alt="PyPI download Month" /></a>
-<a href="https://pypi.python.org/pypi/pyfdc/"><img src="https://img.shields.io/pypi/dw/pyfdc.svg" alt="PyPI download week" /></a>
-<a href="https://pypi.python.org/pypi/pyfdc/"><img src="https://img.shields.io/pypi/dd/pyfdc.svg" alt="PyPI download day" /></a>
-<a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status" /></a>
-<a href="https://github.com/Nelson-Gon/pyfdc/commits/master"><img src="https://img.shields.io/github/last-commit/Nelson-Gon/pyfdc.svg" alt="GitHub last commit" /></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg" alt="made-with-python" /></a>
-<a href="https://GitHub.com/Nelson-Gon/pyfdc/issues/"><img src="https://img.shields.io/github/issues/Nelson-Gon/pyfdc.svg" alt="GitHub issues" /></a>
-<a href="https://GitHub.com/Nelson-Gon/pyfdc/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/Nelson-Gon/pyfdc.svg" alt="GitHub issues-closed" /></a></p>
 <p><strong>Installation</strong></p>
 <p>The simplest way to install the latest release is as follows:</p>
 <pre class="r"><code>pip install pyfdc</code></pre>
@@ -208,20 +210,20 @@ at <a href="https://github.com/Nelson-Gon/pyfdc/issues">issues</a>.</p>
             <span>Tagged:</span>
             
             
-                <a href="/tags/python/">python</a>, 
+                <a href="../../../../tags/python/">python</a>, 
             
-                <a href="/tags/api/">api</a>, 
+                <a href="../../../../tags/api/">api</a>, 
             
-                <a href="/tags/food/">food</a>, 
+                <a href="../../../../tags/food/">food</a>, 
             
-                <a href="/tags/web-scraping/">web scraping</a>
+                <a href="../../../../tags/web-scraping/">web scraping</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=pyfdc%3a%20A%20python%20interface%20to%20FoodDataCentral&url=%2f07%2f05%2f2020%2fpyfdc-a-python-interface-to-fooddatacentral%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=pyfdc%3a%20A%20python%20interface%20to%20FoodDataCentral&url=%2f20%2f05%2f2020%2fpyfdc-a-python-interface-to-fooddatacentral%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
@@ -229,7 +231,7 @@ at <a href="https://github.com/Nelson-Gon/pyfdc/issues">issues</a>.</p>
         
 
         
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f07%2f05%2f2020%2fpyfdc-a-python-interface-to-fooddatacentral%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f20%2f05%2f2020%2fpyfdc-a-python-interface-to-fooddatacentral%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fa fa-facebook"></i>
                 <span class="hidden">Facebook</span>
@@ -237,7 +239,7 @@ at <a href="https://github.com/Nelson-Gon/pyfdc/issues">issues</a>.</p>
         
 
         
-            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f07%2f05%2f2020%2fpyfdc-a-python-interface-to-fooddatacentral%2f"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f20%2f05%2f2020%2fpyfdc-a-python-interface-to-fooddatacentral%2f"
               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
               <i class="fa fa-google-plus"></i>
                 <span class="hidden">Google+</span>
@@ -248,6 +250,29 @@ at <a href="https://github.com/Nelson-Gon/pyfdc/issues">issues</a>.</p>
 </footer>
 
         
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
     </article>
 </div>
 
@@ -258,7 +283,7 @@ at <a href="https://github.com/Nelson-Gon/pyfdc/issues">issues</a>.</p>
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a title="" href="/"></a>
+                        <a title="A Zero to Hero Programmer Pathway" href="../../../../">A Zero to Hero Programmer Pathway</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#">
                         <i class="fa fa-angle-up"></i>
@@ -275,9 +300,9 @@ at <a href="https://github.com/Nelson-Gon/pyfdc/issues">issues</a>.</p>
             </div>
         </footer>
 
-        <script src="/js/jquery-1.11.3.min.js"></script>
-        <script src="/js/jquery.fitvids.js"></script>
-        <script src="/js/scripts.js"></script>
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
     </body>
 </html>
 

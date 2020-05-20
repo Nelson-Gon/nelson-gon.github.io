@@ -4,18 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>manymodelr: Build and Tune Several Models &middot; </title>
-        <meta name="description" content="manymodelr: Build and Tune Several Models
-In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
+        <meta name="description" content="manymodelr: Build and Tune Several ModelsIn this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
 Installing the package
-install.packages(&quot;manymodelr&quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.">
+install.packages(&quot;manymodelr&quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.
+Loading the package
+library(manymodelr)#&gt; Loading required package: caret#&gt; Loading required package: lattice#&gt; Loading required package: ggplot2#&gt; Loading required package: Metrics#&gt; #&gt; Attaching package: &#39;Metrics&#39;#&gt; The following objects are masked from &#39;package:caret&#39;:#&gt; #&gt; precision, recall#&gt; Loading required package: e1071#&gt; Welcome to manymodelr.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.69.2" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="/dist/site.css">
-        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
@@ -35,11 +36,27 @@ Installing the package
                                 <img src="#ZgotmplZ" alt="" />
                             </a>
                         
-                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/neuronelsongon" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
                         
                         
                         
+                            <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="https://gitlab.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-gitlab"></i>
+                            </a>
                         
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
                         
                         
                         
@@ -48,19 +65,19 @@ Installing the package
                     <ul class="site-nav">
                         
     <li class="site-nav-item">
-        <a title="Blog" href="/">Blog</a>
+        <a title="Blog" href="../../../../">Blog</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="About" href="/about">About</a>
+        <a title="About" href="../../../../about">About</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Projects" href="/projects">Projects</a>
+        <a title="Projects" href="../../../../projects">Projects</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Contact" href="/social">Contact</a>
+        <a title="Contact" href="../../../../social">Contact</a>
     </li>
 
                     </ul>
@@ -76,7 +93,7 @@ Installing the package
     <h1 class="post-title" itemprop="name headline">manymodelr: Build and Tune Several Models</h1>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-05-07" itemprop="datePublished">Thu, May 7, 2020</time></span>
+        <span>Published <time datetime="2020-05-20" itemprop="datePublished">Wed, May 20, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -91,28 +108,11 @@ Installing the package
     
 
     
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <div id="manymodelr-build-and-tune-several-models" class="section level1">
 <h1><code>manymodelr</code>: Build and Tune Several Models</h1>
-<p><a href="https://cran.r-project.org/package=manymodelr"><img src="https://www.r-pkg.org/badges/version/manymodelr" alt="CRAN_Status_Badge" /></a>
-<a href="https://doi.org/10.5281/zenodo.3764309"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3764309.svg" alt="DOI" /></a>
-<a href="https://travis-ci.org/Nelson-Gon/manymodelr"><img src="https://travis-ci.org/Nelson-Gon/manymodelr.png?branch=master" alt="Build Status" /></a>
-<a href="https://github.com/Nelson-Gon/manymodelr"><img src="https://github.com/Nelson-Gon/manymodelr/workflows/R-CMD-check-devel/badge.svg" alt="R CMDCheck" /></a>
-<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"><img src="https://img.shields.io/badge/license-GPL--2-blue.svg" alt="license" /></a>
-<a href="http://www.rdocumentation.org/packages/manymodelr"><img src="http://www.rdocumentation.org/badges/version/manymodelr" alt="Rdoc" /></a>
-<a href="https://cran.r-project.org/package=manymodelr"><img src="https://cranlogs.r-pkg.org/badges/manymodelr" alt="Downloads" /></a>
-<a href="https://cran.r-project.org/package=manymodelr"><img src="http://cranlogs.r-pkg.org/badges/grand-total/manymodelr?color=yellow" alt="TotalDownloads" /></a>
-<a href="https://www.tidyverse.org/lifecycle/#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="lifecycle" /></a>
-<a href="https://GitHub.com/Nelson-Gon/manymodelr/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a>
-<a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status" /></a>
-<a href="https://codecov.io/gh/Nelson-Gon/manymodelr?branch=develop"><img src="https://codecov.io/gh/Nelson-Gon/manymodelr/branch/develop/graph/badge.svg" alt="Codecov test coverage" /></a>
-<a href="https://github.com/Nelson-Gon/manymodelr/commits/master"><img src="https://img.shields.io/github/last-commit/Nelson-Gon/manymodelr.svg" alt="GitHub last commit" /></a>
-<a href="https://GitHub.com/Nelson-Gon/manymodelr/issues/"><img src="https://img.shields.io/github/issues/Nelson-Gon/manymodelr.svg" alt="GitHub issues" /></a>
-<a href="https://GitHub.com/Nelson-Gon/manymodelr/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/Nelson-Gon/manymodelr.svg" alt="GitHub issues-closed" /></a>
-<a href="http://isitmaintained.com/project/Nelson-Gon/manymodelr" title="Average time to resolve an issue"><img src="http://isitmaintained.com/badge/resolution/Nelson-Gon/manymodelr.svg" alt="Average time to resolve an issue" /></a>
-<a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a></p>
 <p>In this vignette, we take a look at how we can simplify many machine learning tasks using <code>manymodelr</code>. We will take a look at the core functions first.</p>
 <p><strong>Installing the package</strong></p>
 <pre class="r"><code>
@@ -148,7 +148,7 @@ install.packages(&quot;manymodelr&quot;)
 #&gt; 2 versicolor           50          50           50          50
 #&gt; 3  virginica           50          50           50          50</code></pre>
 <pre class="r"><code>head(agg_by_group(mtcars,cyl~hp+vs,sum))
-#&gt; Grouped By[1]:   hp vs 
+#&gt; Grouped By[2]:   hp vs 
 #&gt; 
 #&gt;    hp vs cyl
 #&gt; 1  91  0   4
@@ -451,18 +451,18 @@ na_replace_grouped(df=test_df,group_by_cols = &quot;groups&quot;,how=&quot;ffill
             <span>Tagged:</span>
             
             
-                <a href="/tags/r/">r</a>, 
+                <a href="../../../../tags/r/">r</a>, 
             
-                <a href="/tags/modeling/">modeling</a>, 
+                <a href="../../../../tags/modeling/">modeling</a>, 
             
-                <a href="/tags/ml/">ml</a>
+                <a href="../../../../tags/ml/">ml</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=manymodelr%3a%20Build%20and%20Tune%20Several%20Models&url=%2f07%2f05%2f2020%2fmanymodelr-build-and-tune-several-models%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=manymodelr%3a%20Build%20and%20Tune%20Several%20Models&url=%2f20%2f05%2f2020%2fmanymodelr-build-and-tune-several-models%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
@@ -470,7 +470,7 @@ na_replace_grouped(df=test_df,group_by_cols = &quot;groups&quot;,how=&quot;ffill
         
 
         
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f07%2f05%2f2020%2fmanymodelr-build-and-tune-several-models%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f20%2f05%2f2020%2fmanymodelr-build-and-tune-several-models%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fa fa-facebook"></i>
                 <span class="hidden">Facebook</span>
@@ -478,7 +478,7 @@ na_replace_grouped(df=test_df,group_by_cols = &quot;groups&quot;,how=&quot;ffill
         
 
         
-            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f07%2f05%2f2020%2fmanymodelr-build-and-tune-several-models%2f"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f20%2f05%2f2020%2fmanymodelr-build-and-tune-several-models%2f"
               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
               <i class="fa fa-google-plus"></i>
                 <span class="hidden">Google+</span>
@@ -489,6 +489,29 @@ na_replace_grouped(df=test_df,group_by_cols = &quot;groups&quot;,how=&quot;ffill
 </footer>
 
         
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
     </article>
 </div>
 
@@ -499,7 +522,7 @@ na_replace_grouped(df=test_df,group_by_cols = &quot;groups&quot;,how=&quot;ffill
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a title="" href="/"></a>
+                        <a title="A Zero to Hero Programmer Pathway" href="../../../../">A Zero to Hero Programmer Pathway</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#">
                         <i class="fa fa-angle-up"></i>
@@ -516,9 +539,9 @@ na_replace_grouped(df=test_df,group_by_cols = &quot;groups&quot;,how=&quot;ffill
             </div>
         </footer>
 
-        <script src="/js/jquery-1.11.3.min.js"></script>
-        <script src="/js/jquery.fitvids.js"></script>
-        <script src="/js/scripts.js"></script>
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
     </body>
 </html>
 

@@ -7,15 +7,15 @@
         <meta name="description" content="This is the development version of mde. The acronym mde stands for Missing Data Explorer, a package that is intended to make missing data exploration as smooth and easy as possible.
 The goal of mde is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.
 Installation
-CRAN releaseinstall.">
+CRAN releaseinstall.packages(&quot;mde&quot;)Stable Development version# install.packages(&quot;devtools&quot;)devtools::install_github(&quot;Nelson-Gon/mde&quot;)# build vignettesdevtools::install_github(&quot;Nelson-Gon/mde&quot;, build_vignettes=TRUE)Unstable Development versiondevtools::install_github(&quot;Nelson-Gon/mde@develop&quot;)Loading the package">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.69.2" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="/dist/site.css">
-        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
@@ -35,11 +35,27 @@ CRAN releaseinstall.">
                                 <img src="#ZgotmplZ" alt="" />
                             </a>
                         
-                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/neuronelsongon" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
                         
                         
                         
+                            <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="https://gitlab.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-gitlab"></i>
+                            </a>
                         
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
                         
                         
                         
@@ -48,19 +64,19 @@ CRAN releaseinstall.">
                     <ul class="site-nav">
                         
     <li class="site-nav-item">
-        <a title="Blog" href="/">Blog</a>
+        <a title="Blog" href="../../../../">Blog</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="About" href="/about">About</a>
+        <a title="About" href="../../../../about">About</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Projects" href="/projects">Projects</a>
+        <a title="Projects" href="../../../../projects">Projects</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Contact" href="/social">Contact</a>
+        <a title="Contact" href="../../../../social">Contact</a>
     </li>
 
                     </ul>
@@ -76,7 +92,7 @@ CRAN releaseinstall.">
     <h1 class="post-title" itemprop="name headline">Missing Data Explorer</h1>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-05-07" itemprop="datePublished">Thu, May 7, 2020</time></span>
+        <span>Published <time datetime="2020-05-20" itemprop="datePublished">Wed, May 20, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -91,26 +107,9 @@ CRAN releaseinstall.">
     
 
     
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p><a href="https://doi.org/10.5281/zenodo.3764303"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3764303.svg" alt="DOI" /></a>
-<a href="https://cran.r-project.org/package=mde"><img src="https://www.r-pkg.org/badges/version/mde" alt="CRAN_Status_Badge" /></a>
-<a href="https://travis-ci.org/Nelson-Gon/mde"><img src="https://travis-ci.org/Nelson-Gon/mde.png?branch=master" alt="Build Status" /></a>
-<img src="https://github.com/Nelson-Gon/mde/workflows/R-CMD-check-devel/badge.svg" alt="R-CMD-check-devel" />
-<img src="https://github.com/Nelson-Gon/mde/workflows/test-coverage/badge.svg" alt="test-coverage" />
-<a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status" /></a>
-<a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle" /></a>
-<a href="https://codecov.io/gh/Nelson-Gon/mde?branch=develop"><img src="https://codecov.io/gh/Nelson-Gon/mde/branch/develop/graph/badge.svg" alt="Codecov test coverage" /></a>
-<a href="https://www.gnu.org/licenses/old-licenses/gpl-3.0.html"><img src="https://img.shields.io/badge/license-GPL--3-blue.svg" alt="license" /></a>
-<a href="https://cran.r-project.org/package=mde"><img src="https://cranlogs.r-pkg.org/badges/mde" alt="Downloads" /></a>
-<a href="https://cran.r-project.org/package=mde"><img src="http://cranlogs.r-pkg.org/badges/grand-total/mde?color=yellow" alt="TotalDownloads" /></a>
-<a href="https://github.com/Nelson-Gon/mde/commits/master"><img src="https://img.shields.io/github/last-commit/Nelson-Gon/mde.svg" alt="GitHub last commit" /></a>
-<a href="https://GitHub.com/Nelson-Gon/mde/issues/"><img src="https://img.shields.io/github/issues/Nelson-Gon/mde.svg" alt="GitHub issues" /></a>
-<a href="https://GitHub.com/Nelson-Gon/mde/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/Nelson-Gon/mde.svg" alt="GitHub issues-closed" /></a>
-<a href="http://isitmaintained.com/project/Nelson-Gon/mde" title="Average time to resolve an issue"><img src="http://isitmaintained.com/badge/resolution/Nelson-Gon/mde.svg" alt="Average time to resolve an issue" /></a>
-<a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
-<a href="https://GitHub.com/Nelson-Gon/mde/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a></p>
 <p>This is the development version of <code>mde</code>. The acronym <code>mde</code> stands for <strong>M</strong>issing <strong>D</strong>ata <strong>E</strong>xplorer, a package that is intended to make missing data exploration as smooth and easy as possible.</p>
 <p>The goal of <code>mde</code> is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.</p>
 <hr />
@@ -602,18 +601,18 @@ By contributing to this project, you agree to abide by its terms.</p>
             <span>Tagged:</span>
             
             
-                <a href="/tags/r/">r</a>, 
+                <a href="../../../../tags/r/">r</a>, 
             
-                <a href="/tags/missing-data/">missing data</a>, 
+                <a href="../../../../tags/missing-data/">missing data</a>, 
             
-                <a href="/tags/data-exploration/">data exploration</a>
+                <a href="../../../../tags/data-exploration/">data exploration</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=Missing%20Data%20Explorer&url=%2f07%2f05%2f2020%2fmissing-data-explorer%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Missing%20Data%20Explorer&url=%2f20%2f05%2f2020%2fmissing-data-explorer%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
@@ -621,7 +620,7 @@ By contributing to this project, you agree to abide by its terms.</p>
         
 
         
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f07%2f05%2f2020%2fmissing-data-explorer%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f20%2f05%2f2020%2fmissing-data-explorer%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fa fa-facebook"></i>
                 <span class="hidden">Facebook</span>
@@ -629,7 +628,7 @@ By contributing to this project, you agree to abide by its terms.</p>
         
 
         
-            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f07%2f05%2f2020%2fmissing-data-explorer%2f"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f20%2f05%2f2020%2fmissing-data-explorer%2f"
               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
               <i class="fa fa-google-plus"></i>
                 <span class="hidden">Google+</span>
@@ -640,6 +639,29 @@ By contributing to this project, you agree to abide by its terms.</p>
 </footer>
 
         
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
     </article>
 </div>
 
@@ -650,7 +672,7 @@ By contributing to this project, you agree to abide by its terms.</p>
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a title="" href="/"></a>
+                        <a title="A Zero to Hero Programmer Pathway" href="../../../../">A Zero to Hero Programmer Pathway</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#">
                         <i class="fa fa-angle-up"></i>
@@ -667,9 +689,9 @@ By contributing to this project, you agree to abide by its terms.</p>
             </div>
         </footer>
 
-        <script src="/js/jquery-1.11.3.min.js"></script>
-        <script src="/js/jquery.fitvids.js"></script>
-        <script src="/js/scripts.js"></script>
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
     </body>
 </html>
 
