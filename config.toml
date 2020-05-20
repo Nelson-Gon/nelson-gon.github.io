@@ -50,6 +50,10 @@ post = "/:day/:month/:year/:slug/"
 
 [params]
     description = "A Beginner's Guide to Automated Data Analysis with R and Python"
+    github ="https://github.com/Nelson-Gon"
+    gitlab ="https://gitlab.com/Nelson-Gon"
+    twitter = "https://twitter.com/neuronelsongon"
+    stackoverflow = "https://stackoverflow.com/users/10323798/nelsongon"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
@@ -68,13 +72,6 @@ post = "/:day/:month/:year/:slug/"
     width = 50
     height = 50
     alt = "Logo"
-
-[Social]
-
-twitter = "neuronelsongon"
-github = "Nelson-Gon"
-stackoverflow = "10323798/nelsongon"
-kaggle = "gonnel"
 
 [markup.goldmark.renderer]
 unsafe = true
