@@ -6,7 +6,7 @@ author = "Nelson Gonzabato"
 copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = ""
 disqusShortname="nelsongon"
-publishDir = "../nelson-gon.github.io"
+publishDir = "../mysite"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # enable SEO search
 enableRobotsTXT= true
