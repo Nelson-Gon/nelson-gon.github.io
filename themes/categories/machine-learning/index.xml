@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on </title>
+    <link>/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>manymodelr: Build and Tune Several Models</title>
+      <link>/07/05/2020/manymodelr-build-and-tune-several-models/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/07/05/2020/manymodelr-build-and-tune-several-models/</guid>
+      <description>manymodelr: Build and Tune Several Models
+In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
+Installing the package
+install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.</description>
+    </item>
+    
+  </channel>
+</rss>

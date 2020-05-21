@@ -54,6 +54,8 @@ post = "/:day/:month/:year/:slug/"
     gitlab ="https://gitlab.com/Nelson-Gon"
     twitter = "https://twitter.com/neuronelsongon"
     stackoverflow = "https://stackoverflow.com/users/10323798/nelsongon"
+    kaggle= "gonnel"
+    email= "gonzabato@hotmail.com"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"

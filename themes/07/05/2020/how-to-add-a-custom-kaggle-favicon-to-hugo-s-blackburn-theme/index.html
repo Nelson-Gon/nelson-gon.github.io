@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme &middot; </title>
+        <meta name="description" content="Adding a Custom Kaggle Favicon with R">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.69.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/neuronelsongon" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="https://gitlab.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-gitlab"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fa fa-stack-overflow"></i>
+                            </a>
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../../about">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../../projects">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</h1>
+    
+        <p class="post-description" itemprop="description">Adding a Custom Kaggle Favicon with R</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-05-07" itemprop="datePublished">Thu, May 7, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Nelson Gonzabato</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p>In this short article, I show how I added a <a href="https://www.kaggle.com">Kaggle</a> favicon to the site.</p>
+<p>Prerequisites:</p>
+<p><strong>R packages</strong></p>
+<ul>
+<li>
+<p><code>magrittr</code></p>
+</li>
+<li>
+<p><code>magick</code></p>
+</li>
+</ul>
+<p><strong>Why did I need to create a custom favicon?</strong></p>
+<p>I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&rsquo;ve found the site to be less enjoyable but that&rsquo;s a post for another day.</p>
+<p>The real reason for the need to create a custom icon was the desire to include Kaggle under the  side bar. However, Hugo only provides &ldquo;out of the box&rdquo; configurations for popular &ldquo;social&rdquo; sites.</p>
+<p><strong>Creating the Favicon</strong></p>
+<p>I have to first give credit to <a href="https://tbradley1013.github.io/">goonR</a>. Coincidentally, I found out that the blog author is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog <a href="https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/">entry</a> which deals with RStudio Community.</p>
+<p>To create the icon, I used code from that blog(I know, I was too lazy to create it and why do it if someone else already has?! DRY, remember?):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">
+kaggle_icon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">image_read</span>(<span style="color:#e6db74">&#34;https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/189_Kaggle-512.png&#34;</span>)
+
+kaggle_icon <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">image_scale</span>(<span style="color:#e6db74">&#34;14&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">image_write</span>(<span style="color:#e6db74">&#34;static/images/kaggle_icon.png&#34;</span>)
+
+</code></pre></div><p>I did not edit the icon further because all I needed was to have it displayed, nothing more.</p>
+<p><strong>Adding the icon to the blog</strong></p>
+<p>To add the icon to the blog, we edit the file <code>themes/blackburn/layouts/partials/social.html</code> to include our need icon. For Kaggle, this becomes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+<span style="color:#75715e">&lt;!-- Kaggle --&gt;</span>
+{{ with .Site.Social.kaggle}}
+&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-item&#34;</span>&gt;
+  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> <span style="color:#a6e22e">id </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kaggle-icon&#34;</span>&gt;Kaggle&lt;/<span style="color:#f92672">a</span>&gt;
+&lt;/<span style="color:#f92672">li</span>&gt;
+{{ end }}
+
+</code></pre></div><p>As someone not very much into Web development, I found the above syntax interesting, especially with respect to its similarity to <code>rlang</code>'s recent <code>{{}}</code> syntax. If you&rsquo;re not familar with the latter, please see <a href="https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/">this site</a>.</p>
+<p><strong>Finishing up</strong></p>
+<p>Having added the above, we can add our new section to the <code>[social]</code> section of our <strong>TOML</strong> file(<code>config.toml</code>) in the project home. This would then look like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+[Social]
+
+twitter = &#34;name here&#34;
+github = &#34;name here&#34;
+stackoverflow = &#34;id/name&#34;
+kaggle = &#34;name&#34;
+
+</code></pre></div><p><strong>Finally</strong></p>
+<p>To see our changes, we can serve our site.</p>
+<p>To serve our site, we call <code>serve_site</code> from <code>blogdown</code>:</p>
+<p><code>blogdown::serve_site()</code></p>
+<p>Finally, our site now has a link to <code>Kaggle</code>. The beauty about this is that you can use it to add any site, which is awesome. Let me know what you think.</p>
+<blockquote>
+<p>For now, please file issues on my repo for a discussion of any of my content.</p>
+</blockquote>
+<p>The relevant repo is <a href="https://www.github.com/nelson-gon.github.io">Nelson-Gon</a></p>
+<p>Thank you!</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="../../../../tags/r/">r</a>, 
+            
+                <a href="../../../../tags/kaggle/">kaggle</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=How%20to%20add%20a%20custom%20Kaggle%20Favicon%20to%20Hugo%27s%20Blackburn%20Theme&url=%2f07%2f05%2f2020%2fhow-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f07%2f05%2f2020%2fhow-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f07%2f05%2f2020%2fhow-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="A Zero to Hero Programmer Pathway" href="../../../../">A Zero to Hero Programmer Pathway</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Automated Image Processing with pyautocv in Python &middot; </title>
+        <meta name="description" content="pyautocv: (Semi) Automated Image Processing
+
+Project Aims
+The goal of pyautocv is to provide a simple computer vision(cv) workflow that enables one to automateor at least reduce the time spent in image (pre)-processing.
+Installing the package
+From pypi:
+pip install pyautocvFrom GitHub
+pip install pip install git&#43;https://github.com/Nelson-Gon/pyautocv.git#or# clone the repogit clone https://www.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.69.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="/dist/site.css">
+        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/about">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="/projects">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Automated Image Processing with pyautocv in Python</h1>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-05-07" itemprop="datePublished">Thu, May 7, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author"></a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p><code>pyautocv</code>: <strong>(Semi) Automated Image Processing</strong></p>
+<p><img src="https://www.repostatus.org/badges/latest/wip.svg" alt="Stage" /> <a href="https://doi.org/10.5281/zenodo.3766956"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3766956.svg" alt="DOI" /></a>
+<img src="https://github.com/Nelson-Gon/pyautocv/workflows/Test-Package/badge.svg" alt="Test-Package" />
+<img src="https://travis-ci.com/Nelson-Gon/pyautocv.svg?branch=master" alt="Travis Build" />
+<a href="https://pypi.python.org/pypi/pyautocv/"><img src="https://badge.fury.io/py/pyautocv.svg" alt="PyPI version fury.io" /></a>
+<a href="https://pypi.python.org/pypi/pyautocv/"><img src="https://img.shields.io/pypi/l/pyautocv.svg" alt="PyPI license" /></a>
+<a href="https://pypi.python.org/pypi/pyautocv/"><img src="https://img.shields.io/pypi/dm/pyautocv.svg" alt="PyPI download Month" /></a>
+<a href="https://pypi.python.org/pypi/pyautocv/"><img src="https://img.shields.io/pypi/dw/pyautocv.svg" alt="PyPI download week" /></a>
+<a href="https://pypi.python.org/pypi/pyautocv/"><img src="https://img.shields.io/pypi/dd/pyautocv.svg" alt="PyPI download day" /></a>
+<a href="https://GitHub.com/Nelson-Gon/pyautocv/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance" /></a>
+<a href="https://github.com/Nelson-Gon/pyautocv/commits/master"><img src="https://img.shields.io/github/last-commit/Nelson-Gon/pyautocv.svg" alt="GitHub last commit" /></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg" alt="made-with-python" /></a>
+<a href="https://GitHub.com/Nelson-Gon/pyautocv/issues/"><img src="https://img.shields.io/github/issues/Nelson-Gon/pyautocv.svg" alt="GitHub issues" /></a>
+<a href="https://GitHub.com/Nelson-Gon/pyautocv/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/Nelson-Gon/pyautocv.svg" alt="GitHub issues-closed" /></a>
+<a href="https://github.com/Nelson-Gon/pyautocv/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" /></a></p>
+<p><strong>Project Aims</strong></p>
+<p>The goal of pyautocv is to provide a simple computer vision(cv) workflow that enables one to automate
+or at least reduce the time spent in image (pre)-processing.</p>
+<p><strong>Installing the package</strong></p>
+<p>From pypi:</p>
+<pre class="r"><code>pip install pyautocv</code></pre>
+<p>From GitHub</p>
+<pre class="r"><code>pip install pip install git+https://github.com/Nelson-Gon/pyautocv.git
+#or
+# clone the repo
+git clone https://www.github.com/Nelson-Gon/pyautocv.git
+cd pyautocv
+python3 setup.py install</code></pre>
+<p><strong>Available Classes</strong></p>
+<ul>
+<li><p>Segmentation is a super class on which other classes build</p></li>
+<li><p>EdgeDetection is dedicated to edge detection. Currently supported kernels are stored in <code>.available_operators()</code></p></li>
+<li><p>Thresholding dedicated to thresholding.</p></li>
+</ul>
+<p><strong>Example Usage</strong></p>
+<ul>
+<li>Smoothing</li>
+</ul>
+<p>To smooth a directory of images, we can use <code>EdgeDetection</code>’s <code>smooth</code> method as
+follows:</p>
+<pre class="r"><code>to_smooth = EdgeDetection(&quot;images/people&quot;,&quot;sobel_vertical&quot;,&quot;box&quot;)
+show_images(*[to_smooth.gray_images(), to_smooth.smooth()])</code></pre>
+<p>This will give us;</p>
+<div class="figure">
+<img src="sample_results/smooth_images.png" alt="" />
+<p class="caption">Smoothened</p>
+</div>
+<ul>
+<li>Edge Detection</li>
+</ul>
+<p>To detect edges in a directory image, we provide original(grayed) images for comparison to
+images that have been transformed to detect edges.</p>
+<pre class="r"><code>from pyautocv.segmentation import *
+edge_detection = EdgeDetection(&quot;images&quot;,&quot;sobel_vertical&quot;,&quot;box&quot;)
+
+show_images(*[edge_detection.gray_images(), edge_detection.detect_edges()])</code></pre>
+<p>The above will give us the following result:</p>
+<div class="figure">
+<img src="./sample_results/images_smooth.png" alt="" />
+<p class="caption">Sample_colored</p>
+</div>
+<p>To use a different filter e.g Laplace,</p>
+<pre class="r"><code>show_images(*[edge_detection.gray_images(), edge_detection.detect_edges(operator=&quot;laplace&quot;)])</code></pre>
+<p>This results in:</p>
+<div class="figure">
+<img src="./sample_results/show_smooth_laplace.png" alt="" />
+<p class="caption">Laplace</p>
+</div>
+<ul>
+<li>Thresholding</li>
+</ul>
+<p>To perform thresholding, we can use <code>Threshold</code>’s methods dedicated to thresholding.</p>
+<p>We use flowers as an example:</p>
+<pre class="r"><code>to_threshold = Threshold(&quot;images/flowers&quot;,threshold_method=&quot;simple&quot;)
+show_images(to_threshold.gray_images(),to_threshold.threshold_images())</code></pre>
+<div class="figure">
+<img src="./sample_results/threshold_flowers.png" alt="" />
+<p class="caption">Flowers</p>
+</div>
+<p>These and more examples are available in <a href="./examples/example2.py">example2.py</a>. Image sources are
+shown in <code>sources.md</code>. If you feel, attribution was not made, please file an issue
+and cite the violating image.</p>
+<blockquote>
+<p>Thank you very much</p>
+</blockquote>
+<blockquote>
+<p>“A language that doesn’t affect the way you think about programming is not worth knowing.”
+― Alan J. Perlis</p>
+</blockquote>
+<hr />
+<p>References:</p>
+<ul>
+<li><a href="https://www.cse.unr.edu/~bebis/CS791E/Notes/EdgeDetection.pdf">Bebis</a></li>
+</ul>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/python/">python</a>, 
+            
+                <a href="/tags/image-processing/">image processing</a>, 
+            
+                <a href="/tags/computer-vision/">computer vision</a>, 
+            
+                <a href="/tags/image-analysis/">image analysis</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Automated%20Image%20Processing%20with%20pyautocv%20in%20Python&url=%2f07%2f05%2f2020%2fautomated-image-processing-with-pyautocv-in-python%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2f07%2f05%2f2020%2fautomated-image-processing-with-pyautocv-in-python%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2f07%2f05%2f2020%2fautomated-image-processing-with-pyautocv-in-python%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="" href="/"></a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
+

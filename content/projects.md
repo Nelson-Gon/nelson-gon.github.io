@@ -1,5 +1,6 @@
 ---
 date: "2020-05-18"
+title: "Projects"
 description: Understanding the software development philosophy
 ---
 
