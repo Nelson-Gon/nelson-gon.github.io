@@ -14,7 +14,7 @@ The following is a list of side projects that I have worked on and continue to i
 
 This is admittedly my favorite package of all the packages I've worked on. The adage that machine learning is 90%[citation needed] data cleaning is true. For this reason, `mde` aims to reduce the time spent in performing missing data exploration and analysis. It is aimed at missing data exploration, nothing more nothing less. It is hoped that this package will help researchers, students, and anyone interested in data analysis to minimise the time spent in data cleaning. 
 
-* [pyautocv](https://github.com/Nelson-Gon/pyautocv)
+* [pyautocv](https://nelson-gon.github.io/pyautocv)
 
 At the time of writing, `pyautocv` is a work in progress. The goal is to reduce the time taken in image segmentation and edge detection and also provide a semi automated way to perform these tasks with less lines of code.
 

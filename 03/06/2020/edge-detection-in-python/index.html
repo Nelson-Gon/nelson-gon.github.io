@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme &middot; </title>
-        <meta name="description" content="Adding a Custom Kaggle Favicon with R">
+        <title>Edge Detection in Python &middot; </title>
+        <meta name="description" content="Semi Automated Edge Detection with pyautocv in python">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.69.2" />
@@ -99,12 +99,12 @@
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</h1>
+    <h1 class="post-title" itemprop="name headline">Edge Detection in Python</h1>
     
-        <p class="post-description" itemprop="description">Adding a Custom Kaggle Favicon with R</p>
+        <p class="post-description" itemprop="description">Semi Automated Edge Detection with pyautocv in python</p>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-05-07" itemprop="datePublished">Thu, May 7, 2020</time></span>
+        <span>Published <time datetime="2020-06-03" itemprop="datePublished">Wed, Jun 3, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -118,62 +118,41 @@
         <div class="post-content clearfix" itemprop="articleBody">
     
 
-    <p>In this short article, I show how I added a <a href="https://www.kaggle.com">Kaggle</a> favicon to the site.</p>
-<p>Prerequisites:</p>
-<p><strong>R packages</strong></p>
+    
+<script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>In this short post, we take a look at how we can use <a href="https://github.com/Nelson-Gon/pyautocv">pyautocv</a> for edge detection. At the time of writing, <code>pyautocv</code> was at version 0.2.1 that was unreleased.</p>
+<p>For installation details, please see the documentation of the <a href="https://github.com/Nelson-Gon/pyautocv">project</a>.</p>
+<p><strong>Pre-requisites</strong></p>
 <ul>
-<li>
-<p><code>magrittr</code></p>
-</li>
-<li>
-<p><code>magick</code></p>
-</li>
+<li>Python &gt;=3.6</li>
+<li>pyautocv</li>
+<li>An image directory for which detection is required.</li>
 </ul>
-<p><strong>Why did I need to create a custom favicon?</strong></p>
-<p>I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&rsquo;ve found the site to be less enjoyable but that&rsquo;s a post for another day.</p>
-<p>The real reason for the need to create a custom icon was the desire to include Kaggle under the  side bar. However, Hugo only provides &ldquo;out of the box&rdquo; configurations for popular &ldquo;social&rdquo; sites.</p>
-<p><strong>Creating the Favicon</strong></p>
-<p>I have to first give credit to <a href="https://tbradley1013.github.io/">goonR</a>. Coincidentally, I found out that the blog author is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog <a href="https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/">entry</a> which deals with RStudio Community.</p>
-<p>To create the icon, I used code from that blog(I know, I was too lazy to create it and why do it if someone else already has?! DRY, remember?):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">
-kaggle_icon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">image_read</span>(<span style="color:#e6db74">&#34;https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/189_Kaggle-512.png&#34;</span>)
+<p>To begin, we import <code>pyautocv</code>’s <code>Segmentation</code> class.</p>
+<pre><code>from pyautocv.segmentation import *
+</code></pre>
+<p>Next, we change directory to the target directory that holds our images. This can be skipped. It is done simply for convenience.</p>
+<pre><code>
+import os
+os.chdir(&quot;path_to_directory_with_images&quot;)
+</code></pre>
+<p>We then create an obejct of class <code>Segmentation</code>:</p>
+<pre><code>
+for_edge_detection = Segmentation(&quot;images&quot;)
 
-kaggle_icon <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">image_scale</span>(<span style="color:#e6db74">&#34;14&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">image_write</span>(<span style="color:#e6db74">&#34;static/images/kaggle_icon.png&#34;</span>)
+</code></pre>
+<p>Finally we can call the target methods and use <code>show_images</code> to show both the original and modified images.</p>
+<pre><code>
+show_images(for_edge_detection.read_images(),for_edge_detection.detect_edges(operator=&quot;roberts&quot;))
 
-</code></pre></div><p>I did not edit the icon further because all I needed was to have it displayed, nothing more.</p>
-<p><strong>Adding the icon to the blog</strong></p>
-<p>To add the icon to the blog, we edit the file <code>themes/blackburn/layouts/partials/social.html</code> to include our need icon. For Kaggle, this becomes:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
-<span style="color:#75715e">&lt;!-- Kaggle --&gt;</span>
-{{ with .Site.Social.kaggle}}
-&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-item&#34;</span>&gt;
-  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> <span style="color:#a6e22e">id </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kaggle-icon&#34;</span>&gt;Kaggle&lt;/<span style="color:#f92672">a</span>&gt;
-&lt;/<span style="color:#f92672">li</span>&gt;
-{{ end }}
-
-</code></pre></div><p>As someone not very much into Web development, I found the above syntax interesting, especially with respect to its similarity to <code>rlang</code>'s recent <code>{{}}</code> syntax. If you&rsquo;re not familar with the latter, please see <a href="https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/">this site</a>.</p>
-<p><strong>Finishing up</strong></p>
-<p>Having added the above, we can add our new section to the <code>[social]</code> section of our <strong>TOML</strong> file(<code>config.toml</code>) in the project home. This would then look like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
-[Social]
-
-twitter = &#34;name here&#34;
-github = &#34;name here&#34;
-stackoverflow = &#34;id/name&#34;
-kaggle = &#34;name&#34;
-
-</code></pre></div><p><strong>Finally</strong></p>
-<p>To see our changes, we can serve our site.</p>
-<p>To serve our site, we call <code>serve_site</code> from <code>blogdown</code>:</p>
-<p><code>blogdown::serve_site()</code></p>
-<p>Finally, our site now has a link to <code>Kaggle</code>. The beauty about this is that you can use it to add any site, which is awesome. Let me know what you think.</p>
-<blockquote>
-<p>For now, please file issues on my repo for a discussion of any of my content.</p>
-</blockquote>
-<p>The relevant repo is <a href="https://www.github.com/nelson-gon.github.io">Nelson-Gon</a></p>
-<p>Thank you!</p>
+</code></pre>
+<p>Sample results from the above:</p>
+<div class="figure">
+<img src="%22/static/images/sample_res.png%22" alt="" />
+<p class="caption">Sample</p>
+</div>
 
 </div>
 
@@ -183,16 +162,20 @@ kaggle = &#34;name&#34;
             <span>Tagged:</span>
             
             
-                <a href="../../../../tags/r/">r</a>, 
+                <a href="../../../../tags/python/">python</a>, 
             
-                <a href="../../../../tags/kaggle/">kaggle</a>
+                <a href="../../../../tags/image-processing/">image processing</a>, 
+            
+                <a href="../../../../tags/computer-vision/">computer vision</a>, 
+            
+                <a href="../../../../tags/image-analysis/">image analysis</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=How%20to%20add%20a%20custom%20Kaggle%20Favicon%20to%20Hugo%27s%20Blackburn%20Theme&url=%2f07%2f05%2f2020%2fhow-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Edge%20Detection%20in%20Python&url=%2f03%2f06%2f2020%2fedge-detection-in-python%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
   <i class="fab fa-twitter"></i>
    <span class="hidden">Twitter</span> 
@@ -201,7 +184,7 @@ kaggle = &#34;name&#34;
 
         
        
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f07%2f05%2f2020%2fhow-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f03%2f06%2f2020%2fedge-detection-in-python%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fab fa-facebook"></i>
                 
