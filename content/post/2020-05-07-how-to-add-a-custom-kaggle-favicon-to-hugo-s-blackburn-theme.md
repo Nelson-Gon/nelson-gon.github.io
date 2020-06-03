@@ -30,7 +30,7 @@ I have to first give credit to [goonR](https://tbradley1013.github.io/). Coincid
 
 To create the icon, I used code from that blog(I know, I was too lazy to create it and why do it if someone else already has?! DRY, remember?):
 
-```r
+```python
 
 kaggle_icon <- image_read("https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/189_Kaggle-512.png")
 
@@ -46,7 +46,7 @@ I did not edit the icon further because all I needed was to have it displayed, n
 
 To add the icon to the blog, we edit the file `themes/blackburn/layouts/partials/social.html` to include our need icon. For Kaggle, this becomes:
 
-```html
+```python
 
 <!-- Kaggle -->
 {{ with .Site.Social.kaggle}}
@@ -63,7 +63,7 @@ As someone not very much into Web development, I found the above syntax interest
 
 Having added the above, we can add our new section to the `[social]` section of our **TOML** file(`config.toml`) in the project home. This would then look like:
 
-```html
+```python
 
 [Social]
 

@@ -29,9 +29,11 @@
         {{ end }}
 
  
-        {{ if .Site.Params.shareLinkedIn }}
+        {{ if or (not (isset .Site.Params "shareLinkedIn")) .Site.Params.shareLinkedIn }}
             <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title={{ .Title }}&url={{ .Permalink }}&summary={{ .Description }}"
                onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
         {{ end }}
+        
+
     </div>
 </footer>

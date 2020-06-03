@@ -135,34 +135,34 @@
 <p><strong>Creating the Favicon</strong></p>
 <p>I have to first give credit to <a href="https://tbradley1013.github.io/">goonR</a>. Coincidentally, I found out that the blog author is an Arsenal fan like myself. Back to the point, most of what I present here is based on the blog <a href="https://tbradley1013.github.io/2018/08/24/add-rstudio-community-to-your-blogs-social-links/">entry</a> which deals with RStudio Community.</p>
 <p>To create the icon, I used code from that blog(I know, I was too lazy to create it and why do it if someone else already has?! DRY, remember?):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">
-kaggle_icon <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">image_read</span>(<span style="color:#e6db74">&#34;https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/189_Kaggle-512.png&#34;</span>)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+kaggle_icon <span style="color:#f92672">&lt;-</span> image_read(<span style="color:#e6db74">&#34;https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/189_Kaggle-512.png&#34;</span>)
 
 kaggle_icon <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">image_scale</span>(<span style="color:#e6db74">&#34;14&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
-  <span style="color:#a6e22e">image_write</span>(<span style="color:#e6db74">&#34;static/images/kaggle_icon.png&#34;</span>)
+  image_scale(<span style="color:#e6db74">&#34;14&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+  image_write(<span style="color:#e6db74">&#34;static/images/kaggle_icon.png&#34;</span>)
 
 </code></pre></div><p>I did not edit the icon further because all I needed was to have it displayed, nothing more.</p>
 <p><strong>Adding the icon to the blog</strong></p>
 <p>To add the icon to the blog, we edit the file <code>themes/blackburn/layouts/partials/social.html</code> to include our need icon. For Kaggle, this becomes:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
-<span style="color:#75715e">&lt;!-- Kaggle --&gt;</span>
-{{ with .Site.Social.kaggle}}
-&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-item&#34;</span>&gt;
-  &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> <span style="color:#a6e22e">id </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kaggle-icon&#34;</span>&gt;Kaggle&lt;/<span style="color:#f92672">a</span>&gt;
-&lt;/<span style="color:#f92672">li</span>&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">!</span><span style="color:#f92672">--</span> Kaggle <span style="color:#f92672">--&gt;</span>
+{{ <span style="color:#66d9ef">with</span> <span style="color:#f92672">.</span>Site<span style="color:#f92672">.</span>Social<span style="color:#f92672">.</span>kaggle}}
+<span style="color:#f92672">&lt;</span>li class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-item&#34;</span><span style="color:#f92672">&gt;</span>
+  <span style="color:#f92672">&lt;</span>a class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pure-menu-link&#34;</span> href<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://Kaggle.com/{{ . }}&#34;</span> target<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span><span style="color:#f92672">&gt;&lt;</span>img src <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/images/kaggle_icon.png&#34;</span> id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;kaggle-icon&#34;</span><span style="color:#f92672">&gt;</span>Kaggle<span style="color:#f92672">&lt;/</span>a<span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;/</span>li<span style="color:#f92672">&gt;</span>
 {{ end }}
 
 </code></pre></div><p>As someone not very much into Web development, I found the above syntax interesting, especially with respect to its similarity to <code>rlang</code>'s recent <code>{{}}</code> syntax. If you&rsquo;re not familar with the latter, please see <a href="https://www.tidyverse.org/blog/2019/06/rlang-0-4-0/">this site</a>.</p>
 <p><strong>Finishing up</strong></p>
 <p>Having added the above, we can add our new section to the <code>[social]</code> section of our <strong>TOML</strong> file(<code>config.toml</code>) in the project home. This would then look like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 [Social]
 
-twitter = &#34;name here&#34;
-github = &#34;name here&#34;
-stackoverflow = &#34;id/name&#34;
-kaggle = &#34;name&#34;
+twitter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;name here&#34;</span>
+github <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;name here&#34;</span>
+stackoverflow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;id/name&#34;</span>
+kaggle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;name&#34;</span>
 
 </code></pre></div><p><strong>Finally</strong></p>
 <p>To see our changes, we can serve our site.</p>
@@ -210,6 +210,11 @@ kaggle = &#34;name&#34;
 
  
         
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=How%20to%20add%20a%20custom%20Kaggle%20Favicon%20to%20Hugo%27s%20Blackburn%20Theme&url=%2f07%2f05%2f2020%2fhow-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme%2f&summary=Adding%20a%20Custom%20Kaggle%20Favicon%20with%20R"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
     </div>
 </footer>
 

@@ -60,7 +60,7 @@ blockquote {
     padding: 5px 30px;
 
     p {
-        color: #AEADAD;
+        color: #0a0a0a;
         display: block;
         font-style: italic;
         margin: 0;
@@ -106,7 +106,7 @@ code {
     padding: 2px 4px;
     font-size: 90%;
     border-radius: 4px;
-    background-color: #f1f0ea;
+    background-color: #000;
 }
 
 hr {
@@ -135,7 +135,7 @@ table {
 }
 
 ::selection {
-    background: #FFF5B8;
+    background: #000;
     color: #000;
     display: block;
 }
