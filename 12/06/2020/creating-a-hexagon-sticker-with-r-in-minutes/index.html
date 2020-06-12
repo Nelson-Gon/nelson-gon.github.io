@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Creating a Hexagon Sticker with R in Minutes &middot; </title>
-        <meta name="description" content="I have recently released new versions of manymodelr and mde, R packages you may or may not have heard about.
+        <meta name="description" content="I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -121,13 +121,9 @@ One common feature of many R packages is a hexagon shaped sticker that often sum
 <script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>I have recently released new versions of <a href="https://CRAN.R-project.org/package=manymodelr">manymodelr</a> and <a href="https://CRAN.R-project.org/package=mde">mde</a>, R packages you may or may not have heard about.</p>
+<p>I have recently released new versions of <a href="https://CRAN.R-project.org/package=manymodelr">manymodelr</a> and <a href="https://CRAN.R-project.org/package=mde">mde</a>, R packages you may or may not have heard of.</p>
 <p>One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</p>
-<p>To achieve this, I draw up a quick idea of the kind of information I would like to include in <a href="https://CRAN.R-project.org/package=mde">mde</a>’s sticker and narrowed down to a simple lens and the word <strong>d?ta</strong>. To make things more exciting, I will not state what these mean and leave that to the reader as a for fun exercise. In all seriousness though, I would love to hear what someone else thinks of when they see this image:</p>
-<div class="figure">
-<img src="images/mde_icon_2.png" alt="" />
-<p class="caption">images</p>
-</div>
+<p>To achieve this, I draw up a quick idea of the kind of information I would like to include in <a href="https://CRAN.R-project.org/package=mde">mde</a>’s sticker and narrowed down to a simple lens and the word <strong>d?ta</strong>. To make things more exciting, I will not state what these mean and leave that to the reader as a for fun exercise.</p>
 <p><strong>Making the sticker</strong></p>
 <p>To make this sticker, I used the packages <code>magick</code>, <code>dplyr</code>(just the pipe, you can use <code>magrittr</code> instead), and <code>hexSticker</code>. Here is the code to produce this sticker:</p>
 <p><strong>Loading required libraries</strong></p>
@@ -158,11 +154,14 @@ res</code></pre>
 <p><img src="../../../../post/hex_creation_files/figure-html/unnamed-chunk-2-1.png" width="108" /></p>
 <p><strong>Actual Sticker Creation</strong></p>
 <pre class="r"><code># wrap in plot to preview ie plot(sticker(...))
-sticker(res, package=&quot;mde&quot;, p_size=30,
+final_res&lt;-sticker(res, package=&quot;mde&quot;, p_size=30,
              p_y = 1.5,
              s_x=1, s_y=0.8, s_width=1.1,
              s_height = 14,
-        filename=&quot;mde_icon_2.png&quot;,h_fill=&quot;#062047&quot;,h_color = &quot;#062047&quot;)</code></pre>
+        filename=&quot;mde_icon_2.png&quot;,h_fill=&quot;#062047&quot;,h_color = &quot;#062047&quot;)
+
+plot(final_res)</code></pre>
+<p><img src="../../../../post/hex_creation_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>That’s it. A very basic and minimal logo. For more info please see:</p>
 <p><strong>References</strong></p>
 <ul>
