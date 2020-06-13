@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> &middot; </title>
+        <meta name="description" content="Creating a Hexagon Sticker with R in Minutes Nelson Gonzabato 2020-06-12
+I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
+One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.69.2" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../../dist/site.css">
+        <link rel="stylesheet" href="../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/neuronelsongon" rel="me">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        
+                        
+                  
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                         
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        
+                              
+                            <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="https://gitlab.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-gitlab"></i>
+                            </a>
+                        
+                       
+                            
+       <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+      <a class="button-square button-social hint--top" data-hint="kaggle" title="Kaggle" href="https://Kaggle.com/gonnel" rel="me">
+<i class="fab fa-kaggle"></i>
+                   
+                    
+                      
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:gonzabato@hotmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../about">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../projects">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"></h1>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="0001-01-01" itemprop="datePublished">Mon, Jan 1, 0001</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author"></a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="creating-a-hexagon-sticker-with-r-in-minutes">Creating a Hexagon Sticker with R in Minutes</h1>
+<p>Nelson Gonzabato
+2020-06-12</p>
+<p>I have recently released new versions of
+<a href="https://CRAN.R-project.org/package=manymodelr">manymodelr</a> and
+<a href="https://CRAN.R-project.org/package=mde">mde</a>, R packages you may or may
+not have heard of.</p>
+<p>One common feature of many R packages is a hexagon shaped sticker that
+often summarises the goals of the package and/or gives an idea of the
+developer’s philosophy. I am, as those who know me well might tell you,
+not the best of artists. I however, have always marveled at these
+beautiful stickers in others’ packages and wished to create one myself.</p>
+<p>To achieve this, I draw up a quick idea of the kind of information I
+would like to include in <a href="https://CRAN.R-project.org/package=mde">mde</a>’s
+sticker and narrowed down to a simple lens and the word <strong>d?ta</strong>. To
+make things more exciting, I will not state what these mean and leave
+that to the reader as a for fun exercise.</p>
+<p><strong>Making the sticker</strong></p>
+<p>To make this sticker, I used the packages <code>magick</code>, <code>dplyr</code>(just the
+pipe, you can use <code>magrittr</code> instead), and <code>hexSticker</code>. Here is the
+code to produce this sticker:</p>
+<p><strong>Loading required libraries</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(magick)
+</code></pre></div><pre><code>## Linking to ImageMagick 6.9.9.14
+## Enabled features: cairo, freetype, fftw, ghostscript, lcms, pango, rsvg, webp
+## Disabled features: fontconfig, x11
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(dplyr)
+</code></pre></div><pre><code>## 
+## Attaching package: 'dplyr'
+
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(hexSticker)
+</code></pre></div><p>I used this
+<a href="https://st.depositphotos.com/1041273/3800/v/450/depositphotos_38005243-stock-illustration-vector-magnifying-glass.jpg">image</a>
+for the lens.</p>
+<p><strong>Basic Image Processing</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">img <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">image_read</span>(<span style="color:#e6db74">&#34;images/glass.jpg&#34;</span>)
+img <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">image_convert</span>(<span style="color:#e6db74">&#34;png&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">image_resize</span>(<span style="color:#e6db74">&#34;1080 x 200&#34;</span>)<span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">image_fill</span>(color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#062047&#34;</span>, point<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;+45&#34;</span>) <span style="color:#f92672">%&gt;%</span> 
+  <span style="color:#a6e22e">image_annotate</span>(<span style="color:#e6db74">&#34;d?ta&#34;</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">38</span>, location <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;+47+58&#34;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>) <span style="color:#f92672">-&gt;</span> res
+
+res
+</code></pre></div><p><img src="hex_creation_files/figure-gfm/unnamed-chunk-2-1.png" width="215" /></p>
+<p><strong>Actual Sticker Creation</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># wrap in plot to preview ie plot(sticker(...))</span>
+final_res<span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">sticker</span>(res, package<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mde&#34;</span>, p_size<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>,
+             p_y <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.5</span>,
+             s_x<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, s_y<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>, s_width<span style="color:#f92672">=</span><span style="color:#ae81ff">1.1</span>,
+             s_height <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>,
+        filename<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mde_icon_2.png&#34;</span>,h_fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#062047&#34;</span>,h_color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#062047&#34;</span>)
+
+<span style="color:#a6e22e">plot</span>(final_res)
+</code></pre></div><p><img src="hex_creation_files/figure-gfm/unnamed-chunk-3-1.png" alt=""><!-- --></p>
+<p>That’s it. A very basic and minimal logo. For more info please see:</p>
+<p><strong>References</strong></p>
+<ul>
+<li>
+<p><a href="https://github.com/Nelson-Gon/mde">https://github.com/Nelson-Gon/mde</a></p>
+</li>
+<li>
+<p><a href="https://github.com/GuangchuangYu/hexSticker">https://github.com/GuangchuangYu/hexSticker</a></p>
+</li>
+<li>
+<p><a href="https://github.com/tidyverse/dplyr">https://github.com/tidyverse/dplyr</a></p>
+</li>
+</ul>
+<p>In case you have anything to add or criticise, please comment and/or
+contact me via the contact information above.</p>
+<blockquote>
+<p>Thank you</p>
+</blockquote>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=&url=%2f01%2f01%2f1%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  <i class="fab fa-twitter"></i>
+   <span class="hidden">Twitter</span> 
+  </a>
+        
+
+        
+       
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f01%2f01%2f1%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fab fa-facebook"></i>
+                
+                </a>
+        
+
+ 
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=&url=%2f01%2f01%2f1%2f&summary="
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+    <footer class="footer">
+ 
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="A Zero to Hero Programmer Pathway" href="../../../">A Zero to Hero Programmer Pathway</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/scripts.js"></script>
+    </body>
+</html>
+
