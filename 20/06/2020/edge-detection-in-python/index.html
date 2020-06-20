@@ -3,9 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Creating a Hexagon Sticker with R in Minutes &middot; </title>
-        <meta name="description" content="I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
-One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.">
+        <title>Edge Detection in Python &middot; </title>
+        <meta name="description" content="Semi Automated Edge Detection with pyautocv in python">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.69.2" />
@@ -96,10 +95,12 @@ One common feature of many R packages is a hexagon shaped sticker that often sum
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Creating a Hexagon Sticker with R in Minutes</h1>
+    <h1 class="post-title" itemprop="name headline">Edge Detection in Python</h1>
+    
+        <p class="post-description" itemprop="description">Semi Automated Edge Detection with pyautocv in python</p>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-06-12" itemprop="datePublished">Fri, Jun 12, 2020</time></span>
+        <span>Published <time datetime="2020-06-20" itemprop="datePublished">Sat, Jun 20, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -117,58 +118,37 @@ One common feature of many R packages is a hexagon shaped sticker that often sum
 <script src="../../../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>I have recently released new versions of <a href="https://CRAN.R-project.org/package=manymodelr">manymodelr</a> and <a href="https://CRAN.R-project.org/package=mde">mde</a>, R packages you may or may not have heard of.</p>
-<p>One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</p>
-<p>To achieve this, I draw up a quick idea of the kind of information I would like to include in <a href="https://CRAN.R-project.org/package=mde">mde</a>’s sticker and narrowed down to a simple lens and the word <strong>d?ta</strong>. To make things more exciting, I will not state what these mean and leave that to the reader as a for fun exercise.</p>
-<p><strong>Making the sticker</strong></p>
-<p>To make this sticker, I used the packages <code>magick</code>, <code>dplyr</code>(just the pipe, you can use <code>magrittr</code> instead), and <code>hexSticker</code>. Here is the code to produce this sticker:</p>
-<p><strong>Loading required libraries</strong></p>
-<pre class="r"><code>library(magick)</code></pre>
-<pre><code>## Linking to ImageMagick 6.9.9.14
-## Enabled features: cairo, freetype, fftw, ghostscript, lcms, pango, rsvg, webp
-## Disabled features: fontconfig, x11</code></pre>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(hexSticker)</code></pre>
-<p>I used this <a href="https://st.depositphotos.com/1041273/3800/v/450/depositphotos_38005243-stock-illustration-vector-magnifying-glass.jpg">image</a> for the lens.</p>
-<p><strong>Basic Image Processing</strong></p>
-<pre class="r"><code>img &lt;- image_read(&quot;images/glass.jpg&quot;)
-img %&gt;% 
-  image_convert(&quot;png&quot;) %&gt;% 
-  image_resize(&quot;1080 x 200&quot;)%&gt;% 
-  image_fill(color=&quot;#062047&quot;, point=&quot;+45&quot;) %&gt;% 
-  image_annotate(&quot;d?ta&quot;, size=38, location = &quot;+47+58&quot;, color=&quot;black&quot;) -&gt; res
-
-res</code></pre>
-<p><img src="../../../../post/hex_creation_files/figure-html/unnamed-chunk-2-1.png" width="108" /></p>
-<p><strong>Actual Sticker Creation</strong></p>
-<pre class="r"><code># wrap in plot to preview ie plot(sticker(...))
-final_res&lt;-sticker(res, package=&quot;mde&quot;, p_size=30,
-             p_y = 1.5,
-             s_x=1, s_y=0.8, s_width=1.1,
-             s_height = 14,
-        filename=&quot;mde_icon_2.png&quot;,h_fill=&quot;#062047&quot;,h_color = &quot;#062047&quot;)
-
-plot(final_res)</code></pre>
-<p><img src="../../../../post/hex_creation_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>That’s it. A very basic and minimal logo. For more info please see:</p>
-<p><strong>References</strong></p>
+<p>In this short post, we take a look at how we can use <a href="https://github.com/Nelson-Gon/pyautocv">pyautocv</a> for edge detection. At the time of writing, <code>pyautocv</code> was at version 0.2.1 that was unreleased.</p>
+<p>For installation details, please see the documentation of the <a href="https://github.com/Nelson-Gon/pyautocv">project</a>.</p>
+<p><strong>Pre-requisites</strong></p>
 <ul>
-<li><p><a href="https://github.com/Nelson-Gon/mde" class="uri">https://github.com/Nelson-Gon/mde</a></p></li>
-<li><p><a href="https://github.com/GuangchuangYu/hexSticker" class="uri">https://github.com/GuangchuangYu/hexSticker</a></p></li>
-<li><p><a href="https://github.com/tidyverse/dplyr" class="uri">https://github.com/tidyverse/dplyr</a></p></li>
+<li>Python &gt;=3.6</li>
+<li>pyautocv</li>
+<li>An image directory for which detection is required.</li>
 </ul>
-<p>In case you have anything to add or criticise, please comment and/or contact me via the contact information above.</p>
-<blockquote>
-<p>Thank you</p>
-</blockquote>
+<p>To begin, we import <code>pyautocv</code>’s <code>Segmentation</code> class.</p>
+<pre><code>from pyautocv.segmentation import *
+</code></pre>
+<p>Next, we change directory to the target directory that holds our images. This can be skipped. It is done simply for convenience.</p>
+<pre><code>
+import os
+os.chdir(&quot;path_to_directory_with_images&quot;)
+</code></pre>
+<p>We then create an obejct of class <code>Segmentation</code>:</p>
+<pre><code>
+for_edge_detection = Segmentation(&quot;images&quot;)
+
+</code></pre>
+<p>Finally we can call the target methods and use <code>show_images</code> to show both the original and modified images.</p>
+<pre><code>
+show_images(for_edge_detection.read_images(),for_edge_detection.detect_edges(operator=&quot;roberts&quot;))
+
+</code></pre>
+<p>Sample results from the above:</p>
+<p><img src="../../../../post/images/sample_res.png" /></p>
+<p>This was meant to be a very brief post. Please see more documentation at the project’s <a href="https://github.com/Nelson-Gon/pyautocv">homepage</a>.</p>
+<p>If you have any criticism or feedback for this post or any of my content, please do not hesitate to contact me. I always love having a chat about my or anyone else’s work.</p>
+<p>Thank you!</p>
 
 </div>
 
@@ -178,20 +158,20 @@ plot(final_res)</code></pre>
             <span>Tagged:</span>
             
             
-                <a href="../../../../tags/r/">r</a>, 
+                <a href="../../../../tags/python/">python</a>, 
             
-                <a href="../../../../tags/developer/">developer</a>, 
+                <a href="../../../../tags/image-processing/">image processing</a>, 
             
-                <a href="../../../../tags/packages/">packages</a>, 
+                <a href="../../../../tags/computer-vision/">computer vision</a>, 
             
-                <a href="../../../../tags/github/">github</a>
+                <a href="../../../../tags/image-analysis/">image analysis</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=Creating%20a%20Hexagon%20Sticker%20with%20R%20in%20Minutes&url=%2f12%2f06%2f2020%2fcreating-a-hexagon-sticker-with-r-in-minutes%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Edge%20Detection%20in%20Python&url=%2f20%2f06%2f2020%2fedge-detection-in-python%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
   <i class="fab fa-twitter"></i>
    <span class="hidden">Twitter</span> 
@@ -200,7 +180,7 @@ plot(final_res)</code></pre>
 
         
        
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f12%2f06%2f2020%2fcreating-a-hexagon-sticker-with-r-in-minutes%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f20%2f06%2f2020%2fedge-detection-in-python%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fab fa-facebook"></i>
                 
@@ -209,7 +189,7 @@ plot(final_res)</code></pre>
 
  
         
-            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Creating%20a%20Hexagon%20Sticker%20with%20R%20in%20Minutes&url=%2f12%2f06%2f2020%2fcreating-a-hexagon-sticker-with-r-in-minutes%2f&summary="
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Edge%20Detection%20in%20Python&url=%2f20%2f06%2f2020%2fedge-detection-in-python%2f&summary=Semi%20Automated%20Edge%20Detection%20with%20pyautocv%20in%20python"
                onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
         
         

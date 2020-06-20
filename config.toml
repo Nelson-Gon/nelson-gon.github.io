@@ -11,6 +11,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # enable SEO search
 enableRobotsTXT= true
 canonifyURLs = true
+
 relativeURLs = true
 # disable rss
 disableKinds = ["RSS"] 
@@ -49,11 +50,11 @@ post = "/:day/:month/:year/:slug/"
 
 
 [params]
-    description = "A Beginner's Guide to Automated Data Analysis with R and Python"
+    description = "Biological Data Analysis with Python and R"
     github ="https://github.com/Nelson-Gon"
     stackoverflow = "https://stackoverflow.com/users/10323798/nelsongon"
     kaggle= "gonnel"
-    twitter = "https://twitter.com/neuronelsongon"
+    twitter = "https://twitter.com/bionelsongon"
     email= "gonzabato@hotmail.com"
 
     # options for highlight.js (version, additional languages, and theme)
@@ -65,8 +66,8 @@ post = "/:day/:month/:year/:slug/"
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"
 
-    # path to the favicon, under "static"
-    favicon = "favicon.ico"
+    # use as site header
+    favicon = "for_icon.ico"
 
     [params.logo]
     url = "logo.png"
