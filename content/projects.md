@@ -17,6 +17,10 @@ This is admittedly his favorite package of all the packages he has worked on. Th
 
 At the time of writing, `pyautocv` is a work in progress. The goal is to reduce the time taken in image segmentation and edge detection and also provide a semi automated way to perform these tasks with less lines of code.
 
+* [unet](https://nelson-gon.github.io/unet)
+
+This is a fork of ZhiXuHao's [unet](https://github.com/zhixuhao/unet). I however fixed known issues(at the time of writing). Since the original repository was failry inactive, I "diverged" and decided to maintain this as "my" own repository. All credit for the original idea and implementation goes to [ZhiXuHao](https://github.com/zhixuhao) and the authors of the landmark U-Net [paper](https://link.springer.com/chapter/10.1007%2F978-3-319-24574-4_28)
+
 * [pyfdc](https://nelson-gon.github.io/pyfdc)
 
 A data scientist should ideally be able to pull data from several sources. One way to do that is through access to APIs. The goal of `pyfdc` is to pull information about different food(s) from the USDA nutrient database, now known as Food Data Central. This was inspired by and is related to [rfdc](https://github.com/Nelson-Gon/rfdc) and the now archived [usdar](https://github.com/Nelson-Gon/usdar)
