@@ -58,11 +58,12 @@ post = "/:day/:month/:year/:slug/"
     email= "gonzabato@hotmail.com"
 
     # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
+    #highlightjsVersion = "9.12.0"
+    #highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    #highlightjsLang = ["r", "yaml"]
+    #highlightjsTheme = "github"
+    highlightjs = "monokai-sublime"
+    highlightjs_extra_languages = ["r"]
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"
 
