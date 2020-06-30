@@ -9,17 +9,21 @@ The following is a list of side projects that Nelson has worked on and continues
 
 `manymodelr` is an R package focused on reducing the time spent in performing common machine learning tasks. Nelson started developing it after observing that most of what he was doing was repetitive. This was also his first project and was therefore key in developing his passion for software development and making users' life easier. It is far from perfect but has certainly improved his understanding of machine learning and package development.
 
+
 * [mde](https://nelson-gon.github.io/mde)
 
 This is admittedly his favorite package of all the packages he has worked on. The adage that machine learning is 90%[citation needed] data cleaning is true. For this reason, `mde` aims to reduce the time spent in performing missing data exploration and analysis. It is aimed at missing data exploration, nothing more nothing less. It is hoped that this package will help researchers, students, and anyone interested in data analysis to minimise the time spent in data cleaning. 
 
+
 * [pyautocv](https://nelson-gon.github.io/pyautocv)
 
-At the time of writing, `pyautocv` is a work in progress. The goal is to reduce the time taken in image segmentation and edge detection and also provide a semi automated way to perform these tasks with less lines of code.
+At the time of writing, `pyautocv` is a work in progress. The goal is to reduce the time taken in image segmentation and edge detection and also provide a semi automated way to perform these tasks with less lines of code. It aligns with Nelson's passion for easing the image analysis pipeline. 
+
 
 * [unet](https://nelson-gon.github.io/unet)
 
-This is a fork of ZhiXuHao's [unet](https://github.com/zhixuhao/unet). I however fixed known issues(at the time of writing). Since the original repository was failry inactive, I "diverged" and decided to maintain this as "my" own repository. All credit for the original idea and implementation goes to [ZhiXuHao](https://github.com/zhixuhao) and the authors of the landmark U-Net [paper](https://link.springer.com/chapter/10.1007%2F978-3-319-24574-4_28)
+This is a clone of ZhiXuHao's [unet](https://github.com/zhixuhao/unet). Nelson has extended it to fix known issues and add more features while ensuring good generalisaion to novel datasets. The goal is to provide an easy-to-use deep learning framework for biological image analysis. 
+
 
 * [pyfdc](https://nelson-gon.github.io/pyfdc)
 
