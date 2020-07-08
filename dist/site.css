@@ -37,7 +37,7 @@ summary { display: list-item; }
 template { display: none; }
 [hidden] { display: none; }
 html, body { height: 100%; }
-body { background: #0a0a0a; color: #0a6194; font-family: "Open Sans", arial, sans-serif; font-size: 18px; }
+body { background: #171717; color: #e3e1e1; font-family: "Open Sans", arial, sans-serif; font-size: 18px; }
 h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; text-transform: none; }
 h1 { font-size: 26px; }
 h2 { font-size: 24px; }
@@ -46,7 +46,7 @@ h4 { font-size: 18px; margin-bottom: 18px; }
 h5 { font-size: 16px; margin-bottom: 15px; }
 h6 { font-size: 14px; margin-bottom: 12px; }
 p { line-height: 1.8; margin: 0 0 30px; }
-a { color: #254e70; text-decoration: none; }
+a { color: #e3e1e1; text-decoration: none; }
 ul, ol { line-height: 1.4; margin: 0 0 20px; }
 ul ul, ul ol, ol ul, ol ol { margin: 10px 0 0 20px; }
 ul li, ol li { margin: 0 0 2px; }
@@ -59,7 +59,7 @@ img[src$="align-left"] { float: left; margin-right: 40px; }
 img[src$="align-right"] { float: right; margin-left: 40px; }
 pre { border: 1px solid #dddbcc; border-radius: 3px; margin: 0 0 20px; overflow-x: auto; padding: 10px; font-size: 16px; }
 pre code { padding: 0; }
-code { padding: 2px 4px; font-size: 90%; border-radius: 4px; background-color: #f1f0ea; }
+code { padding: 2px 4px; font-size: 90%; border-radius: 4px; background-color: #4f4e4e; }
 hr { border: none; border-bottom: 1px dotted #303030; margin: 45px 0; }
 table { margin-bottom: 40px; width: 100%; }
 table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th { background-color: #f7f7f3; }
@@ -75,7 +75,7 @@ table tr { border-bottom: 1px dotted #aeadad; }
 #wrapper { height: auto; min-height: 100%; margin-bottom: -265px; }
 #wrapper:after { content: ""; display: block; height: 265px; }
 .button { background: #303030; border: none; border-radius: 3px; color: #fefefe; font-size: 14px; font-weight: 700; padding: 10px 12px; text-transform: uppercase; }
-.button:hover { background: #254e70; }
+.button:hover { background: #e3e1e1; }
 .button-square { background: #254e70; color: #fff; float: left; font-size: 17px; margin: 0 0 0 10px; padding: 3px 8px 4px; }
 .button-square:hover { background: #303030; }
 .error { text-align: center; }
@@ -119,9 +119,9 @@ table tr { border-bottom: 1px dotted #aeadad; }
 .post-list { list-style: none; padding: 0; }
 .post-stub { border-bottom: 1px dotted #303030; margin: 0; position: relative; }
 .post-stub:first-child { padding-top: 0; }
-.post-stub a { -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; display: block; color: #424242; padding: 20px 5px; }
-.post-stub a:hover { background: #fcf5f5; color: #254e70; padding: 20px 12px; }
-.post-stub a:hover .post-stub-tag { background: #254e70; }
+.post-stub a { -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; display: block; color: #e3e1e1; padding: 20px 5px; }
+.post-stub a:hover { background: #e3e1e1; color: #1a1a1a; padding: 20px 12px; }
+.post-stub a:hover .post-stub-tag { background: #1a1a1a; }
 .post-stub-tag { background: #303030; border-radius: 3px; color: #fff; float: right; font-size: 10px; margin: 7px 0 0; padding: 0 5px; text-transform: uppercase; }
 .post-stub-title { display: inline-block; margin: 0; text-transform: none; }
 .post-stub-description { display: inline-block; margin: 0; text-transform: none; }
