@@ -68,7 +68,7 @@ post = "/:day/:month/:year/:slug/"
     MathJaxVersion = "2.7.5"
 
     # use as site header
-    favicon = "for_icon.ico"
+    favicon = "img/for_icon.ico"
 
     [params.logo]
     url = "logo.png"
