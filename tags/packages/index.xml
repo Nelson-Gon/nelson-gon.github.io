@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>misc on A Zero to Hero Programmer Pathway</title>
-    <link>/categories/misc/</link>
-    <description>Recent content in misc on A Zero to Hero Programmer Pathway</description>
+    <title>packages on A Zero to Hero Programmer Pathway</title>
+    <link>/tags/packages/</link>
+    <description>Recent content in packages on A Zero to Hero Programmer Pathway</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/packages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,22 +20,6 @@
       <guid>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</guid>
       <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
-    </item>
-    
-    <item>
-      <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</title>
-      <link>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
-      <description>In this short article, I show how I added a Kaggle favicon to the site.
-Prerequisites:
-R packages
-  magrittr
-  magick
-  Why did I need to create a custom favicon?
-I admittedly do not use Kaggle as much as I used to a year or so ago, mainly because I&amp;rsquo;ve found the site to be less enjoyable but that&amp;rsquo;s a post for another day.
-The real reason for the need to create a custom icon was the desire to include Kaggle under the side bar.</description>
     </item>
     
   </channel>

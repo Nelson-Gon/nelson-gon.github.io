@@ -14,7 +14,7 @@ canonifyURLs = true
 
 relativeURLs = true
 # disable rss
-disableKinds = ["RSS"] 
+disableKinds = ["rss"] 
 
 [permalinks]
 

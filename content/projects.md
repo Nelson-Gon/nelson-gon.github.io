@@ -3,11 +3,18 @@ date: "2020-05-18"
 title: "Projects"
 ---
 
-The following is a list of side projects that Nelson has worked on and continues to improve.
+Throughout his studies, Nelson has dedicated most of his free time to building software that can simplify life for students, researchers, and anyone interested in software. Listed below is a selection of projects he has worked on. 
+
+
 
 * [manymodelr](https://nelson-gon.github.io/manymodelr)
 
 `manymodelr` is an R package focused on reducing the time spent in performing common machine learning tasks. Nelson started developing it after observing that most of what he was doing was repetitive. This was also his first project and was therefore key in developing his passion for software development and making users' life easier. It is far from perfect but has certainly improved his understanding of machine learning and package development.
+
+
+* [cytounet](https://nelson-gon.github.io/cytounet)
+
+The goal of `cytounet` is to provide an easy to use Keras based deep learning pipeline for image segmentation with particular focus on biological data. Nelson was inspired by and built upon ZhiXuHao's [unet](https://github.com/zhixuhao/unet) implementation. 
 
 
 * [mde](https://nelson-gon.github.io/mde)
@@ -15,16 +22,11 @@ The following is a list of side projects that Nelson has worked on and continues
 This is admittedly his favorite package of all the packages he has worked on. The adage that machine learning is 90%[citation needed] data cleaning is true. For this reason, `mde` aims to reduce the time spent in performing missing data exploration and analysis. It is aimed at missing data exploration, nothing more nothing less. It is hoped that this package will help researchers, students, and anyone interested in data analysis to minimise the time spent in data cleaning. 
 
 
-* [cytounet](https://nelson-gon.github.io/cytounet)
-
-The goal of `cytounet` is to provide an easy to use Keras based deep learning pipeline for image segmentation with particular focus on biological data. Nelson was inspired by and built upon ZhiXuHao's [unet](https://github.com/zhixuhao/unet) implementation. 
-
-Nelson's has since diverged from the original implementation modernising it, fixing known issues while also ensuring active maintenance and improvement.  
 
 
 * [pyautocv](https://nelson-gon.github.io/pyautocv)
 
-At the time of writing, `pyautocv` is a work in progress. The goal is to reduce the time taken in image segmentation and edge detection and also provide a semi automated way to perform these tasks with less lines of code. It aligns with Nelson's passion for easing the image analysis pipeline. 
+The goal of `pyautocv` is to (semi) automate common image processing tasks such as thresholding, segmentation, and edge detection. The overall aim is to simplify this process and make it more accessible even to non-programmers. 
 
 
 

@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>modeling on </title>
+    <title>modeling on A Zero to Hero Programmer Pathway</title>
     <link>/tags/modeling/</link>
-    <description>Recent content in modeling on </description>
+    <description>Recent content in modeling on A Zero to Hero Programmer Pathway</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/modeling/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>manymodelr: Build and Tune Several Models</title>
-      <link>/07/05/2020/manymodelr-build-and-tune-several-models/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <link>/18/07/2020/manymodelr-build-and-tune-several-models/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/07/05/2020/manymodelr-build-and-tune-several-models/</guid>
-      <description>manymodelr: Build and Tune Several Models
-In this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
+      <guid>/18/07/2020/manymodelr-build-and-tune-several-models/</guid>
+      <description>manymodelr: Build and Tune Several ModelsIn this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
 Installing the package
-install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.</description>
+install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.
+Loading the package
+library(manymodelr)#&amp;gt; Loading required package: caret#&amp;gt; Loading required package: lattice#&amp;gt; Loading required package: ggplot2#&amp;gt; Loading required package: Metrics#&amp;gt; #&amp;gt; Attaching package: &amp;#39;Metrics&amp;#39;#&amp;gt; The following objects are masked from &amp;#39;package:caret&amp;#39;:#&amp;gt; #&amp;gt; precision, recall#&amp;gt; Loading required package: e1071#&amp;gt; Welcome to manymodelr.</description>
     </item>
     
   </channel>

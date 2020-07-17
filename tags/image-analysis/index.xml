@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>image analysis on </title>
+    <title>image analysis on A Zero to Hero Programmer Pathway</title>
     <link>/tags/image-analysis/</link>
-    <description>Recent content in image analysis on </description>
+    <description>Recent content in image analysis on A Zero to Hero Programmer Pathway</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/image-analysis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Automated Image Processing with pyautocv in Python</title>
-      <link>/07/05/2020/automated-image-processing-with-pyautocv-in-python/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <title>Semi Automated Image Processing with pyautocv</title>
+      <link>/18/07/2020/semi-automated-image-processing-with-pyautocv/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/07/05/2020/automated-image-processing-with-pyautocv-in-python/</guid>
-      <description>pyautocv: (Semi) Automated Image Processing
-
-Project Aims
-The goal of pyautocv is to provide a simple computer vision(cv) workflow that enables one to automateor at least reduce the time spent in image (pre)-processing.
-Installing the package
-From pypi:
-pip install pyautocvFrom GitHub
-pip install pip install git+https://github.com/Nelson-Gon/pyautocv.git#or# clone the repogit clone https://www.</description>
+      <guid>/18/07/2020/semi-automated-image-processing-with-pyautocv/</guid>
+      <description>In this short post, we take a look at how we can use pyautocv for edge detection. At the time of writing, pyautocv was at version 0.2.1 that was unreleased.
+For installation details, please see the documentation of the project.
+Pre-requisites
+Python &amp;gt;=3.6pyautocvAn image directory for which detection is required.To begin, we import pyautocv’s Segmentation class.
+from pyautocv.segmentation import *Next, we change directory to the target directory that holds our images.</description>
     </item>
     
   </channel>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on </title>
+    <title>Tags on A Zero to Hero Programmer Pathway</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on </description>
+    <description>Recent content in Tags on A Zero to Hero Programmer Pathway</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +15,7 @@
     <item>
       <title>api</title>
       <link>/tags/api/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/api/</guid>
       <description></description>
@@ -22,7 +24,7 @@
     <item>
       <title>computer vision</title>
       <link>/tags/computer-vision/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/computer-vision/</guid>
       <description></description>
@@ -31,7 +33,7 @@
     <item>
       <title>data exploration</title>
       <link>/tags/data-exploration/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/data-exploration/</guid>
       <description></description>
@@ -40,7 +42,7 @@
     <item>
       <title>food</title>
       <link>/tags/food/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/food/</guid>
       <description></description>
@@ -49,7 +51,7 @@
     <item>
       <title>image analysis</title>
       <link>/tags/image-analysis/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/image-analysis/</guid>
       <description></description>
@@ -58,9 +60,90 @@
     <item>
       <title>image processing</title>
       <link>/tags/image-processing/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/image-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>missing data</title>
+      <link>/tags/missing-data/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/missing-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ml</title>
+      <link>/tags/ml/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modeling</title>
+      <link>/tags/modeling/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>/tags/python/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r</title>
+      <link>/tags/r/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web scraping</title>
+      <link>/tags/web-scraping/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/web-scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer</title>
+      <link>/tags/developer/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>/tags/github/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packages</title>
+      <link>/tags/packages/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/packages/</guid>
       <description></description>
     </item>
     
@@ -70,60 +153,6 @@
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/kaggle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>missing data</title>
-      <link>/tags/missing-data/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/missing-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ml</title>
-      <link>/tags/ml/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>modeling</title>
-      <link>/tags/modeling/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/modeling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>/tags/python/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>r</title>
-      <link>/tags/r/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web scraping</title>
-      <link>/tags/web-scraping/</link>
-      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/web-scraping/</guid>
       <description></description>
     </item>
     
