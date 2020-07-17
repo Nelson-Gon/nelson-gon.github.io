@@ -56,7 +56,7 @@ post = "/:day/:month/:year/:slug/"
     kaggle= "gonnel"
     twitter = "https://twitter.com/bionelsongon"
     email= "gonzabato@hotmail.com"
-    dark= "/styles/site/darkmode.scss"
+    #dark= "/styles/site/darkmode.scss"
 
     # options for highlight.js (version, additional languages, and theme)
     #highlightjsVersion = "9.12.0"
