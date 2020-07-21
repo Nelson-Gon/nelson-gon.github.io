@@ -167,14 +167,14 @@ for(i in my_arr){
 }
 
 
-</code></pre><p>To your surprise, <code>my_arr</code> only gets updated at the second value(indexing starts at 1 in <code>R</code> not 0):</p>
+</code></pre><p>To your surprise, <code>my_arr</code> not all values of <code>my_arr</code> are updated(see the last value for instance):</p>
 <pre><code>
 my_arr
 
 [1]  0  5 10 15  4
 
 </code></pre><p><strong>Meet seq_along</strong></p>
-<p>The reason the above fails is to do with the fact that <code>for</code> loops in R are not vectorised. This simply means that you&rsquo;re looping over the first value alone and not the entire &ldquo;array&rdquo;.</p>
+<p>The reason the above fails is to do with the fact that <code>for</code> loops in R are not vectorised. This simply means that you&rsquo;re not looping over the entire &ldquo;array&rdquo;(vector in proper <code>R</code> terminology).</p>
 <p>To get the desired effect, you would need to use either <code>seq_along</code> or <code>1:length</code> to loop over the entire vector(&ldquo;array&rdquo;). What you need would then be:</p>
 <pre><code>
 my_arr = 0:4
