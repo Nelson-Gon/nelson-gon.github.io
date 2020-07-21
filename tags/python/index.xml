@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 23:35:25 +0800</lastBuildDate>
     
 	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Loops for the Python Programmer</title>
+      <link>/21/07/2020/r-loops-for-the-python-programmer/</link>
+      <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
+      
+      <guid>/21/07/2020/r-loops-for-the-python-programmer/</guid>
+      <description>TLDR: Whenever possible use vectorised alternatives instead of loops, seq_along and 1:length will be handy when looping through data.
+The R vs Python debate is one that has stood the test of time. Thousands of articles and tweets have been made that aim to argue for the use of one language over another. Fortunately for the reader, this post is not aimed at justifying the use of one language.
+On the contrary, as someone who is fairly proficient in both languages, I thought it would be nice to write about key differences between loops in R and python.</description>
+    </item>
     
     <item>
       <title>pyfdc: A python interface to FoodDataCentral</title>
