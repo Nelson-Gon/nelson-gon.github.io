@@ -167,14 +167,14 @@ for(i in my_arr){
 }
 
 
-</code></pre><p>To your surprise, <code>my_arr</code> not all values of <code>my_arr</code> are updated(see the last value for instance):</p>
+</code></pre><p>To your surprise, not all values of <code>my_arr</code> are updated(see the last value for instance):</p>
 <pre><code>
 my_arr
 
 [1]  0  5 10 15  4
 
 </code></pre><p><strong>Meet seq_along</strong></p>
-<p>The reason the above fails is to do with the fact that <code>for</code> loops in R are not vectorised. This simply means that you&rsquo;re not looping over the entire &ldquo;array&rdquo;(vector in proper <code>R</code> terminology).</p>
+<p>The reason the above fails is to do with the fact that <code>for</code> loops in R are not vectorised. This simply means that you&rsquo;re not looping over the entire &ldquo;array&rdquo;(vector in proper <code>R</code> terminology). Secondly, unlike <code>python</code> where indexing begins at 0, R&rsquo;s indexing starts at 1.</p>
 <p>To get the desired effect, you would need to use either <code>seq_along</code> or <code>1:length</code> to loop over the entire vector(&ldquo;array&rdquo;). What you need would then be:</p>
 <pre><code>
 my_arr = 0:4
@@ -226,6 +226,67 @@ Reduce(&quot;*&quot;, list(0:4,5))
 sapply(0:4,function(x) x* 5)
 
 [1]  0  5 10 15 20
+
+
+</code></pre><p><strong>Some similarities</strong></p>
+<p>The above example was very simplified for the sake of brevity. Let&rsquo;s look at a few ways looping is similar in <code>R</code> and <code>python</code>. It is worth noting that the examples shown here can always be done in much &ldquo;simpler&rdquo;(more concise) vectorised ways.</p>
+<p>Let&rsquo;s look at a simple way to loop over a list. In <code>python</code>, if we wanted to add a suffix to list elements, we could do:</p>
+<pre><code>
+my_list = ['a', 'b', 'c']
+
+for i in range(len(my_list)):
+    my_list[i] = my_list[i] + &quot;_new&quot;
+    
+my_list
+
+
+['a_new', 'b_new', 'c_new']
+
+
+</code></pre><p>In <code>R</code>, we can use <code>seq_along</code> which is to move along the entire list in a loop:</p>
+<pre><code>
+my_list = list(&quot;a&quot;,&quot;b&quot;, &quot;c&quot;)
+
+for(i in seq_along(my_list)){
+
+my_list[i] = paste0(my_list[i], &quot;_new&quot;)
+
+}
+
+my_list
+
+
+[[1]]
+[1] &quot;a_new&quot;
+
+[[2]]
+[1] &quot;b_new&quot;
+
+[[3]]
+[1] &quot;c_new&quot;
+
+
+</code></pre><p>One thing you may have noticed is that <code>str</code>ings in R cannot be directly concantentated. If you tried, you would get an error:</p>
+<pre><code>
+my_list[1] + &quot;j&quot;
+
+Error in my_list[1] + &quot;j&quot; : non-numeric argument to binary operator
+
+
+</code></pre><p>To keep this post short, I will show loop free solutions for both languages.</p>
+<pre><code>
+# python list comprehensions
+
+[ x + &quot;_new&quot; for x in my_list]
+
+['a_new', 'b_new', 'c_new']
+
+# R vectorised paste
+
+paste0(my_list, &quot;_new&quot;)
+
+[1] &quot;a_new&quot; &quot;b_new&quot; &quot;c_new&quot;
+
 
 
 </code></pre><p>It would be overambitious to try and list all possibilities. The key takeway is that one should often try to use vectorised implemenations and if loops are needed, one should always remember that these are not vectorised in R.</p>
