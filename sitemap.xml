@@ -3,232 +3,257 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/api/</loc>
+    <loc>/categories/api/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/api/</loc>
+    <loc>/tags/api/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/computer-vision/</loc>
+    <loc>/tags/computer-vision/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/computer-vision/</loc>
+    <loc>/categories/computer-vision/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/data-analysis/</loc>
+    <loc>/categories/data-analysis/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/data-exploration/</loc>
+    <loc>/tags/data-exploration/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/food/</loc>
+    <loc>/categories/food/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/food/</loc>
+    <loc>/tags/food/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/image-analysis/</loc>
+    <loc>/tags/image-analysis/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/image-analysis/</loc>
+    <loc>/categories/image-analysis/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/image-processing/</loc>
+    <loc>/tags/image-processing/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/image-processing/</loc>
+    <loc>/categories/image-processing/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/machine-learning/</loc>
+    <loc>/categories/machine-learning/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/31/07/2020/manymodelr-build-and-tune-several-models/</loc>
+    <loc>/31/07/2020/manymodelr-build-and-tune-several-models/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/missing-data/</loc>
+    <loc>/tags/missing-data/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/missing-data/</loc>
+    <loc>/categories/missing-data/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/31/07/2020/missing-data-explorer/</loc>
+    <loc>/31/07/2020/missing-data-explorer/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/missingness/</loc>
+    <loc>/categories/missingness/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/ml/</loc>
+    <loc>/tags/ml/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/modeling/</loc>
+    <loc>/tags/modeling/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/31/07/2020/pyfdc-a-python-interface-to-fooddatacentral/</loc>
+    <loc>/31/07/2020/pyfdc-a-python-interface-to-fooddatacentral/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/python/</loc>
+    <loc>/categories/python/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/31/07/2020/semi-automated-image-processing-with-pyautocv/</loc>
+    <loc>/31/07/2020/semi-automated-image-processing-with-pyautocv/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/web-scraping/</loc>
+    <loc>/categories/web-scraping/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/web-scraping/</loc>
+    <loc>/tags/web-scraping/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</loc>
+    <loc>/tags/beginner/</loc>
+    <lastmod>2020-07-21T23:35:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/loops/</loc>
+    <lastmod>2020-07-21T23:35:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/novice/</loc>
+    <lastmod>2020-07-21T23:35:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/21/07/2020/r-loops-for-the-python-programmer/</loc>
+    <lastmod>2020-07-21T23:35:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorials/</loc>
+    <lastmod>2020-07-21T23:35:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/developer/</loc>
+    <loc>/tags/developer/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/developer/</loc>
+    <loc>/categories/developer/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/github/</loc>
+    <loc>/tags/github/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/misc/</loc>
+    <loc>/categories/misc/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/packages/</loc>
+    <loc>/tags/packages/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/packages/</loc>
+    <loc>/categories/packages/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/social/</loc>
+    <loc>/social/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/projects/</loc>
+    <loc>/projects/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/blog/</loc>
+    <loc>/categories/blog/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</loc>
+    <loc>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/categories/hugo/</loc>
+    <loc>/categories/hugo/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/tags/kaggle/</loc>
+    <loc>/tags/kaggle/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nelson-gon.github.io/about/</loc>
+    <loc>/about/</loc>
   </url>
   
 </urlset>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on Biologically Plausible Programming</title>
-    <link>https://nelson-gon.github.io/categories/machine-learning/</link>
+    <link>/categories/machine-learning/</link>
     <description>Recent content in Machine Learning on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://nelson-gon.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>manymodelr: Build and Tune Several Models</title>
-      <link>https://nelson-gon.github.io/31/07/2020/manymodelr-build-and-tune-several-models/</link>
+      <link>/31/07/2020/manymodelr-build-and-tune-several-models/</link>
       <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/31/07/2020/manymodelr-build-and-tune-several-models/</guid>
+      <guid>/31/07/2020/manymodelr-build-and-tune-several-models/</guid>
       <description>manymodelr: Build and Tune Several ModelsIn this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
 Installing the package
 install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.
