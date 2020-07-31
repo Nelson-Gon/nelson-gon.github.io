@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Biologically Plausible Programming</title>
-    <link>/categories/r/</link>
+    <link>https://nelson-gon.github.io/categories/r/</link>
     <description>Recent content in R on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nelson-gon.github.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>manymodelr: Build and Tune Several Models</title>
-      <link>/18/07/2020/manymodelr-build-and-tune-several-models/</link>
-      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      <link>https://nelson-gon.github.io/31/07/2020/manymodelr-build-and-tune-several-models/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/18/07/2020/manymodelr-build-and-tune-several-models/</guid>
+      <guid>https://nelson-gon.github.io/31/07/2020/manymodelr-build-and-tune-several-models/</guid>
       <description>manymodelr: Build and Tune Several ModelsIn this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
 Installing the package
 install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.
 Loading the package
-library(manymodelr)#&amp;gt; Loading required package: caret#&amp;gt; Loading required package: lattice#&amp;gt; Loading required package: ggplot2#&amp;gt; Loading required package: Metrics#&amp;gt; #&amp;gt; Attaching package: &amp;#39;Metrics&amp;#39;#&amp;gt; The following objects are masked from &amp;#39;package:caret&amp;#39;:#&amp;gt; #&amp;gt; precision, recall#&amp;gt; Loading required package: e1071#&amp;gt; Welcome to manymodelr.</description>
+library(manymodelr)#&amp;gt; Loading required package: caret#&amp;gt; Loading required package: lattice#&amp;gt; Loading required package: ggplot2#&amp;gt; Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 4.</description>
     </item>
     
     <item>
       <title>Missing Data Explorer</title>
-      <link>/18/07/2020/missing-data-explorer/</link>
-      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      <link>https://nelson-gon.github.io/31/07/2020/missing-data-explorer/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/18/07/2020/missing-data-explorer/</guid>
+      <guid>https://nelson-gon.github.io/31/07/2020/missing-data-explorer/</guid>
       <description>This is the development version of mde. The acronym mde stands for Missing Data Explorer, a package that is intended to make missing data exploration as smooth and easy as possible.
 The goal of mde is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.
 Installation
@@ -39,20 +39,20 @@ CRAN releaseinstall.packages(&amp;quot;mde&amp;quot;)Stable Development vers
     
     <item>
       <title>Creating a Hexagon Sticker with R in Minutes</title>
-      <link>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</link>
+      <link>https://nelson-gon.github.io/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</guid>
+      <guid>https://nelson-gon.github.io/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</guid>
       <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
     </item>
     
     <item>
       <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</title>
-      <link>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
+      <link>https://nelson-gon.github.io/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
+      <guid>https://nelson-gon.github.io/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
       <description>In this short article, I show how I added a Kaggle favicon to the site.
 Prerequisites:
 R packages

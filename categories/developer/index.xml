@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>developer on Biologically Plausible Programming</title>
-    <link>/categories/developer/</link>
+    <link>https://nelson-gon.github.io/categories/developer/</link>
     <description>Recent content in developer on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nelson-gon.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a Hexagon Sticker with R in Minutes</title>
-      <link>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</link>
+      <link>https://nelson-gon.github.io/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</guid>
+      <guid>https://nelson-gon.github.io/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</guid>
       <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
     </item>

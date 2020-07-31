@@ -1,5 +1,5 @@
 ---
-date: "2020-07-18"
+date: "2020-07-31"
 output: github_document
 title: "manymodelr: Build and Tune Several Models"
 type: "post"
@@ -27,6 +27,7 @@ install.packages(&quot;manymodelr&quot;)
 #&gt; Loading required package: caret
 #&gt; Loading required package: lattice
 #&gt; Loading required package: ggplot2
+#&gt; Warning: package &#39;ggplot2&#39; was built under R version 4.0.2
 #&gt; Loading required package: Metrics
 #&gt; 
 #&gt; Attaching package: &#39;Metrics&#39;
@@ -243,9 +244,9 @@ head(corrs)
 <pre class="r"><code>
 # purely demonstrative
 get_var_corr(iris,&quot;Sepal.Length&quot;,other_vars=&quot;Petal.Length&quot;,drop_columns=c(&quot;factor&quot;,&quot;character&quot;), method=&quot;spearman&quot;, exact=FALSE)
-#&gt; Warning in get_var_corr.data.frame(iris, &quot;Sepal.Length&quot;, other_vars = &quot;Petal.Length&quot;, : Columns with classes in drop_columns have been discarded. You
-#&gt;               can disable this by setting yourself by setting drop_columns
-#&gt;               to NULL.
+#&gt; Warning in get_var_corr.data.frame(iris, &quot;Sepal.Length&quot;, other_vars =
+#&gt; &quot;Petal.Length&quot;, : Columns with classes in drop_columns have been discarded.
+#&gt; Youcan disable this yourself by setting drop_columns to NULL.
 #&gt;   comparison_var    other_var      p.value correlation
 #&gt; 1   Sepal.Length Petal.Length 3.443087e-50   0.8818981</code></pre>
 <p>Similarly, <code>get_var_corr_</code> (note the underscore at the end) provides a convenient way to get combination-wise correlations.</p>
