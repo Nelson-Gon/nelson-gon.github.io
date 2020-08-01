@@ -7,17 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/image-processing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Semi Automated Image Processing with pyautocv</title>
-      <link>/31/07/2020/semi-automated-image-processing-with-pyautocv/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      <link>/20/05/2020/semi-automated-image-processing-with-pyautocv/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/31/07/2020/semi-automated-image-processing-with-pyautocv/</guid>
+      <guid>/20/05/2020/semi-automated-image-processing-with-pyautocv/</guid>
       <description>In this short post, we take a look at how we can use pyautocv for edge detection. At the time of writing, pyautocv was at version 0.2.1 that was unreleased.
 For installation details, please see the documentation of the project.
 Pre-requisites

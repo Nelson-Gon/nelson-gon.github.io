@@ -7,118 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 23:35:25 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>api</title>
-      <link>/tags/api/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computer vision</title>
-      <link>/tags/computer-vision/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data exploration</title>
-      <link>/tags/data-exploration/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/data-exploration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>food</title>
-      <link>/tags/food/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>image analysis</title>
-      <link>/tags/image-analysis/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/image-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>image processing</title>
-      <link>/tags/image-processing/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/image-processing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>missing data</title>
-      <link>/tags/missing-data/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/missing-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ml</title>
-      <link>/tags/ml/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>modeling</title>
-      <link>/tags/modeling/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/modeling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>/tags/python/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>r</title>
-      <link>/tags/r/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web scraping</title>
-      <link>/tags/web-scraping/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/web-scraping/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>beginner</title>
@@ -144,6 +36,24 @@
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
       <guid>/tags/novice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>/tags/python/</link>
+      <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r</title>
+      <link>/tags/r/</link>
+      <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
+      
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
@@ -180,6 +90,33 @@
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/packages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer vision</title>
+      <link>/tags/computer-vision/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image analysis</title>
+      <link>/tags/image-analysis/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/image-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image processing</title>
+      <link>/tags/image-processing/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/image-processing/</guid>
       <description></description>
     </item>
     

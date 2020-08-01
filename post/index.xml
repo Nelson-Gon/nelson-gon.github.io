@@ -7,64 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 23:35:25 +0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>manymodelr: Build and Tune Several Models</title>
-      <link>/31/07/2020/manymodelr-build-and-tune-several-models/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/31/07/2020/manymodelr-build-and-tune-several-models/</guid>
-      <description>manymodelr: Build and Tune Several ModelsIn this vignette, we take a look at how we can simplify many machine learning tasks using manymodelr. We will take a look at the core functions first.
-Installing the package
-install.packages(&amp;quot;manymodelr&amp;quot;)Once the package has been successfully installed, we can then proceed by loading the package and exploring some of the key functions.
-Loading the package
-library(manymodelr)#&amp;gt; Loading required package: caret#&amp;gt; Loading required package: lattice#&amp;gt; Loading required package: ggplot2#&amp;gt; Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 4.</description>
-    </item>
-    
-    <item>
-      <title>Missing Data Explorer</title>
-      <link>/31/07/2020/missing-data-explorer/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/31/07/2020/missing-data-explorer/</guid>
-      <description>This is the development version of mde. The acronym mde stands for Missing Data Explorer, a package that is intended to make missing data exploration as smooth and easy as possible.
-The goal of mde is to ease exploration of missingness without feeling overwhelmed by syntax with particular focus on simplicity.
-Installation
-CRAN releaseinstall.packages(&amp;quot;mde&amp;quot;)Stable Development version# install.packages(&amp;quot;devtools&amp;quot;)devtools::install_github(&amp;quot;Nelson-Gon/mde&amp;quot;)# build vignettesdevtools::install_github(&amp;quot;Nelson-Gon/mde&amp;quot;, build_vignettes=TRUE)Unstable Development versiondevtools::install_github(&amp;quot;Nelson-Gon/mde@develop&amp;quot;)Loading the package</description>
-    </item>
-    
-    <item>
-      <title>pyfdc: A python interface to FoodDataCentral</title>
-      <link>/31/07/2020/pyfdc-a-python-interface-to-fooddatacentral/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/31/07/2020/pyfdc-a-python-interface-to-fooddatacentral/</guid>
-      <description>pyfdc: A python interface to FoodDataCentral
-Installation
-The simplest way to install the latest release is as follows:
-pip install pyfdcTo install the development version:
-Open the Terminal/CMD/Git bash/shell and enter
-pip install git+https://github.com/Nelson-Gon/pyfdc.git# or for the less stable dev versionpip install git+https://github.com/Nelson-Gon/pyfdc.git@developOtherwise:
-# clone the repogit clone https://www.github.com/Nelson-Gon/pyfdc.gitcd pyfdcpython3 setup.py installBuilding documentation
-# The Makefile here is Windows specificcd docspython -m m2r .</description>
-    </item>
-    
-    <item>
-      <title>Semi Automated Image Processing with pyautocv</title>
-      <link>/31/07/2020/semi-automated-image-processing-with-pyautocv/</link>
-      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/31/07/2020/semi-automated-image-processing-with-pyautocv/</guid>
-      <description>In this short post, we take a look at how we can use pyautocv for edge detection. At the time of writing, pyautocv was at version 0.2.1 that was unreleased.
-For installation details, please see the documentation of the project.
-Pre-requisites
-Python &amp;gt;=3.6pyautocvAn image directory for which detection is required.To begin, we import pyautocv’s Segmentation class.
-from pyautocv.segmentation import *Next, we change directory to the target directory that holds our images.</description>
-    </item>
     
     <item>
       <title>R Loops for the Python Programmer</title>
@@ -85,6 +31,19 @@ On the contrary, as someone who is fairly proficient in both languages, I though
       <guid>/12/06/2020/creating-a-hexagon-sticker-with-r-in-minutes/</guid>
       <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
+    </item>
+    
+    <item>
+      <title>Semi Automated Image Processing with pyautocv</title>
+      <link>/20/05/2020/semi-automated-image-processing-with-pyautocv/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/20/05/2020/semi-automated-image-processing-with-pyautocv/</guid>
+      <description>In this short post, we take a look at how we can use pyautocv for edge detection. At the time of writing, pyautocv was at version 0.2.1 that was unreleased.
+For installation details, please see the documentation of the project.
+Pre-requisites
+Python &amp;gt;=3.6pyautocvAn image directory for which detection is required.To begin, we import pyautocv’s Segmentation class.
+from pyautocv.segmentation import *Next, we change directory to the target directory that holds our images.</description>
     </item>
     
     <item>
