@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Biologically Plausible Programming</title>
-    <link>/categories/</link>
+    <link>https://nelson-gon.github.io/categories/</link>
     <description>Recent content in Categories on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nelson-gon.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>developer</title>
-      <link>/categories/developer/</link>
+      <link>https://nelson-gon.github.io/categories/developer/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/developer/</guid>
+      <guid>https://nelson-gon.github.io/categories/developer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>misc</title>
-      <link>/categories/misc/</link>
+      <link>https://nelson-gon.github.io/categories/misc/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/misc/</guid>
+      <guid>https://nelson-gon.github.io/categories/misc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>packages</title>
-      <link>/categories/packages/</link>
+      <link>https://nelson-gon.github.io/categories/packages/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/packages/</guid>
+      <guid>https://nelson-gon.github.io/categories/packages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>r</title>
-      <link>/categories/r/</link>
+      <link>https://nelson-gon.github.io/categories/r/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/r/</guid>
+      <guid>https://nelson-gon.github.io/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer vision</title>
-      <link>/categories/computer-vision/</link>
+      <link>https://nelson-gon.github.io/categories/computer-vision/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/computer-vision/</guid>
+      <guid>https://nelson-gon.github.io/categories/computer-vision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>image analysis</title>
-      <link>/categories/image-analysis/</link>
+      <link>https://nelson-gon.github.io/categories/image-analysis/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/image-analysis/</guid>
+      <guid>https://nelson-gon.github.io/categories/image-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>image processing</title>
-      <link>/categories/image-processing/</link>
+      <link>https://nelson-gon.github.io/categories/image-processing/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/image-processing/</guid>
+      <guid>https://nelson-gon.github.io/categories/image-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>/categories/python/</link>
+      <link>https://nelson-gon.github.io/categories/python/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/python/</guid>
+      <guid>https://nelson-gon.github.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>/categories/blog/</link>
+      <link>https://nelson-gon.github.io/categories/blog/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/blog/</guid>
+      <guid>https://nelson-gon.github.io/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/categories/hugo/</link>
+      <link>https://nelson-gon.github.io/categories/hugo/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/hugo/</guid>
+      <guid>https://nelson-gon.github.io/categories/hugo/</guid>
       <description></description>
     </item>
     
