@@ -19,8 +19,8 @@
       
       <guid>/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/</guid>
       <description>Introduction
-While there is debate on how much similar deep learning(DL) operations are to the corresponding brain computaions, these operations have been applied to several problems often generating excitement and sometimes unwarranted hype. Of all the DL applications, image processing has considerably matured and provided better results compared to traditional processes that relied on &amp;ldquo;simple&amp;rdquo;(r) kernel convolutions.
-For the biomedical community, the Unet algorithm proposed by Ronneberger et al.(2015) has succesfully been applied to several problems ranging from basic segmentation tasks to more complex tasks like cell tracking and cell cycle progress monitoring.</description>
+While there is debate on how much similar deep learning(DL) operations are to the corresponding brain computations, these operations have been applied to several problems often generating excitement and sometimes unwarranted hype. Of all the DL applications, image processing has considerably matured and provided better results compared to traditional processes that relied on &amp;ldquo;simple&amp;rdquo;(r) kernel convolutions.
+For the biomedical community, the Net algorithm proposed by Ronneberger et al.(2015) has successfully been applied to several problems ranging from basic segmentation tasks to more complex tasks like cell tracking and cell cycle progress monitoring.</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ The real reason for the need to create a custom icon was the desire to include K
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Nelson Gonzabato (NelsonGon) is currently a third year Biomedical Sciences student at the ZJU-UoE Institute. He is interested in computational models and their biomedical applications.
+      <description>Nelson Gonzabato (NelsonGon) is currently a fourth year BSc Biomedical Sciences student at the ZJU-UoE Institute. He is interested in computational models and their biomedical applications.
 Outside class, Nelson is active in the open source community and is a fairly frequent contributor to the R tag on StackOverflow where he has learnt from some of the very best R programmers. You can view some of his answers by clicking on the image at the end of this page or via this link.</description>
     </item>
     

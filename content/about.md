@@ -3,7 +3,7 @@ date: "06/05/2020"
 title: About the Author
 ---
 
-Nelson Gonzabato (NelsonGon) is currently a third year Biomedical Sciences student at the ZJU-UoE Institute. He is interested in computational models and their biomedical applications. 
+Nelson Gonzabato (NelsonGon) is currently a fourth year BSc Biomedical Sciences student at the ZJU-UoE Institute. He is interested in computational models and their biomedical applications. 
 
 Outside class, Nelson is active in the open source community and is a fairly frequent contributor to the `R` tag on [StackOverflow](https://stackoverflow.com/users/10323798/nelsongon) where he has learnt from some of the very best R programmers. You can view some of his answers by clicking on the image at the end of this page or via this [link](https://stackoverflow.com/users/10323798/nelsongon?tab=answers).
 
