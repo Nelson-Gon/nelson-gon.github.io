@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Minimizing loss: Lessons from a Summer of Deep Learning</title>
+      <link>/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/</guid>
+      <description>Introduction
+While there is debate on how much similar deep learning(DL) operations are to the corresponding brain computaions, these operations have been applied to several problems often generating excitement and sometimes unwarranted hype. Of all the DL applications, image processing has considerably matured and provided better results compared to traditional processes that relied on &amp;ldquo;simple&amp;rdquo;(r) kernel convolutions.
+For the biomedical community, the Unet algorithm proposed by Ronneberger et al.(2015) has succesfully been applied to several problems ranging from basic segmentation tasks to more complex tasks like cell tracking and cell cycle progress monitoring.</description>
+    </item>
+    
+    <item>
       <title>R Loops for the Python Programmer</title>
       <link>/21/07/2020/r-loops-for-the-python-programmer/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
