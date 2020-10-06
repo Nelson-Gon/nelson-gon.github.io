@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Open Source Software: The Case for Student Involvement</title>
+      <link>/06/10/2020/open-source-software-the-case-for-student-involvement/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/06/10/2020/open-source-software-the-case-for-student-involvement/</guid>
+      <description>Introduction
+For over two years now, I have devoted most of my time to either building open source software or alerting developers of issues with &amp;ldquo;their&amp;rdquo; software. I use their in quotes because open source software really is community software and most developers have the community&amp;rsquo;s needs first.
+During this time, I have grown a lot as a developer and believe that most of this growth has come from my involvement with developer communities be it over at StackOverflow or GitHub.</description>
+    </item>
     
     <item>
       <title>Minimizing loss: Lessons from a Summer of Deep Learning</title>
