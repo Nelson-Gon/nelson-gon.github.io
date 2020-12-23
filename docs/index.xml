@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biologically Plausible Programming</title>
-    <link>https://nelson-gon.github.io/</link>
+    <link>/</link>
     <description>Recent content on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nelson-gon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Source Software: The Case for Student Involvement</title>
-      <link>https://nelson-gon.github.io/blogs/open-source-student-involvement/</link>
+      <link>/blogs/open-source-student-involvement/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/blogs/open-source-student-involvement/</guid>
+      <guid>/blogs/open-source-student-involvement/</guid>
       <description>Introduction
 For over two years now, I have devoted most of my time to either building open source software or alerting developers of issues with &amp;ldquo;their&amp;rdquo; software. I use their in quotes because open source software really is community software and most developers have the community&amp;rsquo;s needs first.
 During this time, I have grown a lot as a developer and believe that most of this growth has come from my involvement with developer communities be it over at StackOverflow or GitHub.</description>
@@ -21,10 +21,10 @@ During this time, I have grown a lot as a developer and believe that most of thi
     
     <item>
       <title>Minimizing Loss: Lessons From a Summer of Deep Learning</title>
-      <link>https://nelson-gon.github.io/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</link>
+      <link>/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</guid>
+      <guid>/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</guid>
       <description>Introduction
 While there is debate on how much similar deep learning(DL) operations are to the corresponding brain computations, these operations have been applied to several problems often generating excitement and sometimes unwarranted hype. Of all the DL applications, image processing has considerably matured and provided better results compared to traditional processes that relied on simple(r) kernel convolutions.
 For the biomedical community, the UNet algorithm proposed by Ronneberger et al.(2015) has successfully been applied to several problems ranging from basic segmentation tasks to more complex tasks like cell tracking and cell cycle progress monitoring.</description>
@@ -32,10 +32,10 @@ For the biomedical community, the UNet algorithm proposed by Ronneberger et al.(
     
     <item>
       <title>R Loops for the Python Programmer</title>
-      <link>https://nelson-gon.github.io/blogs/2020-07-21-r-loops-for-the-python-programmer/</link>
+      <link>/blogs/2020-07-21-r-loops-for-the-python-programmer/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
-      <guid>https://nelson-gon.github.io/blogs/2020-07-21-r-loops-for-the-python-programmer/</guid>
+      <guid>/blogs/2020-07-21-r-loops-for-the-python-programmer/</guid>
       <description>TLDR: Whenever possible use vectorised alternatives instead of loops, seq_along and 1:length will be handy when looping through data.
 The R vs Python debate is one that has stood the test of time. Thousands of articles and tweets have been made that aim to argue for the use of one language over another. Fortunately for the reader, this post is not aimed at justifying the use of one language.
 On the contrary, as someone who is fairly proficient in both languages, I thought it would be nice to write about key differences between loops in R and python.</description>
@@ -43,20 +43,20 @@ On the contrary, as someone who is fairly proficient in both languages, I though
     
     <item>
       <title>Creating a Hexagon sticker with R in Minutes</title>
-      <link>https://nelson-gon.github.io/blogs/hex-sticker-creation-r/</link>
+      <link>/blogs/hex-sticker-creation-r/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/blogs/hex-sticker-creation-r/</guid>
+      <guid>/blogs/hex-sticker-creation-r/</guid>
       <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
     </item>
     
     <item>
       <title>Semi Automated Edge Detection with pyautocv</title>
-      <link>https://nelson-gon.github.io/blogs/semi-automated-edge-detection-with-pyautocv/</link>
+      <link>/blogs/semi-automated-edge-detection-with-pyautocv/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/blogs/semi-automated-edge-detection-with-pyautocv/</guid>
+      <guid>/blogs/semi-automated-edge-detection-with-pyautocv/</guid>
       <description>In this short post, we take a look at how we can use pyautocv for edge detection. At the time of writing, pyautocv was at version 0.2.1 that was unreleased.
 For installation details, please see the documentation of the project.
 Pre-requisites
@@ -66,38 +66,38 @@ from pyautocv.segmentation import *Next, we change directory to the target dire
     
     <item>
       <title>Contact the Author</title>
-      <link>https://nelson-gon.github.io/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/contact/</guid>
+      <guid>/contact/</guid>
       <description>Send Email | Nelson-Gon on GitHub | NelsonGon on Kaggle | Follow NelsonGon</description>
     </item>
     
     <item>
       <title>Contact the Author</title>
-      <link>https://nelson-gon.github.io/social/</link>
+      <link>/social/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/social/</guid>
+      <guid>/social/</guid>
       <description>Send Email | Nelson-Gon on GitHub | NelsonGon on Kaggle | Follow NelsonGon</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://nelson-gon.github.io/projects/</link>
+      <link>/projects/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/projects/</guid>
+      <guid>/projects/</guid>
       <description>Throughout his studies, Nelson has dedicated most of his free time to building software that can simplify life for students, researchers, and anyone interested in software. Listed below is a selection of projects he has worked on.
  manymodelr  manymodelr is an R package focused on reducing the time spent in performing common machine learning tasks. Nelson started developing it after observing that most of what he was doing was repetitive.</description>
     </item>
     
     <item>
       <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</title>
-      <link>https://nelson-gon.github.io/blogs/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
+      <link>/blogs/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/blogs/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
+      <guid>/blogs/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
       <description>In this short article, I show how I added a Kaggle favicon to the site.
 Prerequisites:
 R packages
@@ -110,10 +110,10 @@ The real reason for the need to create a custom icon was the desire to include K
     
     <item>
       <title>About the Author</title>
-      <link>https://nelson-gon.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>Nelson Gonzabato (NelsonGon) is currently a fourth year BSc Biomedical Sciences student at the Zhejiang University-University of Edinburgh (ZJE) Institute. He is interested in computational models and their biomedical applications.
 Outside class, Nelson is active in the open source community and is a fairly frequent contributor to the R tag on StackOverflow where he has learnt from some of the very best R programmers. You can view some of his answers by clicking on the image at the end of this page or via this link.</description>
     </item>

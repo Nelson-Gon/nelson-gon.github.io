@@ -1,4 +1,4 @@
-baseurl = "https://nelson-gon.github.io"
+baseurl = "/"
 languageCode = "en-us"
 title = "Biologically Plausible Programming"
 theme = "ghostwriter"
