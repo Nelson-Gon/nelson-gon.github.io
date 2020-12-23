@@ -66,8 +66,8 @@ table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th { background-
 table th { padding: 0 10px 10px; text-align: left; }
 table td { padding: 10px; }
 table tr { border-bottom: 1px dotted #aeadad; }
-::selection { background: #fff5b8; color: #000; display: block; }
-::-moz-selection { background: #fff5b8; color: #000; display: block; }
+::selection { background: #174978; color: #fcfcfc; display: block; }
+::-moz-selection { background: #174978; color: #fcfcfc; display: block; }
 .fluid-width-video-wrapper { margin-bottom: 40px; }
 .hidden { text-indent: -9999px; visibility: hidden; display: none; }
 .clearfix:after { content: ""; display: table; clear: both; }
@@ -75,15 +75,15 @@ table tr { border-bottom: 1px dotted #aeadad; }
 #wrapper { height: auto; min-height: 100%; margin-bottom: -265px; }
 #wrapper:after { content: ""; display: block; height: 265px; }
 .button { background: #303030; border: none; border-radius: 3px; color: #fefefe; font-size: 14px; font-weight: 700; padding: 10px 12px; text-transform: uppercase; }
-.button:hover { background: #f03838; }
-.button-square { background: #f03838; color: #fff; float: left; font-size: 17px; margin: 0 0 0 10px; padding: 3px 8px 4px; }
+.button:hover { background: #156ead; }
+.button-square { background: #156ead; color: #fff; float: left; font-size: 17px; margin: 0 0 0 10px; padding: 3px 8px 4px; }
 .button-square:hover { background: #303030; }
 .error { text-align: center; }
 .comments { margin-top: 10px; }
 .site-header { padding: 40px 0 0; overflow: auto; text-align: center; text-transform: uppercase; }
 .site-title-wrapper { display: table; margin: 0 auto; }
 .site-title { float: left; font-size: 14px; font-weight: 600; margin: 0; text-transform: uppercase; }
-.site-title a { float: left; background: #f03838; color: #fefefe; padding: 5px 10px 6px; }
+.site-title a { float: left; background: #156ead; color: #fefefe; padding: 5px 10px 6px; }
 .site-title a:hover { background: #303030; }
 .site-logo { display: block; }
 .site-logo img { margin: 0; }
@@ -110,18 +110,18 @@ table tr { border-bottom: 1px dotted #aeadad; }
 .post-tags { float: left; margin: 3px 0 0; }
 .post-tags a:hover { color: #303030; }
 .share { float: right; }
-.share a { background: #f03838; color: #fff; display: inline-block; font-size: 16px; margin-left: 5px; padding: 5px 0 4px; width: 30px; text-align: center; }
+.share a { background: #156ead; color: #fff; display: inline-block; font-size: 16px; margin-left: 5px; padding: 5px 0 4px; width: 30px; text-align: center; }
 .share a:hover { background: #303030; }
 .post-navigation { display: table; margin: 70px auto 100px; }
-.newer-posts, .older-posts { float: left; background: #f03838; color: #fefefe; font-size: 14px; font-weight: 600; margin: 0 5px; padding: 5px 10px 6px; text-transform: uppercase; }
+.newer-posts, .older-posts { float: left; background: #156ead; color: #fefefe; font-size: 14px; font-weight: 600; margin: 0 5px; padding: 5px 10px 6px; text-transform: uppercase; }
 .newer-posts:hover, .older-posts:hover { background: #303030; }
 .page-number { display: none; }
 .post-list { list-style: none; padding: 0; }
 .post-stub { border-bottom: 1px dotted #303030; margin: 0; position: relative; }
 .post-stub:first-child { padding-top: 0; }
 .post-stub a { -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; display: block; color: #424242; padding: 20px 5px; }
-.post-stub a:hover { background: #fcf5f5; color: #f03838; padding: 20px 12px; }
-.post-stub a:hover .post-stub-tag { background: #f03838; }
+.post-stub a:hover { background: #fcf5f5; color: #156ead; padding: 20px 12px; }
+.post-stub a:hover .post-stub-tag { background: #156ead; }
 .post-stub-tag { background: #303030; border-radius: 3px; color: #fff; float: right; font-size: 10px; margin: 7px 0 0; padding: 0 5px; text-transform: uppercase; }
 .post-stub-title { display: inline-block; margin: 0; text-transform: none; }
 .post-stub-description { display: inline-block; margin: 0; text-transform: none; }
