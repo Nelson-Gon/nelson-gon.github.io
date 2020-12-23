@@ -37,7 +37,7 @@ summary { display: list-item; }
 template { display: none; }
 [hidden] { display: none; }
 html, body { height: 100%; }
-body { background: #fefefe; color: #424242; font-family: "Open Sans", arial, sans-serif; font-size: 18px; }
+body { background: #0a0a0a; color: #0a6194; font-family: "Open Sans", arial, sans-serif; font-size: 18px; }
 h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; text-transform: none; }
 h1 { font-size: 26px; }
 h2 { font-size: 24px; }
@@ -83,7 +83,7 @@ table tr { border-bottom: 1px dotted #aeadad; }
 .site-header { padding: 40px 0 0; overflow: auto; text-align: center; text-transform: uppercase; }
 .site-title-wrapper { display: table; margin: 0 auto; }
 .site-title { float: left; font-size: 14px; font-weight: 600; margin: 0; text-transform: uppercase; }
-.site-title a { float: left; background: #f03838; color: #fefefe; padding: 5px 10px 6px; }
+.site-title a { float: left; background: #f03838; color: #294a69; padding: 5px 10px 6px; }
 .site-title a:hover { background: #303030; }
 .site-logo { display: block; }
 .site-logo img { margin: 0; }
