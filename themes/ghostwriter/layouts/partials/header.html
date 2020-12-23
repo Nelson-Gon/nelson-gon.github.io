@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html{{ if .Site.Params.opengraph }} prefix="og: http://ogp.me/ns#"{{ end }}>
     <head>
+      
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
@@ -11,7 +12,7 @@
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {{ if .Site.Params.opengraph }}{{ partial "opengraph.html" . }}{{ end }}
-        <link rel="icon" type="image/png" href="{{ "img/favicon.ico" | relURL }}">
+       <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}logo.png">
         <link rel="stylesheet" disabled id="dark-mode-theme" href="{{ .Site.BaseURL }}dist/darkmode.css">
         <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/site.css">
         <link rel="stylesheet" href="{{ .Site.BaseURL }}dist/syntax.css">

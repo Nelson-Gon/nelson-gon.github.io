@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.md": ["prettier --parser markdown --write", "git add"]
-  }
-}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>loops on Biologically Plausible Programming</title>
+    <link>/tags/loops/</link>
+    <description>Recent content in loops on Biologically Plausible Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 21 Jul 2020 23:35:25 +0800</lastBuildDate><atom:link href="/tags/loops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>R Loops for the Python Programmer</title>
+      <link>/blogs/2020-07-21-r-loops-for-the-python-programmer/</link>
+      <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
+      
+      <guid>/blogs/2020-07-21-r-loops-for-the-python-programmer/</guid>
+      <description>TLDR: Whenever possible use vectorised alternatives instead of loops, seq_along and 1:length will be handy when looping through data.
+The R vs Python debate is one that has stood the test of time. Thousands of articles and tweets have been made that aim to argue for the use of one language over another. Fortunately for the reader, this post is not aimed at justifying the use of one language.
+On the contrary, as someone who is fairly proficient in both languages, I thought it would be nice to write about key differences between loops in R and python.</description>
+    </item>
+    
+  </channel>
+</rss>
