@@ -59,7 +59,7 @@ img[src$="align-left"] { float: left; margin-right: 40px; }
 img[src$="align-right"] { float: right; margin-left: 40px; }
 pre { border: 1px solid #dddbcc; border-radius: 3px; margin: 0 0 20px; overflow-x: auto; padding: 10px; font-size: 16px; }
 pre code { padding: 0; }
-code { padding: 2px 4px; font-size: 90%; border-radius: 4px; background-color: #0a0a0a; }
+code { padding: 2px 4px; font-size: 90%; border-radius: 4px; background-color: #6e6b6b; }
 hr { border: none; border-bottom: 1px dotted #303030; margin: 45px 0; }
 table { margin-bottom: 40px; width: 100%; }
 table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th { background-color: #f7f7f3; }
