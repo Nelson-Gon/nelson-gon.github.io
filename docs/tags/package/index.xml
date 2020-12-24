@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/package/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Hexagon sticker with R in Minutes</title>
-      <link>/blogs/hex-sticker-creation-r/</link>
+      <link>/12/06/2020/hex-sticker-creation-r/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blogs/hex-sticker-creation-r/</guid>
+      <guid>/12/06/2020/hex-sticker-creation-r/</guid>
       <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
 One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
     </item>

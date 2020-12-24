@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>/blogs/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/git/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
   </url>
@@ -23,12 +18,17 @@
   </url>
   
   <url>
-    <loc>/blogs/open-source-student-involvement/</loc>
+    <loc>/06/10/2020/open-source-student-involvement/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/open-source/</loc>
+    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -73,7 +73,7 @@
   </url>
   
   <url>
-    <loc>/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</loc>
+    <loc>/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/</loc>
     <lastmod>2020-09-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -98,7 +98,7 @@
   </url>
   
   <url>
-    <loc>/blogs/2020-07-21-r-loops-for-the-python-programmer/</loc>
+    <loc>/21/07/2020/r-loops-for-the-python-programmer/</loc>
     <lastmod>2020-07-21T23:35:25+08:00</lastmod>
   </url>
   
@@ -108,7 +108,7 @@
   </url>
   
   <url>
-    <loc>/blogs/hex-sticker-creation-r/</loc>
+    <loc>/12/06/2020/hex-sticker-creation-r/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>/blogs/semi-automated-edge-detection-with-pyautocv/</loc>
+    <loc>/27/05/2020/semi-automated-edge-detection-with-pyautocv/</loc>
     <lastmod>2020-05-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -158,7 +158,7 @@
   </url>
   
   <url>
-    <loc>/blogs/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</loc>
+    <loc>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</loc>
     <lastmod>2020-05-07T00:00:00+00:00</lastmod>
   </url>
   

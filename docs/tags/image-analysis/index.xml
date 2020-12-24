@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/image-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minimizing Loss: Lessons From a Summer of Deep Learning</title>
-      <link>/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</link>
+      <link>/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blogs/minimizing-loss-lessons-from-a-summer-of-deep-learning/</guid>
+      <guid>/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/</guid>
       <description>Introduction
 While there is debate on how much similar deep learning(DL) operations are to the corresponding brain computations, these operations have been applied to several problems often generating excitement and sometimes unwarranted hype. Of all the DL applications, image processing has considerably matured and provided better results compared to traditional processes that relied on simple(r) kernel convolutions.
 For the biomedical community, the UNet algorithm proposed by Ronneberger et al.(2015) has successfully been applied to several problems ranging from basic segmentation tasks to more complex tasks like cell tracking and cell cycle progress monitoring.</description>
@@ -21,10 +21,10 @@ For the biomedical community, the UNet algorithm proposed by Ronneberger et al.(
     
     <item>
       <title>Semi Automated Edge Detection with pyautocv</title>
-      <link>/blogs/semi-automated-edge-detection-with-pyautocv/</link>
+      <link>/27/05/2020/semi-automated-edge-detection-with-pyautocv/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blogs/semi-automated-edge-detection-with-pyautocv/</guid>
+      <guid>/27/05/2020/semi-automated-edge-detection-with-pyautocv/</guid>
       <description>In this short post, we take a look at how we can use pyautocv for edge detection. At the time of writing, pyautocv was at version 0.2.1 that was unreleased.
 For installation details, please see the documentation of the project.
 Pre-requisites
