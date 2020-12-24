@@ -2,180 +2,180 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Biologically Plausible Programming</title>
-    <link>https://nelson-gon.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nelson-gon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git</title>
-      <link>https://nelson-gon.github.io/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https://nelson-gon.github.io/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/github/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>open-source</title>
-      <link>https://nelson-gon.github.io/tags/open-source/</link>
+      <link>/tags/open-source/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/open-source/</guid>
+      <guid>/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>https://nelson-gon.github.io/tags/programming/</link>
+      <link>/tags/programming/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/programming/</guid>
+      <guid>/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://nelson-gon.github.io/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>r</title>
-      <link>https://nelson-gon.github.io/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer-vision</title>
-      <link>https://nelson-gon.github.io/tags/computer-vision/</link>
+      <link>/tags/computer-vision/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/computer-vision/</guid>
+      <guid>/tags/computer-vision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>deep learning</title>
-      <link>https://nelson-gon.github.io/tags/deep-learning/</link>
+      <link>/tags/deep-learning/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/deep-learning/</guid>
+      <guid>/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>image-analysis</title>
-      <link>https://nelson-gon.github.io/tags/image-analysis/</link>
+      <link>/tags/image-analysis/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/image-analysis/</guid>
+      <guid>/tags/image-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>image-processing</title>
-      <link>https://nelson-gon.github.io/tags/image-processing/</link>
+      <link>/tags/image-processing/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/image-processing/</guid>
+      <guid>/tags/image-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>basics</title>
-      <link>https://nelson-gon.github.io/tags/basics/</link>
+      <link>/tags/basics/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/basics/</guid>
+      <guid>/tags/basics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>beginner</title>
-      <link>https://nelson-gon.github.io/tags/beginner/</link>
+      <link>/tags/beginner/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/beginner/</guid>
+      <guid>/tags/beginner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>loops</title>
-      <link>https://nelson-gon.github.io/tags/loops/</link>
+      <link>/tags/loops/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/loops/</guid>
+      <guid>/tags/loops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>novice</title>
-      <link>https://nelson-gon.github.io/tags/novice/</link>
+      <link>/tags/novice/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/novice/</guid>
+      <guid>/tags/novice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorials</title>
-      <link>https://nelson-gon.github.io/tags/tutorials/</link>
+      <link>/tags/tutorials/</link>
       <pubDate>Tue, 21 Jul 2020 23:35:25 +0800</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/tutorials/</guid>
+      <guid>/tags/tutorials/</guid>
       <description></description>
     </item>
     
     <item>
       <title>developer</title>
-      <link>https://nelson-gon.github.io/tags/developer/</link>
+      <link>/tags/developer/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/developer/</guid>
+      <guid>/tags/developer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>package</title>
-      <link>https://nelson-gon.github.io/tags/package/</link>
+      <link>/tags/package/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/package/</guid>
+      <guid>/tags/package/</guid>
       <description></description>
     </item>
     
     <item>
       <title>package-development</title>
-      <link>https://nelson-gon.github.io/tags/package-development/</link>
+      <link>/tags/package-development/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/package-development/</guid>
+      <guid>/tags/package-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kaggle</title>
-      <link>https://nelson-gon.github.io/tags/kaggle/</link>
+      <link>/tags/kaggle/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nelson-gon.github.io/tags/kaggle/</guid>
+      <guid>/tags/kaggle/</guid>
       <description></description>
     </item>
     

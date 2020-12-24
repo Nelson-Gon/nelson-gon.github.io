@@ -1,7 +1,6 @@
-baseurl = "https://nelson-gon.github.io"
+baseurl = "/"
 languageCode = "en-us"
 title = "Biologically Plausible Programming"
-logo= "logo.png"
 theme = "ghostwriter"
 author = "Nelson Gonzabato"
 copyright = "&copy; 2020. All rights reserved."
@@ -24,7 +23,6 @@ post = "/:day/:month/:year/:slug/"
 
 [Author]
 name = "Nelson Gonzabato"
-
 
 
 [[menu.main]]
