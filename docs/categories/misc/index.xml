@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>misc on Biologically Plausible Programming</title>
-    <link>/categories/misc/</link>
+    <link>https://github/com/nelson-gon.github.io/categories/misc/</link>
     <description>Recent content in misc on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://github/com/nelson-gon.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to add a custom Kaggle Favicon to Hugo&#39;s Blackburn Theme</title>
-      <link>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
+      <link>https://github/com/nelson-gon.github.io/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
+      <guid>https://github/com/nelson-gon.github.io/07/05/2020/how-to-add-a-custom-kaggle-favicon-to-hugo-s-blackburn-theme/</guid>
       <description>In this short article, I show how I added a Kaggle favicon to the site.
 Prerequisites:
 R packages
