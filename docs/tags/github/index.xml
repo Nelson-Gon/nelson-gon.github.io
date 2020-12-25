@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo, Blogdown, and Github: What could go wrong?</title>
+      <link>/25/12/2020/hugo-blogdown-pitfalls-to-avoid/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/25/12/2020/hugo-blogdown-pitfalls-to-avoid/</guid>
+      <description>One of the most beautiful things about open source development is the idea that one picks up crucial skills like versioning be it via git* or any version control system of their choosing. For non developers, such versioning can be accomplished via syncing files to the cloud or manually uploading files each time. Alternatively, and in the most extreme scenario, one could simply version their files by simple file number incrementation: file_1_edit, file_1_edit_final, file_1_edit_final_final_finally.</description>
+    </item>
+    
     <item>
       <title>Open Source Software: The Case for Student Involvement</title>
       <link>/06/10/2020/open-source-student-involvement/</link>

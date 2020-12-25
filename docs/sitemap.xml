@@ -4,31 +4,61 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blogdown/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/git/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/github/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/06/10/2020/open-source-student-involvement/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/25/12/2020/hugo-blogdown-pitfalls-to-avoid/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/open-source/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/versioning/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/06/10/2020/open-source-student-involvement/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,16 +69,6 @@
   
   <url>
     <loc>/tags/python/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
   </url>
   

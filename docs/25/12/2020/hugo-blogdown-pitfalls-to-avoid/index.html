@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hugo, Blogdown, and Github: What could go wrong? &middot; Nelson Gonzabato</title>
+        <meta name="description" content="Rare hugo pitfalls and how to avoid them.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.79.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       <link rel="icon" type="image/png" href="../../../../logo.png">
+        <link rel="stylesheet" disabled id="dark-mode-theme" href="../../../../dist/darkmode.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <head>
+  
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+</head>
+        
+        
+        
+    </head>
+    <body>
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-179726246-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Home" title="Home" href="../../../../" rel="me">
+                             <i class="fa fa-home"></i>  
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/bionelsongon" rel="me">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                  
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                         
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        
+                              
+                       
+                            
+       <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+      <a class="button-square button-social hint--top" data-hint="kaggle" title="Kaggle" href="https://Kaggle.com/gonnel" rel="me">
+<i class="fab fa-kaggle"></i>
+                   
+                    
+                      
+                        
+                        
+                            <a  class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:gonzabato@hotmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                        
+                         
+                         
+                       
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../../about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../../projects/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Hugo, Blogdown, and Github: What could go wrong?</h1>
+    
+        <p class="post-description" itemprop="description">Rare hugo pitfalls and how to avoid them.</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-12-25" itemprop="datePublished">Fri, Dec 25, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Nelson Gonzabato</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p>One of the most beautiful things about open source development is the idea that one picks up crucial skills like versioning be it via git* or any version control system of their choosing. For non developers, such versioning can be accomplished via syncing files to the cloud or manually uploading files each time. Alternatively, and in the most extreme scenario, one could simply version their files by simple file number incrementation: <code>file_1_edit</code>, <code>file_1_edit_final</code>, <code>file_1_edit_final_final_finally</code>.</p>
+<p>Yet even in the most extreme and manual versioning system, one can be sure that at least they would always have copies of their files backed up somewhere.</p>
+<p><strong>When things go wrong</strong></p>
+<p>As a fairly &ldquo;seasoned&rdquo; git user, I have almost always backed up all my files. Recently, however, my laptop was irreversibly damaged which meant that a replacement was necessary. No problem, I thought, after all all my files are backed up somewhere. All I needed to do was get the new laptop, restore files and continue with my development/school work.</p>
+<p><strong>Git and Caching: A Case of forgotten files</strong></p>
+<p>As any <code>hugo</code> and <code>R</code> user may be aware, one can quickly set up a website using <code>blogdown</code> and a theme from github (such as <code>ghostwriter</code> that I use here). To keep my webiste and repositories as simple as possible, I decided at some point to store some files only locally by running:</p>
+<pre><code>git rm --cached -r mysite/directory_to_keep_local
+
+</code></pre><p>Hopefully, it should be clear by now how this might be problematic. On cloning the site&rsquo;s repository to my new laptop, I was suprised to find that some blog posts were only available in <code>html</code> and not <code>.md</code>/<code>.rmd</code> format. What this essentially meant was that:</p>
+<ul>
+<li>
+<p>I could not edit these blog posts if I ever needed to someday</p>
+</li>
+<li>
+<p>These posts would be lost on rebuilding the site.</p>
+</li>
+</ul>
+<p><strong>Pitfalls and Possible Solutions</strong></p>
+<p>With this in mind, I list what I think are rare but potentially problematic pitfalls in the <code>hugo</code>-<code>blogdown</code> workflow:</p>
+<p><strong>HTML to Markdown Conversion</strong></p>
+<p>The <code>rmarkdown</code> package has a great function <code>pandoc_convert</code> that can run <code>pandoc</code> and convert to any file format. While this is useful, it is mostly great for single <code>html</code> to <code>md</code> file conversion and the files sometimes require further editing.</p>
+<p>I attempted to write a function that would solve this issue by taking a <code>.txt</code> file of filenames and converting these to <code>.md</code>. Unfortunately, I did not like the results and abandoned this script. Who knows, maybe someday I may need to revisit this problem.</p>
+<p><strong>Theme editing</strong></p>
+<p>For aesthetic reasons, I prefer to have the site in a dark mode. Since I am currently doing this manually, I found the theme editing workflow a bit less obvious. To edit the <code>body</code> for instance, it is crucial that one edits the theme&rsquo;s <code>static/dist/site.css</code> (it may also be in some other location). Importantly, these edits may not be implemented if you also do not delete <code>public</code>.</p>
+<p><strong>Conclusion</strong></p>
+<p>In my case, all this would have been unnecessary had I remembered to back up all files in different places and also pushed all changes to the remote repository. I do hope however that there was at least a thing or two that could be useful to your own blogging and/or hugo development.</p>
+<p>I am always happy to discuss further about these posts and programming in general. You can <a href="https://nelson-gon.github.io">contact me</a> if you would like to have such discussions.</p>
+<p><strong>Thank you and Keep Building!</strong></p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="../../../../tags/versioning/">versioning</a>, 
+            
+                <a href="../../../../tags/github/">github</a>, 
+            
+                <a href="../../../../tags/r/">r</a>, 
+            
+                <a href="../../../../tags/git/">git</a>, 
+            
+                <a href="../../../../tags/blogdown/">blogdown</a>, 
+            
+                <a href="../../../../tags/hugo/">hugo</a>, 
+            
+                <a href="../../../../tags/open-source/">open-source</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Hugo%2c%20Blogdown%2c%20and%20Github%3a%20What%20could%20go%20wrong%3f&url=%2f25%2f12%2f2020%2fhugo-blogdown-pitfalls-to-avoid%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  <i class="fab fa-twitter"></i>
+   <span class="hidden">Twitter</span> 
+  </a>
+        
+
+        
+       
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f25%2f12%2f2020%2fhugo-blogdown-pitfalls-to-avoid%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fab fa-facebook"></i>
+                
+                </a>
+        
+
+ 
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Hugo%2c%20Blogdown%2c%20and%20Github%3a%20What%20could%20go%20wrong%3f&url=%2f25%2f12%2f2020%2fhugo-blogdown-pitfalls-to-avoid%2f&summary=Rare%20hugo%20pitfalls%20and%20how%20to%20avoid%20them."
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+    <footer class="footer">
+ 
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Biologically Plausible Programming" href="../../../../">Biologically Plausible Programming</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
+    </body>
+</html>
+
