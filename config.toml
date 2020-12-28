@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Biologically Plausible Programming"
 theme = "ghostwriter"
 author = "Nelson Gonzabato"
-logo="images/logo.png"
+logo="img/favicon.png"
 copyright = "&copy; 2020. All rights reserved."
 googleAnalytics = "UA-179726246-1"
 disqusShortname="nelsongon"
@@ -77,7 +77,7 @@ name = "Nelson Gonzabato"
     #favicon = "img/for_icon.ico"
 
     [params.logo]
-    url = "logo.png"
+    url = "img/favicon.png"
     width = 50
     height = 50
     alt = "Logo"
