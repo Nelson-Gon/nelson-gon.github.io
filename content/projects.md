@@ -1,5 +1,5 @@
 ---
-date: "2020-05-18"
+date: "2021-02-07"
 title: "Projects"
 ---
 
@@ -33,6 +33,14 @@ The goal of `pyautocv` is to (semi) automate common image processing tasks such 
 * [pyfdc](https://nelson-gon.github.io/pyfdc)
 
 A data scientist should ideally be able to pull data from several sources. One way to do that is through access to APIs. The goal of `pyfdc` is to pull information about different food(s) from the USDA nutrient database, now known as Food Data Central. This was inspired by and is related to [rfdc](https://github.com/Nelson-Gon/rfdc) and the now archived [usdar](https://github.com/Nelson-Gon/usdar)
+
+* [urlfix](https://nelson-gon.github.io/urlfix/)
+
+`urlfix` is a `python` package that aims to take a document that contains URLs,
+checks if they are broken/outdated, and automatically updates them. Nelson was
+inspired by [urlchecker](https://github.com/r-lib/urlchecker), an `R` package
+that does something similar and that was key in helping him solve issues with
+broken links in `mde`. 
 
 * [linit](https://github.com/Nelson-Gon/linit)
 
