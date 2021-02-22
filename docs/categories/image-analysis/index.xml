@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>image-analysis on Biologically Plausible Programming</title>
+    <link>/categories/image-analysis/</link>
+    <description>Recent content in image-analysis on Biologically Plausible Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/image-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PyTorch Dataset Class: Simply Elegant</title>
+      <link>/22/02/2021/pytorch-dataset-class-simply-elegant/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/22/02/2021/pytorch-dataset-class-simply-elegant/</guid>
+      <description>Introduction
+Over the past few weeks, I have been experimenting with and learning more about the popular PyTorch (torch) package that like Keras and Tensorflow, provides an easy way to implement deep learning algorithms. In this post, I show why I think torch&amp;rsquo;s Dataset class is an elegant and beginner-friendly way to handle the process of data processing. As I have written previously, it&amp;rsquo;s more important to ensure you have the correct data than actually implementing a target model.</description>
+    </item>
+    
+  </channel>
+</rss>
