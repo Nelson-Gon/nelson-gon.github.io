@@ -348,7 +348,6 @@ any of the posts/projects on this site.
 ```
 torch==1.7.1
 torchvision==0.2.2.post3
-opencv-python==4.4.0.46
 opencv-python>=4.2 #actual 4.4.046
 scikit-image>=0.16 #actual 0.18.1
 
