@@ -335,7 +335,7 @@ I state here. If you, like me, are interested in learning more about the `torch`
 package, I would highly recommend that you take a look at the official 
 documentation, and spend some time exploring libraries that implement deep
 learning methods using `torch`. The full code for this implementation is
-available at https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/elegant_torch.py 
+available at https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py 
 
 
 Thank you very much for reading. As always, do comment below or [contact](https://nelson-gon.github.io/social/) me if you would like to discuss
