@@ -317,6 +317,17 @@ This gives us:
 ![Image Res](https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/images/dog-test.png?raw=true)
 
 
+**Next Steps**
+
+In this blog post, we have really looked at a very basic example of the elegance of the `torch` `Dataset` class. As a next step, one could implement the following in our `CustomDataLoader` class:
+
+* Perform more transformations in `transform` for example random flipping of images.
+
+* Extend the data loader to handle multiple image types.
+
+* Finalize the transform by converting to a torch tensors. This is important because when running models with the `torch.nn.Module` class, you will likley encounter errors that request that you use tensors.  
+
+
 **Conclusion**
 
 The `torch` `Dataset` class is powerful and can be used to do more than just what
@@ -326,17 +337,32 @@ documentation, and spend some time exploring libraries that implement deep
 learning methods using `torch`. The full code for this implementation is
 available at https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/elegant_torch.py 
 
+
 Thank you very much for reading. As always, do comment below or [contact](https://nelson-gon.github.io/social/) me if you would like to discuss
 any of the posts/projects on this site.
 
 **Keep Building**
 
 
-References
+**Modules used in this blog post**
+
+```
+torch==1.7.1
+torchvision==0.2.2.post3
+opencv-python==4.4.0.46
+opencv-python>=4.2 #actual 4.4.046
+scikit-image>=0.16 #actual 0.18.1
+
+```
+
+
+**References**
 
 https://www.sciencedirect.com/science/article/abs/pii/003132039390115D
 
-https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/elegant_torch.py 
+https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py
+
+https://www.nature.com/articles/s41524-020-00363-x#Sec1
 
 
 

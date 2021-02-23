@@ -408,6 +408,19 @@ by using manual indexing:</p>
 
 </code></pre><p>This gives us:</p>
 <p><img src="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/images/dog-test.png?raw=true" alt="Image Res"></p>
+<p><strong>Next Steps</strong></p>
+<p>In this blog post, we have really looked at a very basic example of the elegance of the <code>torch</code> <code>Dataset</code> class. As a next step, one could implement the following in our <code>CustomDataLoader</code> class:</p>
+<ul>
+<li>
+<p>Perform more transformations in <code>transform</code> for example random flipping of images.</p>
+</li>
+<li>
+<p>Extend the data loader to handle multiple image types.</p>
+</li>
+<li>
+<p>Finalize the transform by converting to a torch tensors. This is important because when running models with the <code>torch.nn.Module</code> class, you will likley encounter errors that request that you use tensors.</p>
+</li>
+</ul>
 <p><strong>Conclusion</strong></p>
 <p>The <code>torch</code> <code>Dataset</code> class is powerful and can be used to do more than just what
 I state here. If you, like me, are interested in learning more about the <code>torch</code>
@@ -418,9 +431,17 @@ available at <a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/ma
 <p>Thank you very much for reading. As always, do comment below or <a href="https://nelson-gon.github.io/social/">contact</a> me if you would like to discuss
 any of the posts/projects on this site.</p>
 <p><strong>Keep Building</strong></p>
-<p>References</p>
+<p><strong>Modules used in this blog post</strong></p>
+<pre><code>torch==1.7.1
+torchvision==0.2.2.post3
+opencv-python==4.4.0.46
+opencv-python&gt;=4.2 #actual 4.4.046
+scikit-image&gt;=0.16 #actual 0.18.1
+
+</code></pre><p><strong>References</strong></p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">https://www.sciencedirect.com/science/article/abs/pii/003132039390115D</a></p>
-<p><a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/elegant_torch.py">https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/elegant_torch.py</a></p>
+<p><a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py">https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py</a></p>
+<p><a href="https://www.nature.com/articles/s41524-020-00363-x#Sec1">https://www.nature.com/articles/s41524-020-00363-x#Sec1</a></p>
 
 </div>
 
