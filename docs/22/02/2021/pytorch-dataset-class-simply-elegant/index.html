@@ -180,21 +180,19 @@ follows:</p>
 <ul>
 <li>sample
 <ul>
-<li>train</li>
-</ul>
+<li>train
 <ul>
 <li>images</li>
 <li>masks</li>
 </ul>
 </li>
 </ul>
-<p><strong>Li Thresholding with skimage</strong></p>
-<p>To create the gray image (mask) above, I used the Li thresholding implementation
-in <code>scikit-image</code>. To avoid getting a manual threshold, we get the 95% quantile based on the grayscale image and feed it to the <code>initial_guess</code> argument of the 
-<code>threshold_li</code> method. The whole process involved reading the colored image,
-converting it to grayscale, and finally thresholding with the Li method. For 
-convenience, I did not perform Gaussian denoising. I have also recently read 
-that Gaussian pre-processing may increase the likelihood of <a href="https://www.nature.com/articles/s41524-020-00363-x#Sec1">overfitting</a> in
+</li>
+</ul>
+<p><strong>Li Thresholding with scikit-image</strong></p>
+<p>Li thresholding is a thresholding method introduced by <a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">Li &amp; Lee, 1993</a> that finds an optimum threshold by minimising the <a href="https://en.wikipedia.org/wiki/Cross_entropy">cross entropy</a> between an image and its segmentation.</p>
+<p>In the <code>scikit-image</code> implementation, you can either use the method with defaults or supply an initial guess to use to find the optimal threshold. In this example, we willcalculate the 95% quantile based on the grayscale image and use this as the <code>initial_guess</code> argument of the <code>threshold_li</code> method.</p>
+<p>In summary, we read a colored image,convert it to grayscale, and finally threshold with the Li method. For convenience, I did not perform Gaussian denoising. I have also recently read that Gaussian pre-processing may increase the likelihood of <a href="https://www.nature.com/articles/s41524-020-00363-x#Sec1">overfitting</a> in
 convolutional neural networks.</p>
 <p>The full process in code:</p>
 <pre><code>import cv2
@@ -418,14 +416,14 @@ by using manual indexing:</p>
 <p>Extend the data loader to handle multiple image types.</p>
 </li>
 <li>
-<p>Finalize the transform by converting to a torch tensors. This is important because when running models with the <code>torch.nn.Module</code> class, you will likley encounter errors that request that you use tensors.</p>
+<p>Finalize the transform by converting to a torch tensors. This is important because when running models with the <code>torch.nn.Module</code> class, you will likely encounter errors that request that you use tensors.</p>
 </li>
 </ul>
 <p><strong>Conclusion</strong></p>
 <p>The <code>torch</code> <code>Dataset</code> class is powerful and can be used to do more than just what
-I state here. If you, like me, are interested in learning more about the <code>torch</code>
-package, I would highly recommend that you take a look at the official 
-documentation, and spend some time exploring libraries that implement deep
+I state here. If you, are interested in learning more about the <code>torch</code>
+package, I highly recommend that you take a look at the official 
+<a href="https://pytorch.org/docs/stable/index.html">documentation</a>, and spend some time exploring libraries that implement deep
 learning methods using <code>torch</code>. The full code for this implementation is
 available at <a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py">https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py</a></p>
 <p>Thank you very much for reading. As always, do comment below or <a href="https://nelson-gon.github.io/social/">contact</a> me if you would like to discuss
@@ -440,8 +438,10 @@ scikit-image&gt;=0.16 #actual 0.18.1
 
 </code></pre><p><strong>References</strong></p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">https://www.sciencedirect.com/science/article/abs/pii/003132039390115D</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Cross_entropy">https://en.wikipedia.org/wiki/Cross_entropy</a></p>
 <p><a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py">https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py</a></p>
 <p><a href="https://www.nature.com/articles/s41524-020-00363-x#Sec1">https://www.nature.com/articles/s41524-020-00363-x#Sec1</a></p>
+<p><a href="https://pytorch.org/docs/stable/index.html">https://pytorch.org/docs/stable/index.html</a></p>
 
 </div>
 

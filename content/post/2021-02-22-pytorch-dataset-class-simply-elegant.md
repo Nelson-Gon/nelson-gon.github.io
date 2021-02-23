@@ -35,18 +35,17 @@ In this blog post, we shall be using a simple two image dataset organised as
 follows: 
 * sample
   * train
-  - images
-  - masks
+    - images
+    - masks
   
 
-**Li Thresholding with skimage**
+**Li Thresholding with scikit-image**
 
-To create the gray image (mask) above, I used the Li thresholding implementation
-in `scikit-image`. To avoid getting a manual threshold, we get the 95% quantile based on the grayscale image and feed it to the `initial_guess` argument of the 
-`threshold_li` method. The whole process involved reading the colored image,
-converting it to grayscale, and finally thresholding with the Li method. For 
-convenience, I did not perform Gaussian denoising. I have also recently read 
-that Gaussian pre-processing may increase the likelihood of [overfitting](https://www.nature.com/articles/s41524-020-00363-x#Sec1) in
+Li thresholding is a thresholding method introduced by [Li & Lee, 1993](https://www.sciencedirect.com/science/article/abs/pii/003132039390115D) that finds an optimum threshold by minimising the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) between an image and its segmentation. 
+
+In the `scikit-image` implementation, you can either use the method with defaults or supply an initial guess to use to find the optimal threshold. In this example, we willcalculate the 95% quantile based on the grayscale image and use this as the `initial_guess` argument of the `threshold_li` method. 
+
+In summary, we read a colored image,convert it to grayscale, and finally threshold with the Li method. For convenience, I did not perform Gaussian denoising. I have also recently read that Gaussian pre-processing may increase the likelihood of [overfitting](https://www.nature.com/articles/s41524-020-00363-x#Sec1) in
 convolutional neural networks. 
 
 The full process in code:
@@ -325,15 +324,15 @@ In this blog post, we have really looked at a very basic example of the elegance
 
 * Extend the data loader to handle multiple image types.
 
-* Finalize the transform by converting to a torch tensors. This is important because when running models with the `torch.nn.Module` class, you will likley encounter errors that request that you use tensors.  
+* Finalize the transform by converting to a torch tensors. This is important because when running models with the `torch.nn.Module` class, you will likely encounter errors that request that you use tensors.  
 
 
 **Conclusion**
 
 The `torch` `Dataset` class is powerful and can be used to do more than just what
-I state here. If you, like me, are interested in learning more about the `torch`
-package, I would highly recommend that you take a look at the official 
-documentation, and spend some time exploring libraries that implement deep
+I state here. If you, are interested in learning more about the `torch`
+package, I highly recommend that you take a look at the official 
+[documentation](https://pytorch.org/docs/stable/index.html), and spend some time exploring libraries that implement deep
 learning methods using `torch`. The full code for this implementation is
 available at https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py 
 
@@ -360,9 +359,13 @@ scikit-image>=0.16 #actual 0.18.1
 
 https://www.sciencedirect.com/science/article/abs/pii/003132039390115D
 
+https://en.wikipedia.org/wiki/Cross_entropy
+
 https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py
 
 https://www.nature.com/articles/s41524-020-00363-x#Sec1
+
+https://pytorch.org/docs/stable/index.html
 
 
 
