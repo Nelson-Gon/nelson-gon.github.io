@@ -177,21 +177,13 @@ of the <code>torch</code> <code>Dataset</code> class.</p>
 method, I thought it would be great to write a word or two about it.</p>
 <p>In this blog post, we shall be using a simple two image dataset organised as
 follows:</p>
-<ul>
-<li>sample
-<ul>
-<li>train
-<ul>
-<li>images</li>
-<li>masks</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>Li Thresholding with scikit-image</strong></p>
+<pre><code>* sample
+  * train
+    - images
+    - masks
+</code></pre><p><strong>Li Thresholding with scikit-image</strong></p>
 <p>Li thresholding is a thresholding method introduced by <a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">Li &amp; Lee, 1993</a> that finds an optimum threshold by minimising the <a href="https://en.wikipedia.org/wiki/Cross_entropy">cross entropy</a> between an image and its segmentation.</p>
-<p>In the <code>scikit-image</code> implementation, you can either use the method with defaults or supply an initial guess to use to find the optimal threshold. In this example, we willcalculate the 95% quantile based on the grayscale image and use this as the <code>initial_guess</code> argument of the <code>threshold_li</code> method.</p>
+<p>In the <code>scikit-image</code> implementation, you can either use the method with defaults or supply an initial guess to use to find the optimal threshold. In this example, we will calculate the 95% quantile based on the grayscale image and use this as the <code>initial_guess</code> argument of the <code>threshold_li</code> method.</p>
 <p>In summary, we read a colored image,convert it to grayscale, and finally threshold with the Li method. For convenience, I did not perform Gaussian denoising. I have also recently read that Gaussian pre-processing may increase the likelihood of <a href="https://www.nature.com/articles/s41524-020-00363-x#Sec1">overfitting</a> in
 convolutional neural networks.</p>
 <p>The full process in code:</p>
@@ -393,8 +385,7 @@ class CustomDataLoader(Dataset):
 
 </code></pre><p><strong>Usage</strong></p>
 <p>To use our newly created dataset, we can simply create an object as usual:</p>
-<pre><code>images_loader = CustomDataLoader(&quot;path_to_images&quot;,&quot;&quot;
-                                &quot;path_to_masks&quot;,
+<pre><code>images_loader = CustomDataLoader(&quot;path_to_images&quot;,&quot;path_to_masks&quot;,
                                  target_size= (512, 512), image_suffix=&quot;png&quot;)
 </code></pre><p>Finally, to test and for purposes of this post, we will simply use <code>next(iter)</code>
 or simply &ldquo;manual&rdquo; indexing:</p>

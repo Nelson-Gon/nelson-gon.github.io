@@ -33,17 +33,19 @@ method, I thought it would be great to write a word or two about it.
 
 In this blog post, we shall be using a simple two image dataset organised as
 follows: 
+
+```
 * sample
   * train
     - images
     - masks
-  
+```  
 
 **Li Thresholding with scikit-image**
 
 Li thresholding is a thresholding method introduced by [Li & Lee, 1993](https://www.sciencedirect.com/science/article/abs/pii/003132039390115D) that finds an optimum threshold by minimising the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) between an image and its segmentation. 
 
-In the `scikit-image` implementation, you can either use the method with defaults or supply an initial guess to use to find the optimal threshold. In this example, we willcalculate the 95% quantile based on the grayscale image and use this as the `initial_guess` argument of the `threshold_li` method. 
+In the `scikit-image` implementation, you can either use the method with defaults or supply an initial guess to use to find the optimal threshold. In this example, we will calculate the 95% quantile based on the grayscale image and use this as the `initial_guess` argument of the `threshold_li` method. 
 
 In summary, we read a colored image,convert it to grayscale, and finally threshold with the Li method. For convenience, I did not perform Gaussian denoising. I have also recently read that Gaussian pre-processing may increase the likelihood of [overfitting](https://www.nature.com/articles/s41524-020-00363-x#Sec1) in
 convolutional neural networks. 
@@ -290,8 +292,7 @@ class CustomDataLoader(Dataset):
 To use our newly created dataset, we can simply create an object as usual:
 
 ```
-images_loader = CustomDataLoader("path_to_images",""
-                                "path_to_masks",
+images_loader = CustomDataLoader("path_to_images","path_to_masks",
                                  target_size= (512, 512), image_suffix="png")
 ```
 
