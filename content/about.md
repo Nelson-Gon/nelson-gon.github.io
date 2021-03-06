@@ -1,11 +1,14 @@
 ---
-date: "12/01/2020"
+date: "06/03/2021"
 title: About the Author
 ---
 
-Nelson Gonzabato (NelsonGon) is currently a fourth year BSc (Hons) and BSc Biomedical Sciences student at the University of Edinburgh and Zhejiang University, respectively. He is pursuing both degrees at the joint Zhejiang University-University of Edinburgh (ZJE) Institute.  
+Nelson Gonzabato (NelsonGon) is currently an Honors year Biomedical Sciences student at the University of Edinburgh. He is also simultaneously a final year 
+BSc Biomedical Sciences student at Zhejiang University under the dual degree program at the Zhejiang University-University of Edinburgh Institute. 
 
-Nelson is interested in utilizing the power of computational neuroscience in advancing our understanding of sensory processing, memory, and emotion. Nelson therefore finds joy in building computational tools to aid biomedical research, a list of which is available [here](https://nelson-gon.github.io/projects) with publicly available source code on [GitHub](https://github.com/Nelson-Gon/). 
+Nelson started this blog, conveniently titled "Biologically Plausible Programming", to share his thoughts on the role of designing biologically inspired computational tools to advance biomedical research. He has also built a number of computational tools to aid computational analysis of biomedical data, a list of which can be found by browsing [projects](https://nelson-gon.github.io/projects) or viewing his GitHub [profile](https://github.com/Nelson-Gon/). 
+
+
 
 Outside class, Nelson is an active member of the open source community and frequently contributes to the `R` tag on [StackOverflow](https://stackoverflow.com/users/10323798/nelsongon) where he has learnt from some of the very best programmers. Some of his answers can be viewed by clicking on the image at the end of this page or via this [link](https://stackoverflow.com/users/10323798/nelsongon?tab=answers).
 
