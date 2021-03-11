@@ -3,7 +3,7 @@ date = '2020-10-06'
 slug = "open-source-student-involvement"
 title = "Open Source Software: The Case for Student Involvement"
 author = "Nelson Gonzabato"
-description = "Why students should contribute to open source software."
+description = "The case for student open-source contribution."
 tags = ["python","github", "r", "git", "programming", "open-source"]
 +++
 
