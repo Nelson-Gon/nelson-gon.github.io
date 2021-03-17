@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Growing big by building small.</title>
+      <link>/17/03/2021/small-projects-not-so-small-lessons/</link>
+      <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/17/03/2021/small-projects-not-so-small-lessons/</guid>
+      <description>**Why build when you can simply read?&amp;quot;
+The importance of learning as one builds has been echoed so many times in the open-source development world that another article on the same might seem not worth the time. However, our experiences are often unique and offer a unique perspective even on topics that have been read and written about countless times.
+When a problem sparks an idea
+A month or so ago, I was ready to submit updates to the R packages manymodelr and mde and thought the process would go just as smooth as it always does, if you ignore the usual issues with fixing tests and unidentified bugs that is.</description>
+    </item>
+    
     <item>
       <title>PyTorch Dataset Class: Simply Elegant</title>
       <link>/22/02/2021/pytorch-dataset-class-simply-elegant/</link>

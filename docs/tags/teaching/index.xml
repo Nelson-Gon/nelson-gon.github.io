@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>developer on Biologically Plausible Programming</title>
-    <link>/tags/developer/</link>
-    <description>Recent content in developer on Biologically Plausible Programming</description>
+    <title>teaching on Biologically Plausible Programming</title>
+    <link>/tags/teaching/</link>
+    <description>Recent content in teaching on Biologically Plausible Programming</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/developer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Growing big by building small.</title>
       <link>/17/03/2021/small-projects-not-so-small-lessons/</link>
@@ -18,16 +18,6 @@
 The importance of learning as one builds has been echoed so many times in the open-source development world that another article on the same might seem not worth the time. However, our experiences are often unique and offer a unique perspective even on topics that have been read and written about countless times.
 When a problem sparks an idea
 A month or so ago, I was ready to submit updates to the R packages manymodelr and mde and thought the process would go just as smooth as it always does, if you ignore the usual issues with fixing tests and unidentified bugs that is.</description>
-    </item>
-    
-    <item>
-      <title>Creating a Hexagon sticker with R in Minutes</title>
-      <link>/12/06/2020/hex-sticker-creation-r/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/12/06/2020/hex-sticker-creation-r/</guid>
-      <description>I have recently released new versions of manymodelr and mde, R packages you may or may not have heard of.
-One common feature of many R packages is a hexagon shaped sticker that often summarises the goals of the package and/or gives an idea of the developer’s philosophy. I am, as those who know me well might tell you, not the best of artists. I however, have always marveled at these beautiful stickers in others’ packages and wished to create one myself.</description>
     </item>
     
   </channel>

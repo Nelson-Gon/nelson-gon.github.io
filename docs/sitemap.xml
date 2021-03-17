@@ -4,7 +4,52 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dev-tools/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/developer/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/17/03/2021/small-projects-not-so-small-lessons/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/open-source/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/projects/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -28,21 +73,6 @@
   </url>
   
   <url>
-    <loc>/tags/open-source/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/python/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
@@ -54,11 +84,6 @@
   
   <url>
     <loc>/22/02/2021/pytorch-dataset-class-simply-elegant/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -169,11 +194,6 @@
   
   <url>
     <loc>/12/06/2020/hex-sticker-creation-r/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/developer/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
