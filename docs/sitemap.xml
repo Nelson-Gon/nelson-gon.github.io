@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/dev-tools/</loc>
     <lastmod>2021-03-17T00:00:00+00:00</lastmod>
   </url>
@@ -18,12 +23,22 @@
   </url>
   
   <url>
+    <loc>/categories/development/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/17/03/2021/small-projects-not-so-small-lessons/</loc>
     <lastmod>2021-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/open-source/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/open-source/</loc>
     <lastmod>2021-03-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,6 +58,16 @@
   </url>
   
   <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reflection/</loc>
+    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2021-03-17T00:00:00+00:00</lastmod>
   </url>
@@ -50,11 +75,6 @@
   <url>
     <loc>/tags/teaching/</loc>
     <lastmod>2021-03-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -69,11 +89,6 @@
   
   <url>
     <loc>/categories/image-analysis/</loc>
-    <lastmod>2021-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/python/</loc>
     <lastmod>2021-02-22T00:00:00+00:00</lastmod>
   </url>
   
