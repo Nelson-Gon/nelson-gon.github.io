@@ -1,5 +1,7 @@
 # Biologically Plausible Programming 
 
+[![CodeQL](https://github.com/Nelson-Gon/nelson-gon.github.io/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Nelson-Gon/nelson-gon.github.io/actions/workflows/codeql-analysis.yml)
+
 This repository holds source files for Nelson Gonzabato's blog hosted at 
 https://nelson-gon.github.io. 
 
