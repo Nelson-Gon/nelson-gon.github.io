@@ -9,6 +9,17 @@
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Throughout his studies, Nelson has dedicated most of his free time to building software that can simplify life for students, researchers, and anyone interested in software. Listed below is a selection of projects he has worked on.
+Python
+ cytounet  The goal of cytounet is to provide an easy-to-use Keras based deep learning pipeline for image segmentation with particular focus on biological data. Nelson was inspired by and built upon ZhiXuHao&amp;rsquo;s unet implementation.</description>
+    </item>
+    
+    <item>
       <title>Growing big by building small.</title>
       <link>/17/03/2021/small-projects-not-so-small-lessons/</link>
       <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
@@ -28,16 +39,6 @@ A month or so ago, I was ready to submit updates to the R packages manymodelr an
       <guid>/22/02/2021/pytorch-dataset-class-simply-elegant/</guid>
       <description>Introduction
 Over the past few weeks, I have been experimenting with and learning more about the popular PyTorch (torch) package that like Keras and Tensorflow, provides an easy way to implement deep learning algorithms. In this post, I show why I think torch&amp;rsquo;s Dataset class is an elegant and beginner-friendly way to handle the process of data processing. As I have written previously, it&amp;rsquo;s more important to ensure you have the correct data than actually implementing a target model.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>Throughout his studies, Nelson has dedicated most of his free time to building software that can simplify life for students, researchers, and anyone interested in software. Listed below is a selection of projects he has worked on.
- manymodelr  manymodelr is an R package focused on reducing the time spent in performing common machine learning tasks. Nelson started developing it after observing that most of what he was doing was repetitive.</description>
     </item>
     
     <item>
