@@ -20,11 +20,14 @@ inspired by [urlchecker](https://github.com/r-lib/urlchecker), an `R` package
 that does something similar and that was key in helping him solve issues with
 broken links in `mde`. 
 
-* [pycite](https://nelson-gon.github.io/urlfix)
+* [pycite](https://nelson-gon.github.io/pycite)
 
 
 Given a file containing links to scientific articles, `pycite` generates 
-citations in the Harvard referencing style (at the time of writing). 
+citations in the Harvard referencing style (at the time of writing). This project
+is mainly aimed at researchers and students looking to save time in writing
+reference lists for their articles. This is also in line with Nelson's belief in
+reproducible science. 
 
 
 * [pyautocv](https://nelson-gon.github.io/pyautocv)
