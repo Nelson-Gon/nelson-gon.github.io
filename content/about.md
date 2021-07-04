@@ -3,7 +3,7 @@ date: "04/07/2021"
 title: About the Author
 ---
 
-Nelson Gonzabato (NelsonGon) holds a BSc (Hons) Integrative Biomedical Sciences from the University of Edinburgh and BSc Biomedical Sciences from Zhejiang University. His research interests lie in combining computational methods with basic biomedical techniques to better understand neural processes and design effective therapies for dysregulated neural processing.    
+Nelson Gonzabato (NelsonGon) holds a BSc (Hons) Integrative Biomedical Sciences from The University of Edinburgh and BSc Biomedical Sciences from Zhejiang University. His research interests lie in combining computational methods with basic biomedical techniques to better understand neural processes and design effective therapies for dysregulated neural processing.    
 
 
 
