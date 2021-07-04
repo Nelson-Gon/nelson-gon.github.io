@@ -146,9 +146,8 @@ The real reason for the need to create a custom icon was the desire to include K
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Nelson Gonzabato (NelsonGon) is currently a final year BSc (Hons) and BSc Biomedical Sciences student at the University of Edinburgh and Zhejiang University, respectively. He is pursuing both degrees at the joint Zhejiang University-University of Edinburgh Institute.
-Nelson has built several open-source computational tools including cytounet, urlfix, and manymodelr. A full list of these tools can be found at https://nelson-gon.github.io/projects and source code browsed at https://github.com/Nelson-Gon/.
-Over the years, Nelson has also been an active member of the open source community, frequently contributing to the R tag on StackOverflow.</description>
+      <description>Nelson Gonzabato (NelsonGon) holds a BSc (Hons) Integrative Biomedical Sciences from the University of Edinburgh and BSc Biomedical Sciences from Zhejiang University. His research interests lie in combining computational methods with basic biomedical techniques to better understand neural processes and design effective therapies for dysregulated neural processing.
+Nelson has built several open-source computational tools including cytounet, urlfix, and manymodelr. A full list of these tools can be found at https://nelson-gon.github.io/projects and source code browsed at https://github.</description>
     </item>
     
   </channel>

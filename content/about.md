@@ -1,10 +1,9 @@
 ---
-date: "06/03/2021"
+date: "04/07/2021"
 title: About the Author
 ---
 
-Nelson Gonzabato (NelsonGon) is currently a final year BSc (Hons) and BSc Biomedical Sciences student at the University of Edinburgh and Zhejiang University,
-respectively. He is pursuing both degrees at the joint Zhejiang University-University of Edinburgh Institute. 
+Nelson Gonzabato (NelsonGon) holds a BSc (Hons) Integrative Biomedical Sciences from the University of Edinburgh and BSc Biomedical Sciences from Zhejiang University. His research interests lie in combining computational methods with basic biomedical techniques to better understand neural processes and design effective therapies for dysregulated neural processing.    
 
 
 
