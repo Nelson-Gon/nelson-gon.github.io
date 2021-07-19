@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building User Interfaces with R&#39;s Shiny</title>
+      <link>/19/07/2021/shiny-lessons/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/19/07/2021/shiny-lessons/</guid>
+      <description>Introduction
+Admittedly, it has been a long time since my last blog entry. Between that time, I have been working on a number of projects that I maintain over at my GitHub and more importantly, I was working on my final year thesis and finalizing my undergraduate studies.
+I have also been reading a few programming books, more recently deciding to delve into shiny app development after a brief tour of Mastering Shiny.</description>
+    </item>
+    
     <item>
       <title>Open Source Software: The Case for Student Involvement</title>
       <link>/06/10/2020/open-source-student-involvement/</link>

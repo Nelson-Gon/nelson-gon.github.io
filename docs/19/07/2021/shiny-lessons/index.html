@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Building User Interfaces with R&#39;s Shiny &middot; Nelson Gonzabato</title>
+        <meta name="description" content="Shiny Lessons from a shiny R project.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.79.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+        <link rel="manifest" href="../../../../site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <link rel="stylesheet" disabled id="dark-mode-theme" href="../../../../dist/darkmode.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <head>
+  
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+</head>
+        
+        
+        
+    </head>
+    <body>
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-179726246-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Home" title="Home" href="../../../../" rel="me">
+                             <i class="fa fa-home"></i>  
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/bionelsongon" rel="me">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                  
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                         
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        
+                              
+                       
+                            
+       <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+      <a class="button-square button-social hint--top" data-hint="kaggle" title="Kaggle" href="https://Kaggle.com/gonnel" rel="me">
+<i class="fab fa-kaggle"></i>
+                   
+                    
+                      
+                        
+                        
+                            <a  class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:gonzabato@hotmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                        
+                         
+                         
+                       
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../../about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../../projects/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Building User Interfaces with R&#39;s Shiny</h1>
+    
+        <p class="post-description" itemprop="description">Shiny Lessons from a shiny R project.</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2021-07-19" itemprop="datePublished">Mon, Jul 19, 2021</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Nelson Gonzabato</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p><strong>Introduction</strong></p>
+<p>Admittedly, it has been a long time since my last blog entry. Between that time, I have been working on a number of <a href="https://nelson-gon.github.io/projects">projects</a> that I maintain over at my <a href="https://github.com/Nelson-Gon">GitHub</a> and more importantly, I was working on my final year thesis and finalizing my undergraduate studies.</p>
+<p>I have also been reading a few programming books, more recently deciding to delve into shiny app development after a brief tour of <a href="https://mastering-shiny.org">Mastering Shiny</a>.</p>
+<p><strong>Introducing shinymde</strong></p>
+<p>For those who may have come across my work, you may be aware of an R package that I developed to ease the process of missing data exploration. This package, <a href="https://nelson-gon.github.io/mde">mde</a> may be useful to those who are more into writing code and find it faster than using graphical user interfaces (GUIs).</p>
+<p>That said, GUIs can have a number of advantages including but not limited to increasing access to the R programming language to those who may feel intimidated with command-line like interfaces or who may not have decided to go full programmer (yet). GUIs may also be more visually appealing especially if enough time and effort is taken into their beautification. Also, for some users, it may be easier and faster to simply click on an interface than simply writing a bunch of commands.</p>
+<p>The cons and pros for GUIs may require there own independent post and are most likely biased by personal choice. However, I do believe in providing users with choice and for this reason have decided to develop <a href="https://github.com/Nelson-Gon/shinymde">shinymde</a> that under the hood calls <code>mde</code> functions with the added advantage of being simpler to use for anyone who may want to explore missingness in their dataset.</p>
+<p><strong>What&rsquo;s so good about shiny?</strong></p>
+<p>If one were given shiny code to review, their first thought would probably be about how overwhelmingly complex such code might appear. Even for the more experienced R programmer, looking at <code>shiny</code> code may feel extremely overwhelming unless one has prior <code>shiny</code> experience.</p>
+<p>Like most aspects of programming, as one goes from a simple &ldquo;Hello World&rdquo; program to more complex programs, one is more likely to enjoy the hurdles and challenges as they show up. This in my opinion is even truer for <code>shiny</code> given that one can immediately get visual feedback which in turn can lead to excitement and courage to try even more complex features.</p>
+<p><strong>What is there to learn?</strong></p>
+<p>There is still much more for me to learn about <code>shiny</code> but so far here are a few things I have loved about developing <code>shinymde</code>:</p>
+<p><strong>Meet conditionalPanel</strong></p>
+<ul>
+<li>It is surprisingly easier to do complex JavaScript/Web development tasks thanks to the plethora of shiny extensions. One feature that I particularly struggled with was hiding a given part of the UI, conditionally. If you run the <code>shinymde</code> <a href="https://github.com/Nelson-Gon/shinmyde">app</a>, you might notice that the &ldquo;Input Data&rdquo; tab can conditionally ask for a file path or an inbuilt dataset (at the time of writing). This relatively simple task can be achieved by either using <code>conditionalPanel</code> from <code>shiny</code> or <code>hide</code>, <code>toggle</code> or <code>hidden</code> from <code>shinyjs</code>.</li>
+</ul>
+<p>Initially (even after reading the documentation), the <code>conditionalPanel</code> syntax was not one that I could readily wrap my head around. If you are familiar with <code>python</code>, you may be familiar with the &ldquo;dot syntax&rdquo; of accessing elements/items i.e. <code>[list].item</code> or accessing module methods for instance. This is the kind of syntax that <code>conditionalPanel</code> uses to conditionally show a panel such that</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># some conditional ui part</span>
+conditionalPanel<span style="color:#f92672">(</span>condition<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;input.input_element==&#39;target_condition&#39;&#34;</span>, selectInput<span style="color:#f92672">(</span>...<span style="color:#f92672">))</span>
+</code></pre></div><p>Another source of confusion, at least for me, was that in accessing input elements, one uses <code>$</code> as in <code>R</code> syntax. Finally, I did expect to have the <code>selectInput</code> (or whatever function) show up before the condition argument.</p>
+<p>After getting my head around this syntax, it was exciting to see that the panel did conditionally show up as intended.</p>
+<p><strong>shinyjs, a powerful shiny extension</strong></p>
+<ul>
+<li>In my search for an easy way to conditionally hide elements I came across <code>shinyjs</code>&rsquo;s <code>hide</code>, <code>hidden</code>, and <code>toggle</code> which respectively hide, initially hide, and turn off/on selected parts of the user interface based on shiny tags. These are fairly straightforward and for the most part work as one may expect without much hassle.</li>
+</ul>
+<p><strong>&hellip;Dynamically rendered user interfaces and reactivity</strong></p>
+<ul>
+<li>Another component of <code>shiny</code> programming is that one can dynamically render a user interface for example using <code>renderUI</code>, <code>renderPlot</code>, and so on. Another reactive function, <code>reactive</code> is also handy especially if you would like to use a given input in multiple places as the case may be for input datasets.</li>
+</ul>
+<p>At the time of writing, I found issues with <code>shinyjs::hide</code> and <code>shinyjs::show</code> or <code>toggle</code> not working when wrapped under certain <code>reactive</code> pieces of code. Regardless, reactivity is an interesting <code>shiny</code> feature that I have so far found great to work with.</p>
+<p><strong>selectInput and selectsize: what if you need a null init?</strong></p>
+<ul>
+<li>The more one builds, the more features of a programming language or framework one meets. To allow users to select input, one can use <code>selectInput</code> or <code>selectsize</code> and a list of choices. For the most part, this may be sufficient until one needs to set the initial value in <code>selected</code> to <code>NULL</code>.</li>
+</ul>
+<p>For <code>mde</code>, I did write some code that would only work if only one but not two arguments were set to <code>NULL</code>. It was therefore necessary that in <code>shinymde</code>, I had a way of setting one of these to <code>NULL</code> initially. At the time of this post, it is unfortunately not sufficient to set <code>selected</code> to <code>NULL</code>. Instead, one should set <code>selected</code> to <code>FALSE</code>, <code>selectsize</code> to <code>FALSE</code> and providing a numeric to <code>list</code> in my case just 4 since I had only four options. This is a neat workaround although visually <code>selectsize</code> looks more appealing.</p>
+<p><strong>Themes, themes, and more themes</strong></p>
+<ul>
+<li>To make a standout dashboard, it may at some point be necessary to go beyond the standard <code>shiny</code> layout and get more creative either by writing custom bootstrap, javascript, or editing css tags. An even easier and quicker way to create themes is to use <code>bslib</code> which provides a way to theme a shiny app by providing a bootswatch theme to the theme argument in the <code>ui</code> part of the code.</li>
+</ul>
+<p><strong>observeEvent, observe,req, and observers</strong></p>
+<p>I have not looked a lot into the <code>observe</code> family but these, like their name suggests, provide a simple way to achieve a certain task only after some other tasks happens. In essence, they are like a switch that is only on after some other switch is on. They also seem related to <code>req</code> which in my brief usage seems to halt execution until something happens i.e. tasks are suspended until a users performs some action.</p>
+<p><strong>Conclusion</strong></p>
+<p>Shiny apps provide an easy way to increase access to programming and general data analysis. They also are a good way to share data in real time (for example through vaccination rate trackers) if published. I have briefly outlined some lessons and observations from my experience developing <a href="https://github.com/Nelson-Gon/shinymde">shinymde</a> that should hopefully give you something to think about or inspire you to build your own shiny app if you haven&rsquo;t already.</p>
+<p>As always, I am excited to receive feedback on these posts or projects.</p>
+<p>Thank you and keep building,</p>
+<p>Nelson</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="../../../../tags/user-interface/">user-interface</a>, 
+            
+                <a href="../../../../tags/github/">github</a>, 
+            
+                <a href="../../../../tags/r/">r</a>, 
+            
+                <a href="../../../../tags/git/">git</a>, 
+            
+                <a href="../../../../tags/programming/">programming</a>, 
+            
+                <a href="../../../../tags/open-source/">open-source</a>, 
+            
+                <a href="../../../../tags/missing-data/">missing-data</a>, 
+            
+                <a href="../../../../tags/dashboards/">dashboards</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Building%20User%20Interfaces%20with%20R%27s%20Shiny&url=%2f19%2f07%2f2021%2fshiny-lessons%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  <i class="fab fa-twitter"></i>
+   <span class="hidden">Twitter</span> 
+  </a>
+        
+
+        
+       
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f19%2f07%2f2021%2fshiny-lessons%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fab fa-facebook"></i>
+                
+                </a>
+        
+
+ 
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Building%20User%20Interfaces%20with%20R%27s%20Shiny&url=%2f19%2f07%2f2021%2fshiny-lessons%2f&summary=Shiny%20Lessons%20from%20a%20shiny%20R%20project."
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+    <footer class="footer">
+ 
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Biologically Plausible Programming" href="../../../../">Biologically Plausible Programming</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2021 Nelson Gonzabato / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
+    </body>
+</html>
+
