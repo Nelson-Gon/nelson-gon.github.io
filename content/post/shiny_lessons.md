@@ -34,7 +34,7 @@ There is still much more for me to learn about `shiny` but so far here are a few
 
 **Meet conditionalPanel**
 
-* It is surprisingly easier to do complex JavaScript/Web development tasks thanks to the plethora of shiny extensions. One feature that I particularly struggled with was hiding a given part of the UI, conditionally. If you run the `shinymde` [app](https://github.com/Nelson-Gon/shinmyde), you might notice that the "Input Data" tab can conditionally ask for a file path or an inbuilt dataset (at the time of writing). This relatively simple task can be achieved by either using `conditionalPanel` from `shiny` or `hide`, `toggle` or `hidden` from `shinyjs`. 
+* It is surprisingly easier to do complex JavaScript/Web development tasks thanks to the plethora of shiny extensions. One feature that I particularly struggled with was hiding a given part of the UI, conditionally. If you run the `shinymde` [app](https://github.com/Nelson-Gon/shinymde), you might notice that the "Input Data" tab can conditionally ask for a file path or an inbuilt dataset (at the time of writing). This relatively simple task can be achieved by either using `conditionalPanel` from `shiny` or `hide`, `toggle` or `hidden` from `shinyjs`. 
 
 Initially (even after reading the documentation), the `conditionalPanel` syntax was not one that I could readily wrap my head around. If you are familiar with `python`, you may be familiar with the "dot syntax" of accessing elements/items i.e. `[list].item` or accessing module methods for instance. This is the kind of syntax that `conditionalPanel` uses to conditionally show a panel such that 
 
