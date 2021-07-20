@@ -20,7 +20,7 @@ For those who may have come across my work, you may be aware of an R package tha
 
 That said, GUIs can have a number of advantages including but not limited to increasing access to the R programming language to those who may feel intimidated with command-line like interfaces or who may not have decided to go full programmer (yet). GUIs may also be more visually appealing especially if enough time and effort is taken into their beautification. Also, for some users, it may be easier and faster to simply click on an interface than simply writing a bunch of commands. 
 
-The cons and pros for GUIs may require there own independent post and are most likely biased by personal choice. However, I do believe in providing users with choice and for this reason have decided to develop [shinymde](https://github.com/Nelson-Gon/shinymde) that under the hood calls `mde` functions with the added advantage of being simpler to use for anyone who may want to explore missingness in their dataset. 
+The cons and pros for GUIs may require their own independent post and are most likely biased by personal choice. However, I do believe in providing users with choice and for this reason have decided to develop [shinymde](https://github.com/Nelson-Gon/shinymde) that under the hood calls `mde` functions with the added advantage of being simpler to use for anyone who may want to explore missingness in their dataset. 
 
 **What's so good about shiny?**
 
