@@ -1,5 +1,5 @@
 ---
-date: "2021-05-21"
+date: "2021-09-06"
 title: "Projects"
 ---
 
@@ -53,6 +53,12 @@ A data scientist should ideally be able to pull data from several sources. One w
 * [mde](https://nelson-gon.github.io/mde)
 
 This is admittedly his favorite package of all the packages he has worked on. The adage that machine learning is 90%[citation needed] data cleaning is true. For this reason, `mde` aims to reduce the time spent in performing missing data exploration and analysis. It is aimed at missing data exploration, nothing more nothing less. It is hoped that this package will help researchers, students, and anyone interested in data analysis to minimise the time spent in data cleaning. 
+
+
+* [shinymde](https://github.com/Nelson-Gon/shinymde)
+
+
+For some users, using a graphical user interface (GUI) is a more convenient way to explore their data. The goal of `shinymde` is to provide a `shiny` GUI to `mde`, the missing data explorer. This allows users to explore missingness without writing any line of code! This project can be tested at https://nelson-gon.shinyapps.io/shinymde. 
 
 
 
