@@ -14,9 +14,10 @@
       <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/19/07/2021/shiny-lessons/</guid>
-      <description>Introduction
-Admittedly, it has been a long time since my last blog entry. Between that time, I have been working on a number of projects that I maintain over at my GitHub and more importantly, I was working on my final year thesis and finalizing my undergraduate studies.
-I have also been reading a few programming books, more recently deciding to delve into shiny app development after a brief tour of Mastering Shiny.</description>
+      <description>Update 22nd September 2021
+The dashboard/app referred to in this blog post can now be tested and used in a browser by visiting https://nelson-gon.shinyapps.io/shinymde.
+Introduction
+Admittedly, it has been a long time since my last blog entry. Between that time, I have been working on a number of projects that I maintain over at my GitHub and more importantly, I was working on my final year thesis and finalizing my undergraduate studies.</description>
     </item>
     
   </channel>

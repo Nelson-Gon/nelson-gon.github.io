@@ -7,6 +7,10 @@ description = "Shiny Lessons from a shiny R project."
 tags = ["user-interface","github", "r", "git", "programming", "open-source", "missing-data", "dashboards"]
 +++
 
+**Update 22nd September 2021**
+
+The dashboard/app referred to in this blog post can now be tested and used in a browser by visiting https://nelson-gon.shinyapps.io/shinymde. 
+
 **Introduction**
 
 
