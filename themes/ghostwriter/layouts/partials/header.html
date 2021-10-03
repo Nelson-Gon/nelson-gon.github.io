@@ -30,12 +30,10 @@
         {{ partial "extra-in-head.html" . }}
         {{ partial "exponea.html" . }}
         {{ partial "fathom.html" . }}
-        {{ partial "google_analytics.html" . }}
         
     </head>
     <body>
-       <!-- This references an old version of google analytics-->
-        <!---{{ template "_internal/google_analytics.html" . }}--->
+        {{ template "_internal/google_analytics.html" . }}
 
         <div id="wrapper">
             <header class="site-header">
