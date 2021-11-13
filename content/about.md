@@ -15,7 +15,11 @@ Over the years, Nelson has also been an active member of the open source communi
 frequently contributing to the `R` tag on StackOverflow. Some of his answers can be found at https://stackoverflow.com/users/10323798/nelsongon.  
 
 
-[![NelsonGon on StackOverflow](https://stackoverflow.com/users/flair/10323798.png)](https://stackoverflow.com/users/10323798/nelsongon?tab=profile) 
+<a href="https://stackoverflow.com/users/10323798/nelsongon">
+
+<img height="137px" src="https://stackoverflow-card.vercel.app/?userID=10323798&theme=dracula&showBorder=false" />
+</a>
+
 
  
 
