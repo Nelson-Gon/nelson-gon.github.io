@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shiny on Biologically Plausible Programming</title>
+    <link>/tags/shiny/</link>
+    <description>Recent content in shiny on Biologically Plausible Programming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shiny Modals, Performance, Reactivity, and Observers.</title>
+      <link>/12/12/2021/shiny-reactivity/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/12/12/2021/shiny-reactivity/</guid>
+      <description>Since my last post almost five months ago, a lot has changed both in my personal and professional life. On a personal note, I finally moved to the beautiful and magical city of Prague, walked the famous Charles Bridge, enjoyed the clock show at the lovely Old Town Square, tried Czech dumplings, and enjoyed Kofola. Professionally, I have worked more with R&amp;rsquo;s shiny system as part of my job, learning a lot in the process.</description>
+    </item>
+    
+    <item>
+      <title>Building User Interfaces with R&#39;s Shiny</title>
+      <link>/19/07/2021/shiny-lessons/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/19/07/2021/shiny-lessons/</guid>
+      <description>Update 22nd September 2021
+The dashboard/app referred to in this blog post can now be tested and used in a browser by visiting https://nelson-gon.shinyapps.io/shinymde.
+Introduction
+Admittedly, it has been a long time since my last blog entry. Between that time, I have been working on a number of projects that I maintain over at my GitHub and more importantly, I was working on my final year thesis and finalizing my undergraduate studies.</description>
+    </item>
+    
+  </channel>
+</rss>
