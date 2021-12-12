@@ -4,7 +4,7 @@ slug = "shiny-lessons"
 title = "Building User Interfaces with R's Shiny"
 author = "Nelson Gonzabato"
 description = "Shiny Lessons from a shiny R project."
-tags = ["user-interface","github", "r", "git", "programming", "open-source", "missing-data", "dashboards"]
+tags = ["user-interface","github", "r", "git", "programming", "open-source", "missing-data", "dashboards", "shiny"]
 +++
 
 **Update 22nd September 2021**

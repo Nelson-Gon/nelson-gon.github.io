@@ -3,67 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dashboards/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/github/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/missing-data/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/open-source/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/12/12/2021/shiny-reactivity/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/user-interface/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/projects/</loc>
     <lastmod>2021-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/19/07/2021/shiny-lessons/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/dashboards/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/github/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/missing-data/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/open-source/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/programming/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/user-interface/</loc>
     <lastmod>2021-07-19T00:00:00+00:00</lastmod>
   </url>
   
