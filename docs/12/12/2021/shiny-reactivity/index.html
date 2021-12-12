@@ -159,7 +159,7 @@ if (!doNotTrack) {
     
 
     <p>Since my last <a href="https://nelson-gon.github.io/19/07/2021/shiny-lessons/">post</a> almost five months ago, a lot has changed both in my personal and professional life. On a personal note, I finally moved to the beautiful and magical city of Prague, walked the famous Charles Bridge, enjoyed the clock show at the lovely Old Town Square, tried Czech dumplings, and enjoyed Kofola. Professionally, I have worked more with R&rsquo;s shiny system as part of my job, learning a lot in the process.</p>
-<p>This post aims to summarize a few tips and tricks that have upped my shiny game. In a slight change of style, I will include a sample application to demonstrate the points raised.</p>
+<p>This post aims to summarize a few tips and tricks that have upped my shiny game. In a slight change of style, I will include a sample application to demonstrate the points raised. This app can be browsed at <a href="https://nelson-gon.shinyapps.io/sampleapp/">https://nelson-gon.shinyapps.io/sampleapp/</a></p>
 <p><strong>Require, require, require</strong></p>
 <p>Perhaps one of the most underrated features/functions of <code>shiny</code> is <code>req</code>. Let us say you wanted to build an app that takes a user&rsquo;s CSV file, prints it on read and filters only numeric columns displaying these on the next panel. The app&rsquo;s UI could look something like:</p>
 <pre><code>ui &lt;- navbarPage(
@@ -365,7 +365,7 @@ server &lt;- function(session, input, output){
 shinyApp(ui, server)
 
 
-</code></pre><p>You can also view the code at <a href="https://github.com/Nelson-Gon/nelson-gon.github.io">https://github.com/Nelson-Gon/nelson-gon.github.io</a>.</p>
+</code></pre><p>You can also view the code at <a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/78ce2a8a09e2046d85c4e5859d9111d6b2de80eb/code/elegant_shiny.R">https://github.com/Nelson-Gon/nelson-gon.github.io/blob/78ce2a8a09e2046d85c4e5859d9111d6b2de80eb/code/elegant_shiny.R</a> and try out the app at <a href="https://nelson-gon.shinyapps.io/sampleapp/">https://nelson-gon.shinyapps.io/sampleapp/</a>.</p>
 <p>As a further step or challenge/way to review for yourself, you could try to do the following:</p>
 <ul>
 <li>

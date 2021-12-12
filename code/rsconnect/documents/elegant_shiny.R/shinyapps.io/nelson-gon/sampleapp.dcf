@@ -1,0 +1,14 @@
+name: sampleapp
+title: sampleapp
+username:
+account: nelson-gon
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5313371
+bundleId: 5362403
+url: https://nelson-gon.shinyapps.io/sampleapp/
+when: 1639312506.37059
+lastSyncTime: 1639312506.37059
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: elegant_torch.py

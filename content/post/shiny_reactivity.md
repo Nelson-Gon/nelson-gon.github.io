@@ -9,7 +9,7 @@ tags = ["user-interface","github", "r", "git", "programming", "open-source", "mi
 
 Since my last [post](https://nelson-gon.github.io/19/07/2021/shiny-lessons/) almost five months ago, a lot has changed both in my personal and professional life. On a personal note, I finally moved to the beautiful and magical city of Prague, walked the famous Charles Bridge, enjoyed the clock show at the lovely Old Town Square, tried Czech dumplings, and enjoyed Kofola. Professionally, I have worked more with R's shiny system as part of my job, learning a lot in the process. 
 
-This post aims to summarize a few tips and tricks that have upped my shiny game. In a slight change of style, I will include a sample application to demonstrate the points raised. 
+This post aims to summarize a few tips and tricks that have upped my shiny game. In a slight change of style, I will include a sample application to demonstrate the points raised. This app can be browsed at https://nelson-gon.shinyapps.io/sampleapp/ 
 
 **Require, require, require**
 
@@ -277,7 +277,7 @@ shinyApp(ui, server)
 
 ```
 
-You can also view the code at https://github.com/Nelson-Gon/nelson-gon.github.io. 
+You can also view the code at https://github.com/Nelson-Gon/nelson-gon.github.io/blob/78ce2a8a09e2046d85c4e5859d9111d6b2de80eb/code/elegant_shiny.R and try out the app at https://nelson-gon.shinyapps.io/sampleapp/.  
 
 As a further step or challenge/way to review for yourself, you could try to do the following:
 
