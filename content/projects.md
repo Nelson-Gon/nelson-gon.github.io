@@ -61,7 +61,7 @@ This is admittedly his favorite package of all the packages he has worked on. Th
 For some users, using a graphical user interface (GUI) is a more convenient way to explore their data. The goal of `shinymde` is to provide a `shiny` GUI to `mde`, the missing data explorer. This allows users to explore missingness without writing any line of code! This project can be tested at https://nelson-gon.shinyapps.io/shinymde. 
 
 
-* [shinymisc]{https://github.com/Nelson-Gon/shinymisc}
+* [shinymisc](https://github.com/Nelson-Gon/shinymisc)
 
 `shinymisc` aims to make it possible for users less proficient at the `shiny` framework to understand key `shiny` concepts in an interactive environment. This app is hosted at https://nelson-gon.shinyapps.io/shinymisc. 
 
