@@ -29,7 +29,7 @@ Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters
 
 ## Set your configuration publish folder to `_site`
 
-The default is for Jekyll to publish to `_site` and for Hugo to publish to `public`. If, like me, you have [`_site` mapped to a git submodule on the `gh-pages` branch](http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html), you'll want to do one of two alternatives:
+The default is for Jekyll to publish to `_site` and for Hugo to publish to `public`. If, like me, you have [`_site` mapped to a git submodule on the `gh-pages` branch](https://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html), you'll want to do one of two alternatives:
 
 1. Change your submodule to point to map `gh-pages` to public instead of `_site` (recommended).
 
@@ -47,9 +47,9 @@ The default is for Jekyll to publish to `_site` and for Hugo to publish to `publ
 
 ## Convert Jekyll templates to Hugo templates
 
-That's the bulk of the work right here. The documentation is your friend. You should refer to [Jekyll's template documentation](http://jekyllrb.com/docs/templates/) if you need to refresh your memory on how you built your blog and [Hugo's template](/layout/templates/) to learn Hugo's way.
+That's the bulk of the work right here. The documentation is your friend. You should refer to [Jekyll's template documentation](https://jekyllrb.com/docs/templates/) if you need to refresh your memory on how you built your blog and [Hugo's template](/layout/templates/) to learn Hugo's way.
 
-As a single reference data point, converting my templates for [heyitsalex.net](http://heyitsalex.net/) took me no more than a few hours.
+As a single reference data point, converting my templates for [heyitsalex.net](https://heyitsalex.net/) took me no more than a few hours.
 
 ## Convert Jekyll plugins to Hugo shortcodes
 
@@ -160,4 +160,4 @@ You'll want to remove the Jekyll configuration at this point. If you have anythi
 
 ## A practical example in a diff
 
-[Hey, it's Alex](http://heyitsalex.net/) was migrated in less than a _father-with-kids day_ from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this [diff](https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610).
+[Hey, it's Alex](https://heyitsalex.net/) was migrated in less than a _father-with-kids day_ from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this [diff](https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610).
