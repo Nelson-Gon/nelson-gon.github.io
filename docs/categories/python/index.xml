@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sequel to Pandas</title>
+      <link>/05/03/2022/sql-to-python-pandas/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/05/03/2022/sql-to-python-pandas/</guid>
+      <description>One of the most important parts of the data analysis pipeline is the ability to collate data obtained from different sources. While the CSV file format remains the most popular form of data input, a lot of times production level data analysis requires that one fetch data from an internet source which in the simplest form may involve downloading a CSV file from a remote source. Often, however, the data fetch process requires interaction with a database which therefore necessitates that one have an understanding of relational databases and how to interact with them.</description>
+    </item>
+    
     <item>
       <title>Growing big by building small.</title>
       <link>/17/03/2021/small-projects-not-so-small-lessons/</link>
