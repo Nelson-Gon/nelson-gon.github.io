@@ -8,7 +8,7 @@
         <meta name="description" content="Hex sticker creation with r">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.79.1" />
+        <meta name="generator" content="Hugo 0.98.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -43,16 +43,14 @@
     </head>
     <body>
         
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3BZWLHV7B"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-179726246-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-B3BZWLHV7B', { 'anonymize_ip': false });
 }
 </script>
 
@@ -163,7 +161,7 @@ if (!doNotTrack) {
 <p>To achieve this, I draw up a quick idea of the kind of information I would like to include in mde’s sticker and narrowed down to a simple lens and the word <strong>d?ta</strong>. To make things more exciting, I will not state what these mean and leave that to the reader as a for fun exercise.</p>
 <p><strong>Making the sticker</strong></p>
 <p>To make this sticker, I used the packages <code>magick</code>, <code>dplyr</code>(just the pipe, you can use <code>magrittr</code> instead), and <code>hexSticker</code>. Here is the code to produce this sticker:</p>
-<pre><code>
+<pre tabindex="0"><code>
 Loading required libraries
 
 library(magick)
@@ -172,38 +170,35 @@ library(magick)
 ## Disabled features: fontconfig, x11
 library(dplyr)
 ## 
-## Attaching package: 'dplyr'
-## The following objects are masked from 'package:stats':
+## Attaching package: &#39;dplyr&#39;
+## The following objects are masked from &#39;package:stats&#39;:
 ## 
 ##     filter, lag
-## The following objects are masked from 'package:base':
+## The following objects are masked from &#39;package:base&#39;:
 ## 
 ##     intersect, setdiff, setequal, union
 library(hexSticker)
-
 </code></pre><p>I used this <a href="https://st.depositphotos.com/1041273/3800/v/450/depositphotos_38005243-stock-illustration-vector-magnifying-glass.jpg">image</a> for the lens.</p>
 <p><strong>Basic Image Processing</strong></p>
-<pre><code>
-img &lt;- image_read(&quot;images/glass.jpg&quot;)
+<pre tabindex="0"><code>
+img &lt;- image_read(&#34;images/glass.jpg&#34;)
 img %&gt;% 
-  image_convert(&quot;png&quot;) %&gt;% 
-  image_resize(&quot;1080 x 200&quot;)%&gt;% 
-  image_fill(color=&quot;#062047&quot;, point=&quot;+45&quot;) %&gt;% 
-  image_annotate(&quot;d?ta&quot;, size=38, location = &quot;+47+58&quot;, color=&quot;black&quot;) -&gt; res
+  image_convert(&#34;png&#34;) %&gt;% 
+  image_resize(&#34;1080 x 200&#34;)%&gt;% 
+  image_fill(color=&#34;#062047&#34;, point=&#34;+45&#34;) %&gt;% 
+  image_annotate(&#34;d?ta&#34;, size=38, location = &#34;+47+58&#34;, color=&#34;black&#34;) -&gt; res
 
 res
-
 </code></pre><p><strong>Actual Sticker Creation</strong></p>
-<pre><code>
+<pre tabindex="0"><code>
 # wrap in plot to preview ie plot(sticker(...))
-final_res&lt;-sticker(res, package=&quot;mde&quot;, p_size=30,
+final_res&lt;-sticker(res, package=&#34;mde&#34;, p_size=30,
              p_y = 1.5,
              s_x=1, s_y=0.8, s_width=1.1,
              s_height = 14,
-        filename=&quot;mde_icon_2.png&quot;,h_fill=&quot;#062047&quot;,h_color = &quot;#062047&quot;)
+        filename=&#34;mde_icon_2.png&#34;,h_fill=&#34;#062047&#34;,h_color = &#34;#062047&#34;)
 
 plot(final_res)
-
 </code></pre><p><img src="https://github.com/Nelson-Gon/mde/raw/master/man/figures/mde_icon_2.png?raw=true" alt="logo"></p>
 <p>That’s it. A very basic and minimal logo. For more info please see:</p>
 <p><strong>References</strong></p>
@@ -264,7 +259,7 @@ plot(final_res)
     <div class="comments">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

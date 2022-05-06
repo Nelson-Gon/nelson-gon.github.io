@@ -8,7 +8,7 @@
         <meta name="description" content="On the elegance of PyTorch&#39;s Dataset Class">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.79.1" />
+        <meta name="generator" content="Hugo 0.98.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -43,16 +43,14 @@
     </head>
     <body>
         
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3BZWLHV7B"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-179726246-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-B3BZWLHV7B', { 'anonymize_ip': false });
 }
 </script>
 
@@ -177,7 +175,7 @@ of the <code>torch</code> <code>Dataset</code> class.</p>
 method, I thought it would be great to write a word or two about it.</p>
 <p>In this blog post, we shall be using a simple two image dataset organised as
 follows:</p>
-<pre><code>* sample
+<pre tabindex="0"><code>* sample
   * train
     - images
     - masks
@@ -187,20 +185,18 @@ follows:</p>
 <p>In summary, we read a colored image,convert it to grayscale, and finally threshold with the Li method. For convenience, I did not perform Gaussian denoising. I have also recently read that Gaussian pre-processing may increase the likelihood of <a href="https://www.nature.com/articles/s41524-020-00363-x#Sec1">overfitting</a> in
 convolutional neural networks.</p>
 <p>The full process in code:</p>
-<pre><code>import cv2
+<pre tabindex="0"><code>import cv2
 from skimage.filters import threshold_li
 from skimage.io import imread 
 import numpy as np
 
-img = imread(&quot;https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/images/dog-test.png?raw=true&quot;)
+img = imread(&#34;https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/images/dog-test.png?raw=true&#34;)
 gray_img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 li_thresh = threshold_li(gray_img, initial_guess=np.quantile(gray_img,0.95))
 thresholded_image = gray_img &gt; li_thresh
-thresholded_numpy = np.array(thresholded_image).astype(&quot;uint8&quot;)
-plt.imshow(thresholded_numpy, cmap=&quot;gray&quot;)
-plt.axis(&quot;off&quot;)
-
-
+thresholded_numpy = np.array(thresholded_image).astype(&#34;uint8&#34;)
+plt.imshow(thresholded_numpy, cmap=&#34;gray&#34;)
+plt.axis(&#34;off&#34;)
 </code></pre><p>The result:</p>
 <p><img src="https://raw.githubusercontent.com/Nelson-Gon/nelson-gon.github.io/master/images/dog_mask.png" alt="Li-Result"></p>
 <p>I will leave it at that for Li thresholding and leave further exploration to 
@@ -215,7 +211,7 @@ I love the model building process but think <code>torch</code> provides an easie
 processing implementation to work with.</p>
 <p>To write a simple custom data loader, we will need to import the following 
 modules/packages:</p>
-<pre><code>from torch.utils.data import Dataset
+<pre tabindex="0"><code>from torch.utils.data import Dataset
 import glob
 import os
 import torch
@@ -223,7 +219,6 @@ from skimage.io import imread
 import torchvision.transforms as tf
 from PIL import Image
 import matplotlib.pyplot as plt
-
 </code></pre><p>For purposes of this blog post, I wanted the <code>CustomDataLoader</code> to do only two
 things:</p>
 <ul>
@@ -239,18 +234,18 @@ take an image directory argument, a mask directory argument, an image suffix,
 and <code>target_size</code> specifying the target size for our resizing. We also add some
 sanity checks to ensure that we get exactly what we expect. The class then
 becomes:</p>
-<pre><code>
+<pre tabindex="0"><code>
 
 class CustomDataLoader(Dataset):
-    def __init__(self, train_images, train_labels, image_suffix=&quot;jpg&quot;, target_size=(30, 30)):
-        &quot;&quot;&quot;
+    def __init__(self, train_images, train_labels, image_suffix=&#34;jpg&#34;, target_size=(30, 30)):
+        &#34;&#34;&#34;
 
         :param train_images: Directory containing train_images
         :param train_labels: Directory containing train_labels
         :param image_suffix: Image suffix, for convenience
         :param target_size
 
-        &quot;&quot;&quot;
+        &#34;&#34;&#34;
 
         self.train_images = train_images
         self.train_labels = train_labels
@@ -263,37 +258,35 @@ class CustomDataLoader(Dataset):
         # We also ensure that we get the correct image suffix, jpg and png here
 
         if not (all(os.path.isdir(directory) for directory in [train_images, train_labels])):
-            raise NotADirectoryError(&quot;Please ensure that both train_images and train_labels are valid directories.&quot;)
+            raise NotADirectoryError(&#34;Please ensure that both train_images and train_labels are valid directories.&#34;)
 
-        if not self.image_suffix in [&quot;png&quot;, &quot;jpg&quot;,&quot;jpeg&quot;]:
-            raise ValueError(&quot;Only supporting PNG and JPG files for now.&quot;)
+        if not self.image_suffix in [&#34;png&#34;, &#34;jpg&#34;,&#34;jpeg&#34;]:
+            raise ValueError(&#34;Only supporting PNG and JPG files for now.&#34;)
 
         # glob for our file names
         # sorted because I prefer 1, 10, 11, ...
         # ideally should be able to glob both png and jpg, for simplicity glob only one type
-        self.image_list = sorted(glob.glob(self.train_images + &quot;/*&quot; + self.image_suffix))
-        self.labels_list = sorted(glob.glob(self.train_labels + &quot;/*&quot; + self.image_suffix))
+        self.image_list = sorted(glob.glob(self.train_images + &#34;/*&#34; + self.image_suffix))
+        self.labels_list = sorted(glob.glob(self.train_labels + &#34;/*&#34; + self.image_suffix))
 
 
         if len(self.image_list) != len(self.labels_list):
-            raise ValueError(&quot;Images list and labels list should be the same length.&quot;)
-
+            raise ValueError(&#34;Images list and labels list should be the same length.&#34;)
 </code></pre><p>Next, by convention, and also for sanity checking, we define a <code>__len__</code> method
 that will return the length of all images in the directory ie how many images
 we will work with.</p>
-<pre><code>    def __len__(self):
-        &quot;&quot;&quot;
+<pre tabindex="0"><code>    def __len__(self):
+        &#34;&#34;&#34;
 
         :return: length of the dataset
 
-        &quot;&quot;&quot;
+        &#34;&#34;&#34;
         return len(self.image_list)
-
 </code></pre><p>As stated above, we also define a <code>transform</code> method that will allow us to 
 transform images. Here we will simply transform them by changing their size to
 the target size defined in <code>__init__</code> and also converting to <code>Image</code> since this
 is what <code>torch</code> is happy to work with.</p>
-<pre><code> def transform(self, image):
+<pre tabindex="0"><code> def transform(self, image):
         # Basic, convert to PIL since torch tensors only work with PIL
         # Basic resizing
         to_pil = Image.fromarray(image)
@@ -301,34 +294,32 @@ is what <code>torch</code> is happy to work with.</p>
         resizer = tf.Resize(self.target_size)
         image = resizer(to_pil)
         return image
-
 </code></pre><p><strong>Oh the elegance of <strong>get_item</strong>!</strong></p>
 <p>Finally, here comes what I think is the most elegant part of the <code>Dataset</code> class.</p>
 <p>We can define a &ldquo;getter&rdquo; method <code>__get__item</code> that will allow us to work with 
 one image at a time. I think it could be thought of as a <code>generator</code> that calls
 <code>next(iter)</code> since what we are really doing is &ldquo;looping&rdquo; through the data one index at a time and doing the necessary transformations.</p>
 <p>Programmatically:</p>
-<pre><code>    def __getitem__(self, img_index):
+<pre tabindex="0"><code>    def __getitem__(self, img_index):
         if torch.is_tensor(img_index):
             img_index = img_index.tolist()
 
         train_image = imread(self.image_list[img_index])
         train_label = imread(self.labels_list[img_index])
 
-        return {&quot;image&quot;:self.transform(train_image), &quot;mask&quot;:self.transform(train_label)}
-
+        return {&#34;image&#34;:self.transform(train_image), &#34;mask&#34;:self.transform(train_label)}
 </code></pre><p><strong>Putting it all together</strong></p>
-<pre><code>
+<pre tabindex="0"><code>
 class CustomDataLoader(Dataset):
-    def __init__(self, train_images, train_labels, image_suffix=&quot;jpg&quot;, target_size=(30, 30)):
-        &quot;&quot;&quot;
+    def __init__(self, train_images, train_labels, image_suffix=&#34;jpg&#34;, target_size=(30, 30)):
+        &#34;&#34;&#34;
 
         :param train_images: Directory containing train_images
         :param train_labels: Directory containing train_labels
         :param image_suffix: Image suffix, for convenience
         :param target_size
 
-        &quot;&quot;&quot;
+        &#34;&#34;&#34;
 
         self.train_images = train_images
         self.train_labels = train_labels
@@ -341,27 +332,27 @@ class CustomDataLoader(Dataset):
         # We also ensure that we get the correct image suffix, jpg and png here
 
         if not (all(os.path.isdir(directory) for directory in [train_images, train_labels])):
-            raise NotADirectoryError(&quot;Please ensure that both train_images and train_labels are valid directories.&quot;)
+            raise NotADirectoryError(&#34;Please ensure that both train_images and train_labels are valid directories.&#34;)
 
-        if not self.image_suffix in [&quot;png&quot;, &quot;jpg&quot;,&quot;jpeg&quot;]:
-            raise ValueError(&quot;Only supporting PNG and JPG files for now.&quot;)
+        if not self.image_suffix in [&#34;png&#34;, &#34;jpg&#34;,&#34;jpeg&#34;]:
+            raise ValueError(&#34;Only supporting PNG and JPG files for now.&#34;)
 
         # glob for our file names
         # sorted because I prefer 1, 10, 11, ...
         # ideally should be able to glob both png and jpg, for simplicity glob only one type
-        self.image_list = sorted(glob.glob(self.train_images + &quot;/*&quot; + self.image_suffix))
-        self.labels_list = sorted(glob.glob(self.train_labels + &quot;/*&quot; + self.image_suffix))
+        self.image_list = sorted(glob.glob(self.train_images + &#34;/*&#34; + self.image_suffix))
+        self.labels_list = sorted(glob.glob(self.train_labels + &#34;/*&#34; + self.image_suffix))
 
 
         if len(self.image_list) != len(self.labels_list):
-            raise ValueError(&quot;Images list and labels list should be the same length.&quot;)
+            raise ValueError(&#34;Images list and labels list should be the same length.&#34;)
 
     def __len__(self):
-        &quot;&quot;&quot;
+        &#34;&#34;&#34;
 
         :return: length of the dataset
 
-        &quot;&quot;&quot;
+        &#34;&#34;&#34;
         return len(self.image_list)
 
     def transform(self, image):
@@ -380,21 +371,18 @@ class CustomDataLoader(Dataset):
         train_image = imread(self.image_list[img_index])
         train_label = imread(self.labels_list[img_index])
 
-        return {&quot;image&quot;:self.transform(train_image),
-                                &quot;mask&quot;:self.transform(train_label)}
-
+        return {&#34;image&#34;:self.transform(train_image),
+                                &#34;mask&#34;:self.transform(train_label)}
 </code></pre><p><strong>Usage</strong></p>
 <p>To use our newly created dataset, we can simply create an object as usual:</p>
-<pre><code>images_loader = CustomDataLoader(&quot;path_to_images&quot;,&quot;path_to_masks&quot;,
-                                 target_size= (512, 512), image_suffix=&quot;png&quot;)
+<pre tabindex="0"><code>images_loader = CustomDataLoader(&#34;path_to_images&#34;,&#34;path_to_masks&#34;,
+                                 target_size= (512, 512), image_suffix=&#34;png&#34;)
 </code></pre><p>Finally, to test and for purposes of this post, we will simply use <code>next(iter)</code>
 or simply &ldquo;manual&rdquo; indexing:</p>
-<pre><code>next(iter(images_loader))
-
+<pre tabindex="0"><code>next(iter(images_loader))
 </code></pre><p>I will demonstrate what happens when we try to plot the <code>image</code> at index 0
 by using manual indexing:</p>
-<pre><code>plt.imshow(images_loader[0][&quot;image&quot;])
-
+<pre tabindex="0"><code>plt.imshow(images_loader[0][&#34;image&#34;])
 </code></pre><p>This gives us:</p>
 <p><img src="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/images/dog-test.png?raw=true" alt="Image Res"></p>
 <p><strong>Next Steps</strong></p>
@@ -421,11 +409,10 @@ available at <a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/ma
 any of the posts/projects on this site.</p>
 <p><strong>Keep Building</strong></p>
 <p><strong>Modules used in this blog post</strong></p>
-<pre><code>torch==1.7.1
+<pre tabindex="0"><code>torch==1.7.1
 torchvision==0.2.2.post3
 opencv-python&gt;=4.2 #actual 4.4.046
 scikit-image&gt;=0.16 #actual 0.18.1
-
 </code></pre><p><strong>References</strong></p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">https://www.sciencedirect.com/science/article/abs/pii/003132039390115D</a></p>
 <p><a href="https://en.wikipedia.org/wiki/Cross_entropy">https://en.wikipedia.org/wiki/Cross_entropy</a></p>
@@ -484,7 +471,7 @@ scikit-image&gt;=0.16 #actual 0.18.1
     <div class="comments">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

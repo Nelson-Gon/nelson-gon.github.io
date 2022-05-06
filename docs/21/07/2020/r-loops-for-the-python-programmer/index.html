@@ -8,7 +8,7 @@
         <meta name="description" content="Basic Programming with R and Python">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.79.1" />
+        <meta name="generator" content="Hugo 0.98.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -43,16 +43,14 @@
     </head>
     <body>
         
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3BZWLHV7B"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-179726246-1', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-B3BZWLHV7B', { 'anonymize_ip': false });
 }
 </script>
 
@@ -163,40 +161,34 @@ if (!doNotTrack) {
 <p>On the contrary, as someone who is fairly proficient in both languages, I thought it would be nice to write about key differences between loops in R and python. This post assumes basic R and python proficiency and/or general interest in the same.</p>
 <p><strong>Loops in python</strong></p>
 <p>It has been argued that <code>python</code> is close to pseudocode in the sense that one often can write what they think of and it just works, well sort of. For our example, will use an array of <code>range(5)</code>.</p>
-<pre><code>
+<pre tabindex="0"><code>
 import numpy as np
 my_arr = np.arange(5)
-
 </code></pre><p>What we now want to do is fairly simple: replace each value with the value multiplied by 5. This can be written as follows:</p>
-<pre><code>
+<pre tabindex="0"><code>
 for i in my_arr:
     my_arr[i] *= 5
-
 </code></pre><p>Our result should show that our values have been updated:</p>
-<pre><code>
+<pre tabindex="0"><code>
 my_arr
 
 Out[17]: array([ 0,  5, 10, 15, 20])
-
 </code></pre><p><strong>R is picky, or is it?</strong></p>
 <p>So far all good(I think). Now, if you&rsquo;re coming from <code>python</code> to <code>R</code>, you would typically try to reproduce the above as follows:</p>
-<pre><code>
+<pre tabindex="0"><code>
 my_arr = 0:4
 for(i in my_arr){
   my_arr[i] = my_arr[i] * 5
 }
-
-
 </code></pre><p>To your surprise, <code>my_arr</code> only gets updated at the second value(indexing starts at 1 in <code>R</code> not 0):</p>
-<pre><code>
+<pre tabindex="0"><code>
 my_arr
 
 [1]  0  5 10 15  4
-
 </code></pre><p><strong>Meet seq_along</strong></p>
 <p>The reason the above fails is to do with the fact that <code>for</code> loops in R are not vectorised. This simply means that you&rsquo;re looping over the first value alone and not the entire &ldquo;array&rdquo;.</p>
 <p>To get the desired effect, you would need to use either <code>seq_along</code> or <code>1:length</code> to loop over the entire vector(&ldquo;array&rdquo;). What you need would then be:</p>
-<pre><code>
+<pre tabindex="0"><code>
 my_arr = 0:4
 for(i in seq_along(my_arr)){
    my_arr[i] = my_arr[i] * 5
@@ -204,50 +196,42 @@ for(i in seq_along(my_arr)){
 
  my_arr
 [1]  0  5 10 15 20
-
 </code></pre><p>Using <code>1:length</code>:</p>
-<pre><code>my_arr = 0:4
+<pre tabindex="0"><code>my_arr = 0:4
 for (i in 1:length(my_arr)){
    my_arr[i] = my_arr[i] * 5
  }
  my_arr
 [1]  0  5 10 15 20
-
 </code></pre><p><strong>No loops, please</strong></p>
 <p>While loops are great, there is often a vectorised solution to do what you would like to do, just like most operations are vectorised in <code>numpy</code>.</p>
 <p>Here are a few ways to achieve the same without using explicit loops:</p>
 <p>For this simple example, you don&rsquo;t need loops at all:</p>
-<pre><code>
+<pre tabindex="0"><code>
 0 : 4 * 5
 
 0  5 10 15 20
-
 </code></pre><p>This is similar to what you would do in <code>python</code>:</p>
-<pre><code>
+<pre tabindex="0"><code>
 my_arr *= 5
 
 array([ 0,  5, 10, 15, 20])
-
 </code></pre><p>For more complex examples(I should think of a better example next time), things are not always as straightforward.</p>
 <p>This is an overkill for this task but <code>do.call</code> is an equally useful function for the task.</p>
-<pre><code>
-do.call(&quot;*&quot;, list(0:4,5))
+<pre tabindex="0"><code>
+do.call(&#34;*&#34;, list(0:4,5))
 
 [1]  0  5 10 15 20
-
 </code></pre><p>Using <code>Reduce</code>:</p>
-<pre><code>
-Reduce(&quot;*&quot;, list(0:4,5))
+<pre tabindex="0"><code>
+Reduce(&#34;*&#34;, list(0:4,5))
 
 [1]  0  5 10 15 20
-
 </code></pre><p>Using the <code>apply</code> family:</p>
-<pre><code>
+<pre tabindex="0"><code>
 sapply(0:4,function(x) x* 5)
 
 [1]  0  5 10 15 20
-
-
 </code></pre><p>It would be overambitious to try and list all possibilities. The key takeway is that one should often try to use vectorised implemenations and if loops are needed, one should always remember that these are not vectorised in R.</p>
 <p>Thank you for reading. Hopefully, I will come up with better examples in the future.</p>
 
@@ -308,7 +292,7 @@ sapply(0:4,function(x) x* 5)
     <div class="comments">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

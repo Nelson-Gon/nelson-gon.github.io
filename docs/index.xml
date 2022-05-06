@@ -133,7 +133,7 @@ One common feature of many R packages is a hexagon shaped sticker that often sum
 For installation details, please see the documentation of the project.
 Pre-requisites
  Python &amp;gt;=3.6 pyautocv &amp;gt;=0.2.1 An image directory for which detection is required.  To begin, we import pyautocv&amp;rsquo;s Segmentation class.
-from pyautocv.segmentation import *Next, we change directory to the target directory that holds our images.</description>
+from pyautocv.segmentation import * Next, we change directory to the target directory that holds our images.</description>
     </item>
     
     <item>
