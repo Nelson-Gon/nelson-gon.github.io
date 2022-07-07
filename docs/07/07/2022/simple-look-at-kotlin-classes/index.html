@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kotlin Classes for the Python Developer &middot; Nelson Gonzabato</title>
+        <meta name="description" content="kotlin-classes-for-python-developers">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.101.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+        <link rel="manifest" href="../../../../site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <link rel="stylesheet" disabled id="dark-mode-theme" href="../../../../dist/darkmode.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <head>
+  
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+</head>
+        
+        
+        
+    </head>
+    <body>
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3BZWLHV7B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-B3BZWLHV7B', { 'anonymize_ip': false });
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Home" title="Home" href="../../../../" rel="me">
+                             <i class="fa fa-home"></i>  
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/bionelsongon" rel="me">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                  
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                         
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        
+                              
+                       
+                            
+       <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+      <a class="button-square button-social hint--top" data-hint="kaggle" title="Kaggle" href="https://Kaggle.com/gonnel" rel="me">
+<i class="fab fa-kaggle"></i>
+                   
+                    
+                      
+                        
+                        
+                            <a  class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:gonzabato@hotmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                        
+                         
+                         
+                       
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../../about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../../projects/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Kotlin Classes for the Python Developer</h1>
+    
+        <p class="post-description" itemprop="description">kotlin-classes-for-python-developers</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2022-07-07" itemprop="datePublished">Thu, Jul 7, 2022</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Nelson Gonzabato</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="introduction">Introduction</h1>
+<p>For anyone who has followed the tech scene and/or Android Development for some time, Kotlin, a language developed at <a href="https://kotlinlang.org/docs/faq.html">JetBrains</a> is likely familiar. The language has also received a lot of media attention as the future of Android development, receiving <a href="https://insights.dice.com/2019/05/09/google-koltin-java-android/">backing</a> from tech giant, Google.</p>
+<p>To understand why this is the case, I have recently started learning Kotlin mainly for fun and to see how well the language lives up to its hype (praise). So far, I have been impressed by a couple of features that I will summarise below. To do this, I will walk through a simple implementation of a <code>Search</code> class, from which <code>Binary</code> and <code>Linear</code> search subclasses inherit. As such, we will explore the concept of classes, inheritance, and a few unique Kotlin features that I found interesting.</p>
+<h1 id="defining-a-kotlin-class">Defining a Kotlin Class</h1>
+<p>As might be expected, we can create a class using the <code>class</code> keyword. For our walkthrough, we will create a class named <code>Search</code> as a <code>super</code> class.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Search</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">abstract</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">search</span>(): Int 
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Let us break down this code. If you are coming from a language like <code>python</code> and are not familiar with Java like language, the most obvious difference in defining a class is the need to use keywords like <code>open</code>, <code>abstract</code>, <code>public</code>, etc.</p>
+<p>What exactly does <code>abstract</code> do? In Kotlin or Kotlin-like languages, an <code>abstract</code> class is used when we want for example to create a super class that we are not going to initialize directly.</p>
+<p>In this case, we create a super class <code>Search</code> and declare it <code>abstract</code>. We also define an <code>abstract</code> function for the actual search algorithm. By declaring <code>search</code> abstract, we can customize this for the specific search algorithm using the <code>override</code> keyword as we see below. It is interesting to note that we define a return type (<code>Int</code> here) in the <code>search</code> method. While this is optional, the default return type in Kotlin is <code>Unit</code> which can cause problems later on so I think it is better to be explicit about the return type.</p>
+<h1 id="inheritance">Inheritance</h1>
+<p>Alright, we now have a base class and are ready to define subclasses. To declare inheritance, we use the <code>:</code> operator as below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LinearSearch</span>(<span style="color:#66d9ef">var</span> lst: List&lt;Int&gt;, <span style="color:#66d9ef">var</span> target: Int):Search(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">init</span>{
+</span></span><span style="display:flex;"><span>        println(<span style="color:#e6db74">&#34;LinearSearch object created with list </span><span style="color:#e6db74">${lst}</span><span style="color:#e6db74"> of size </span><span style="color:#e6db74">${lst.size}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">search</span>(): Int {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> lst.indexOfFirst {<span style="color:#66d9ef">it</span> <span style="color:#f92672">==</span> target}
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above code, we create a <code>LinearSearch</code> class and use a <a href="https://kotlinlang.org/docs/classes.html">primary constructor</a> which is defined as being part of the class header. A secondary constructor on the other hand is defined within the class body and bears the keyword <code>constructor</code>.</p>
+<p>For our <code>LinearSearch</code> above, we have defined an <code>lst</code> var in the constructor to hold our integer list and target to specify the target element of the list.</p>
+<p><code>init</code> is similar to python <code>__init__</code> and here we define what happens on instance creation. Here, we use syntax similar to python f-strings to print the list and its size (length).</p>
+<p><strong>Null Safety</strong></p>
+<p><a href="https://kotlinlang.org/docs/null-safety.html">Null safety</a> is a broad and important topic that ensures that values are not null when they shouldn&rsquo;t be. In out init, we could have used <code>lst.!!size</code> to ensure that size is always available but in this case this is redundant and not necessary.</p>
+<p><strong>Overriding methods</strong></p>
+<p>As mentioned briefly above, we can override a function with the <code>override</code> keyword. For the linear search algorithm, we are only interested in linearly finding the target so we use a built-in function <code>indexOfFirst</code> to do this. However, we could have written this from scratch. This line also intriduces the <code>{...}</code> syntax that is <code>map</code>-like syntax.</p>
+<p>Here, we are mapping every <code>it</code>eration within the list to check if it is equal to our target and return the index of the first element that is true.</p>
+<p>The above briefly explains inheritance and we can proceed to implement a binary search.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BinarySearch</span>(<span style="color:#66d9ef">var</span> lst: List&lt;Int&gt;, <span style="color:#66d9ef">var</span> start:Int = <span style="color:#ae81ff">0</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> end:Int = lst.size - <span style="color:#ae81ff">1</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> target:Int):Search(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> new_list = lst.sorted()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">init</span>{
+</span></span><span style="display:flex;"><span>       println(<span style="color:#e6db74">&#34;BinarySearch object created with list </span><span style="color:#e6db74">$new</span><span style="color:#e6db74">_list of size </span><span style="color:#e6db74">${new_list.size}</span><span style="color:#e6db74">&#34;</span>)  
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">search</span>():Int{   
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> mid_index = (start + end) / <span style="color:#ae81ff">2</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(start <span style="color:#f92672">&lt;=</span> end){
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(new_list[mid_index] <span style="color:#f92672">==</span> target) <span style="color:#66d9ef">return</span> mid_index
+</span></span><span style="display:flex;"><span>        start = <span style="color:#66d9ef">if</span>(new_list[mid_index] &lt; target) mid_index + <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> start
+</span></span><span style="display:flex;"><span>        end = <span style="color:#66d9ef">if</span>(new_list[mid_index] &gt; target)mid_index - <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> end  
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// If not found 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> -<span style="color:#ae81ff">111</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The details of the algorithm are available <a href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">online</a>. Briefly, a binary search sorts an input list, and depending on the start and end indices defined compares the target value to the middle value of the sorted list and if these are equal returns the index of the middle value. Otherwise, the start and end points are redefined depending on the whether the target is greater than or less than the middle value.</p>
+<p>For our inheritance story, we note that within <code>BinarySearch</code>&rsquo;s primary constructor we can create new variables (parameters) and also directly perform manipulations on these variables. For example here we set the initial end value to one less than the length of the input list.</p>
+<h1 id="running-the-code">Running the code</h1>
+<p>Finally, we can encapsulate our code in a <code>main()</code> call and see what happens.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> my_list = listOf(<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">89</span>, <span style="color:#ae81ff">56</span>, <span style="color:#ae81ff">83</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> bin_search = BinarySearch(lst = my_list, target = <span style="color:#ae81ff">56</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> lin_search = LinearSearch(lst = my_list, target = <span style="color:#ae81ff">56</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;Target </span><span style="color:#e6db74">${bin_search.target}</span><span style="color:#e6db74"> found via a binary search at index: </span><span style="color:#e6db74">${bin_search.search()}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>println(<span style="color:#e6db74">&#34;Target </span><span style="color:#e6db74">${lin_search.target}</span><span style="color:#e6db74"> found at index: </span><span style="color:#e6db74">${lin_search.search()}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This yields the following at the console. Do you see any immediate difference in the algorithms based on the output from our <code>init</code>?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>BinarySearch object created with list <span style="color:#f92672">[</span>25, 56, 83, 89<span style="color:#f92672">]</span> of size <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>LinearSearch object created with list <span style="color:#f92672">[</span>25, 89, 56, 83<span style="color:#f92672">]</span> of size <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>Target <span style="color:#ae81ff">56</span> found via a binary search at index: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Target <span style="color:#ae81ff">56</span> found at index: <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><h1 id="conclusion">Conclusion</h1>
+<p>Kotlin is an interesting language that simplifies the process of android app development by eliminating a lot of the boilerplate code that makes Java appear less readable. Admittedly, this blog post does not cover everything there is to know about Kotlin classes. For example <code>interface</code>s, <code>companion object</code>s, and other related concepts are not illustrated here. I hope however that this post gives more confidence to those coming from python and looking to work with Kotlin in how much similar to python the language is.</p>
+<p>As always, I am happy to talk about this and other coding issues either on Twitter or on my email.</p>
+<p>Thank you and keep bulding.</p>
+<p>Nelson</p>
+<p><strong>Further Reading</strong></p>
+<ul>
+<li>
+<p><a href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search</a></p>
+</li>
+<li>
+<p><a href="https://kotlinlang.org/docs/classes.html">https://kotlinlang.org/docs/classes.html</a></p>
+</li>
+<li>
+<p><a href="https://kotlinlang.org/docs/interfaces.html">https://kotlinlang.org/docs/interfaces.html</a></p>
+</li>
+</ul>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="../../../../tags/python/">python</a>, 
+            
+                <a href="../../../../tags/kotlin/">kotlin</a>, 
+            
+                <a href="../../../../tags/fundamentals/">fundamentals</a>, 
+            
+                <a href="../../../../tags/open-source/">open-source</a>, 
+            
+                <a href="../../../../tags/tutorial/">tutorial</a>, 
+            
+                <a href="../../../../tags/reflection/">reflection</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Kotlin%20Classes%20for%20the%20Python%20Developer&url=%2f07%2f07%2f2022%2fsimple-look-at-kotlin-classes%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  <i class="fab fa-twitter"></i>
+   <span class="hidden">Twitter</span> 
+  </a>
+        
+
+        
+       
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f07%2f07%2f2022%2fsimple-look-at-kotlin-classes%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fab fa-facebook"></i>
+                
+                </a>
+        
+
+ 
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Kotlin%20Classes%20for%20the%20Python%20Developer&url=%2f07%2f07%2f2022%2fsimple-look-at-kotlin-classes%2f&summary=kotlin-classes-for-python-developers"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+    <footer class="footer">
+ 
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Biologically Plausible Programming" href="../../../../">Biologically Plausible Programming</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2022 Nelson Gonzabato / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="https://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
+    </body>
+</html>
+

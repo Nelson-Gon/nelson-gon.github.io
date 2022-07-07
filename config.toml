@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "./"
 languageCode = "en-us"
 title = "Biologically Plausible Programming"
 theme = "ghostwriter"
@@ -9,7 +9,7 @@ googleAnalytics = "G-B3BZWLHV7B"
 disqusShortname="nelsongon"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", 
                "\\.utf8\\.md$"]
-publishDir = "/docs"
+publishDir = "./docs"
 # enable SEO search
 enableRobotsTXT= true
 canonifyURLs = true

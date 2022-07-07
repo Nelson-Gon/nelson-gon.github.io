@@ -8,7 +8,7 @@
         <meta name="description" content="On the elegance of PyTorch&#39;s Dataset Class">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.98.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -157,21 +157,21 @@ if (!doNotTrack) {
     
 
     <p><strong>Introduction</strong></p>
-<p>Over the past few weeks, I have been experimenting with and learning more about 
-the popular <code>PyTorch</code> (<code>torch</code>) package that like <code>Keras</code> and <code>Tensorflow</code>, 
-provides an easy way to implement deep learning algorithms. In this post, I 
+<p>Over the past few weeks, I have been experimenting with and learning more about
+the popular <code>PyTorch</code> (<code>torch</code>) package that like <code>Keras</code> and <code>Tensorflow</code>,
+provides an easy way to implement deep learning algorithms. In this post, I
 show why I think <code>torch</code>&rsquo;s <code>Dataset</code> class is an elegant and beginner-friendly
-way to handle the process of data processing. As I have written 
-<a href="https://nelson-gon.github.io/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/">previously</a>, it&rsquo;s more important to ensure you have the correct 
-data than actually implementing a target model. This, of course, is not to say 
-that implementing a model is always straightforward. However, it is easier 
-and faster to fix an erroneous model than it is to correct the data processing 
+way to handle the process of data processing. As I have written
+<a href="https://nelson-gon.github.io/14/09/2020/minimizing-loss-lessons-from-a-summer-of-deep-learning/">previously</a>, it&rsquo;s more important to ensure you have the correct
+data than actually implementing a target model. This, of course, is not to say
+that implementing a model is always straightforward. However, it is easier
+and faster to fix an erroneous model than it is to correct the data processing
 pipeline.</p>
 <p>With the importance of data processing re-emphasised, let us dive into the beauty
 of the <code>torch</code> <code>Dataset</code> class.</p>
 <p><strong>But First, a word on Li Thresholding</strong></p>
-<p>As part of my experiments over the past few weeks, I came across 
-<a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">Li Thresholding</a>, which was until this year an unknown method to me. Since I liked this 
+<p>As part of my experiments over the past few weeks, I came across
+<a href="https://www.sciencedirect.com/science/article/abs/pii/003132039390115D">Li Thresholding</a>, which was until this year an unknown method to me. Since I liked this
 method, I thought it would be great to write a word or two about it.</p>
 <p>In this blog post, we shall be using a simple two image dataset organised as
 follows:</p>
@@ -199,17 +199,17 @@ plt.imshow(thresholded_numpy, cmap=&#34;gray&#34;)
 plt.axis(&#34;off&#34;)
 </code></pre><p>The result:</p>
 <p><img src="https://raw.githubusercontent.com/Nelson-Gon/nelson-gon.github.io/master/images/dog_mask.png" alt="Li-Result"></p>
-<p>I will leave it at that for Li thresholding and leave further exploration to 
+<p>I will leave it at that for Li thresholding and leave further exploration to
 those who may be interested in the same. We now proceed with the main aim of this
 blogpost: appreciating the elegance of <code>Dataset</code>.</p>
 <p><strong>Writing a simple custom data loader with torch</strong></p>
 <p>If you are coming from a Keras/Tensorflow background (like myself), you will
 probably (dis)agree that the data processing process in Keras/Tensorflow is
-less obvious and may sometimes feel less programmer-like. To be clear, this is 
+less obvious and may sometimes feel less programmer-like. To be clear, this is
 not meant to say that the Keras/Tensorflow combination is bad. On the contrary,
 I love the model building process but think <code>torch</code> provides an easier data
 processing implementation to work with.</p>
-<p>To write a simple custom data loader, we will need to import the following 
+<p>To write a simple custom data loader, we will need to import the following
 modules/packages:</p>
 <pre tabindex="0"><code>from torch.utils.data import Dataset
 import glob
@@ -227,9 +227,9 @@ things:</p>
 resize the images and convert them to <code>PIL</code> images.</li>
 </ul>
 <p><strong>Creating our class</strong></p>
-<p>To create the class, one simply inherits from the <code>Dataset</code> class which I 
-think is a great way to work with, and also because I like the idea of 
-inheritance. For this simple example, the class <code>__init__</code> function will only 
+<p>To create the class, one simply inherits from the <code>Dataset</code> class which I
+think is a great way to work with, and also because I like the idea of
+inheritance. For this simple example, the class <code>__init__</code> function will only
 take an image directory argument, a mask directory argument, an image suffix,
 and <code>target_size</code> specifying the target size for our resizing. We also add some
 sanity checks to ensure that we get exactly what we expect. The class then
@@ -282,7 +282,7 @@ we will work with.</p>
 
         &#34;&#34;&#34;
         return len(self.image_list)
-</code></pre><p>As stated above, we also define a <code>transform</code> method that will allow us to 
+</code></pre><p>As stated above, we also define a <code>transform</code> method that will allow us to
 transform images. Here we will simply transform them by changing their size to
 the target size defined in <code>__init__</code> and also converting to <code>Image</code> since this
 is what <code>torch</code> is happy to work with.</p>
@@ -296,7 +296,7 @@ is what <code>torch</code> is happy to work with.</p>
         return image
 </code></pre><p><strong>Oh the elegance of <strong>get_item</strong>!</strong></p>
 <p>Finally, here comes what I think is the most elegant part of the <code>Dataset</code> class.</p>
-<p>We can define a &ldquo;getter&rdquo; method <code>__get__item</code> that will allow us to work with 
+<p>We can define a &ldquo;getter&rdquo; method <code>__get__item</code> that will allow us to work with
 one image at a time. I think it could be thought of as a <code>generator</code> that calls
 <code>next(iter)</code> since what we are really doing is &ldquo;looping&rdquo; through the data one index at a time and doing the necessary transformations.</p>
 <p>Programmatically:</p>
@@ -401,7 +401,7 @@ by using manual indexing:</p>
 <p><strong>Conclusion</strong></p>
 <p>The <code>torch</code> <code>Dataset</code> class is powerful and can be used to do more than just what
 I state here. If you, are interested in learning more about the <code>torch</code>
-package, I highly recommend that you take a look at the official 
+package, I highly recommend that you take a look at the official
 <a href="https://pytorch.org/docs/stable/index.html">documentation</a>, and spend some time exploring libraries that implement deep
 learning methods using <code>torch</code>. The full code for this implementation is
 available at <a href="https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py">https://github.com/Nelson-Gon/nelson-gon.github.io/blob/master/code/elegant_torch.py</a></p>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kotlin Classes for the Python Developer</title>
+      <link>/07/07/2022/simple-look-at-kotlin-classes/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/07/07/2022/simple-look-at-kotlin-classes/</guid>
+      <description>Introduction For anyone who has followed the tech scene and/or Android Development for some time, Kotlin, a language developed at JetBrains is likely familiar. The language has also received a lot of media attention as the future of Android development, receiving backing from tech giant, Google.
+To understand why this is the case, I have recently started learning Kotlin mainly for fun and to see how well the language lives up to its hype (praise).</description>
+    </item>
+    
     <item>
       <title>Sequel to Pandas</title>
       <link>/05/03/2022/sql-to-python-pandas/</link>
