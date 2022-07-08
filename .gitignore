@@ -39,3 +39,4 @@ vignettes/*.pdf
 .Renviron
 # extend ignore for hugo
 
+.hugo_build.lock

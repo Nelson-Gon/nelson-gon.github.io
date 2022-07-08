@@ -59,13 +59,13 @@ For our `LinearSearch` above, we have defined an `lst` var in the constructor to
 
 **Null Safety**
 
-[Null safety](https://kotlinlang.org/docs/null-safety.html) is a broad and important topic that ensures that values are not null when they shouldn't be. In out init, we could have used `lst.!!size` to ensure that size is always available but in this case this is redundant and not necessary. 
+[Null safety](https://kotlinlang.org/docs/null-safety.html) is a broad and important topic that ensures that values are not null when they shouldn't be. In our init, we could have used `lst.!!size` to ensure that size is always available but in this case this is redundant. 
 
 **Overriding methods**
 
-As mentioned briefly above, we can override a function with the `override` keyword. For the linear search algorithm, we are only interested in linearly finding the target so we use a built-in function `indexOfFirst` to do this. However, we could have written this from scratch. This line also intriduces the `{...}` syntax that is `map`-like syntax. 
+As mentioned briefly above, we can override a function with the `override` keyword. For the linear search algorithm, we are only interested in linearly finding the target so we use a built-in function `indexOfFirst` to do this. However, we could have written this from scratch. This line also introduces the `{...}` map-like syntax. 
 
-Here, we are mapping every `it`eration within the list to check if it is equal to our target and return the index of the first element that is true.
+Here, we are mapping every `it`eration within the list to check if it is equal to our target and return the index of the first true element.
 
 The above briefly explains inheritance and we can proceed to implement a binary search. 
 
