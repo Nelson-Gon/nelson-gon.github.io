@@ -15,7 +15,7 @@ man approaches me and starts a conversation.
 
 Person: Hi, what book are you reading?!
 
-Me: Noise, erm Noise, a flaw in human judgement.
+Me: Noise, uhh..Noise, a flaw in human judgement.
 
 **We both laugh**
 
