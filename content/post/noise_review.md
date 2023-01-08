@@ -14,10 +14,15 @@ I am seated at Prague Castle on a slightly cold Saturday afternoon when a young
 man approaches me and starts a conversation.
 
 Person: Hi, what book are you reading?!
+
 Me: Noise, erm Noise, a flaw in human judgement.
+
 **We both laugh**
+
 Person: You're reading noise? **more laughter**.
+
 Me: Yes, it is a strange title I must agree.
+
 Person: What is it about?
 
 What follows is an attempt at describing what noise, the book is and a description
@@ -90,7 +95,9 @@ While the authors present the possibility of reducing noise via ML and statistic
 At the time of this post, I have not yet completed the book but found it quite interesting and worth a read and hopefully this account can give someone else the motivation to check the book out. As always, let me know if you notice any flaws and or have any comments.
 
 Thank you,
+
 NelsonGon
+
 Prague 08.01.2023
 
 
