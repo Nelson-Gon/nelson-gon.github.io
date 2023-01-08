@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Noise: A flaw in Human Judgement reviewed &middot; Nelson Gonzabato</title>
+        <meta name="description" content="A review of Noise">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.109.0">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+        <link rel="manifest" href="../../../../site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <link rel="stylesheet" disabled id="dark-mode-theme" href="../../../../dist/darkmode.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <head>
+  
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+</head>
+        
+        
+        
+    </head>
+    <body>
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3BZWLHV7B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-B3BZWLHV7B', { 'anonymize_ip': false });
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Home" title="Home" href="../../../../" rel="me">
+                             <i class="fa fa-home"></i>  
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/bionelsongon" rel="me">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                  
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                         
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        
+                              
+                       
+                            
+       <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+      <a class="button-square button-social hint--top" data-hint="kaggle" title="Kaggle" href="https://Kaggle.com/gonnel" rel="me">
+<i class="fab fa-kaggle"></i>
+                   
+                    
+                      
+                        
+                        
+                            <a  class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:gonzabato@hotmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                        
+                         
+                         
+                       
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../../about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../../projects/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Noise: A flaw in Human Judgement reviewed</h1>
+    
+        <p class="post-description" itemprop="description">A review of Noise</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-12-25" itemprop="datePublished">Fri, Dec 25, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Nelson Gonzabato</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p><strong>Introduction</strong></p>
+<p>I am seated at Prague Castle on a slightly cold Saturday afternoon when a young
+man approaches me and starts a conversation.</p>
+<p>Person: Hi, what book are you reading?!
+Me: Noise, erm Noise, a flaw in human judgement.
+<strong>We both laugh</strong>
+Person: You&rsquo;re reading noise? <strong>more laughter</strong>.
+Me: Yes, it is a strange title I must agree.
+Person: What is it about?</p>
+<p>What follows is an attempt at describing what noise, the book is and a description
+of a few lessons/concepts I have learnt from reading the book, but first&hellip;</p>
+<p><strong>What is noise?</strong></p>
+<p>I think it is important to stress that we discuss noise, in the statistical sense
+as opposed to noise as we would describe for example a noisy stadium or noisy
+train station.</p>
+<p>Statistically, noise can be defined as any unexplained variability that is often random. In plain terms, this statistical noise can include for example the
+unexplained difference in repeated measurements of the length of a field.</p>
+<p><strong>Types of noise from the book</strong></p>
+<p>In the book, different types of noise are described. System noise and occasion noise.</p>
+<p><strong>System noise</strong> is perhaps the kind of noise that we can more easily &ldquo;notice&rdquo; as it
+often relates to internal or external sources of variability. The authors break
+down system noise into level noise and pattern noise.</p>
+<p><strong>Level noise</strong> can be thought of as the &ldquo;unexplained&rdquo; difference between a judge&rsquo;s
+average &ldquo;harshness&rdquo; compared to the average &ldquo;harshness&rdquo; of all judges. In the
+forecasting business, this can be thought of as the difference in the average
+predictions of a forecaster compared to the averages of other forecasters.</p>
+<p><strong>Pattern noise</strong>, on the other hand, can be thought of as the tendency of a specific
+judge to display specific patterns, resulting in differences in the judgement of
+cases. In the stock market, a broker who has previously gained by backing non-conventional companies may display increased likelihood of investing in stocks
+from companies that some may be more pessimistic about. Pattern noise can also
+be temporary for example due to recent events.</p>
+<p><strong>Occasion noise</strong>, like the name suggests, is variability due to random factors
+that may have no direct relation with the issue at hand. For example, the book
+presents studies linking judge leniency with the weather, with judges being more
+lenient on nicer days (less hot days). This could also be linked to mood as <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8174739">The temperature of emotions</a> explores. Briefly, research suggests a link between the weather and emotion(s), and it is established that people tend to associate hotter days with negative emotions.</p>
+<p>We have defined noise and broken it down into types, but what effect does noise have on our daily lives.</p>
+<p><strong>Cascades and social influence</strong></p>
+<p>Whether we realize it or not, we are all part of information cascades that are under heavy social influence. In organizations, these cascades can have profound effects on hiring processes, product approvals, and so on.</p>
+<p>In presenting information cascades, the authors highlight how influential persons within an organization can sway the decisions of other members and steer the decision process in completely different ways. Specifically, in a meeting for example, if a likable person happens to support hiring a given candidate, this may influence other members to agree with them leading to a loss of diversity in the decision process.</p>
+<p><strong>The power of first vote, group think, and group polarization</strong></p>
+<p>Related to the social influence described above is the power of the first vote. In studies on the popularity of music, it has been established that a song that gets early approval (first download for example or first listen) was more likely to go on to be the most popular as people tend to stick to what appears to be popular. Similarly at meetings, the person to speak first could influence the entire decision process by driving the decision process in their direction. This can be problematic as alternative ideas could be lost or early popularity could lead to other members to staying quiet so as to blend in or as a form of respect.</p>
+<p><strong>Wisdom of the crowd</strong></p>
+<p>When a group of people is asked to provide an estimate, the individual values may be less accurate but when these are averaged, the overall estimate of the group will be much closer to the real value. This is because averaging these estimates &ldquo;cancels&rdquo; out the noise, following the concept of the mean squared error.</p>
+<p><strong>One&rsquo;s a crowd</strong></p>
+<p>When tasked with providing an estimate, an individual&rsquo;s first guess has been found to be far off than their subsequent guesses. It is thought that on subsequent guesses, individuals taken into account more information that they may have missed the first time around, leading to less noisy &ldquo;predictions&rdquo;. This is the premise of the dialectical bootstrap.</p>
+<p><strong>Algorithms and decision making</strong></p>
+<p>An even more interesting concept presented in the book, is the surprising result that modeling a &ldquo;predictor&rdquo; (you) with a very simple model does just as well as and often beats the performance of predictor.</p>
+<p>If instead of having a judge make judgement, it is shown that a model of the same judge will often make better &ldquo;judgement&rdquo; as measured by correlation coefficients and percent concordance. With even more sophistication and data as machine learning models provide for example, the performance outweighs human judgement and is less noisy.</p>
+<p>While the authors present the possibility of reducing noise via ML and statistical models, they provide caution about making such a conclusion. For example, as might be expected, a ML model using a biased data set will only exaggerate the bias.</p>
+<p><strong>Closing remarks</strong></p>
+<p>At the time of this post, I have not yet completed the book but found it quite interesting and worth a read and hopefully this account can give someone else the motivation to check the book out. As always, let me know if you notice any flaws and or have any comments.</p>
+<p>Thank you,
+NelsonGon
+Prague 08.01.2023</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="../../../../tags/decisions/">decisions</a>, 
+            
+                <a href="../../../../tags/neuroscience/">neuroscience</a>, 
+            
+                <a href="../../../../tags/data-science/">data-science</a>, 
+            
+                <a href="../../../../tags/game-theory/">game theory</a>, 
+            
+                <a href="../../../../tags/decision-theory/">decision-theory</a>, 
+            
+                <a href="../../../../tags/bias/">bias</a>, 
+            
+                <a href="../../../../tags/noise/">noise</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Noise%3a%20A%20flaw%20in%20Human%20Judgement%20reviewed&url=%2f25%2f12%2f2020%2fnoise-a-review%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  <i class="fab fa-twitter"></i>
+   <span class="hidden">Twitter</span> 
+  </a>
+        
+
+        
+       
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f25%2f12%2f2020%2fnoise-a-review%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fab fa-facebook"></i>
+                
+                </a>
+        
+
+ 
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Noise%3a%20A%20flaw%20in%20Human%20Judgement%20reviewed&url=%2f25%2f12%2f2020%2fnoise-a-review%2f&summary=A%20review%20of%20Noise"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+    <footer class="footer">
+ 
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Biologically Plausible Programming" href="../../../../">Biologically Plausible Programming</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2022 Nelson Gonzabato / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="https://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
+    </body>
+</html>
+
