@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2022. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Noise: A flaw in Human Judgement reviewed</title>
+      <link>/08/01/2023/noise-a-review/</link>
+      <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/08/01/2023/noise-a-review/</guid>
+      <description>Introduction
+I am seated at Prague Castle on a slightly cold Saturday afternoon when a young man approaches me and starts a conversation.
+Person: Hi, what book are you reading?! Me: Noise, erm Noise, a flaw in human judgement. We both laugh Person: You&amp;rsquo;re reading noise? more laughter. Me: Yes, it is a strange title I must agree. Person: What is it about?
+What follows is an attempt at describing what noise, the book is and a description of a few lessons/concepts I have learnt from reading the book, but first&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Kotlin Classes for the Python Developer</title>
       <link>/07/07/2022/simple-look-at-kotlin-classes/</link>
@@ -77,18 +89,6 @@ Over the past few weeks, I have been experimenting with and learning more about 
       
       <guid>/25/12/2020/hugo-blogdown-pitfalls-to-avoid/</guid>
       <description>One of the most beautiful things about open source development is the idea that one picks up crucial skills like versioning be it via git* or any version control system of their choosing. For non developers, such versioning can be accomplished via syncing files to the cloud or manually uploading files each time. Alternatively, and in the most extreme scenario, one could simply version their files by simple file number incrementation: file_1_edit, file_1_edit_final, file_1_edit_final_final_finally.</description>
-    </item>
-    
-    <item>
-      <title>Noise: A flaw in Human Judgement reviewed</title>
-      <link>/25/12/2020/noise-a-review/</link>
-      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/25/12/2020/noise-a-review/</guid>
-      <description>Introduction
-I am seated at Prague Castle on a slightly cold Saturday afternoon when a young man approaches me and starts a conversation.
-Person: Hi, what book are you reading?! Me: Noise, erm Noise, a flaw in human judgement. We both laugh Person: You&amp;rsquo;re reading noise? more laughter. Me: Yes, it is a strange title I must agree. Person: What is it about?
-What follows is an attempt at describing what noise, the book is and a description of a few lessons/concepts I have learnt from reading the book, but first&amp;hellip;</description>
     </item>
     
     <item>

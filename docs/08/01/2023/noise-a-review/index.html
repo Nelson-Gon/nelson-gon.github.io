@@ -4,8 +4,8 @@
       
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Growing big by building small. &middot; Nelson Gonzabato</title>
-        <meta name="description" content="Small Open Source Projects, Not so Small Lessons">
+        <title>Noise: A flaw in Human Judgement reviewed &middot; Nelson Gonzabato</title>
+        <meta name="description" content="A review of Noise">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.109.0">
@@ -137,12 +137,12 @@ if (!doNotTrack) {
 <div class="container">
     <article class="post-container" itemscope="" itemtype="https://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Growing big by building small.</h1>
+    <h1 class="post-title" itemprop="name headline">Noise: A flaw in Human Judgement reviewed</h1>
     
-        <p class="post-description" itemprop="description">Small Open Source Projects, Not so Small Lessons</p>
+        <p class="post-description" itemprop="description">A review of Noise</p>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2021-03-17" itemprop="datePublished">Wed, Mar 17, 2021</time></span>
+        <span>Published <time datetime="2023-01-08" itemprop="datePublished">Sun, Jan 8, 2023</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -156,35 +156,60 @@ if (!doNotTrack) {
         <div class="post-content clearfix" itemprop="articleBody">
     
 
-    <p><strong>Why build when you can simply read?</strong></p>
-<p>The importance of learning as one builds has been echoed so many times in the
-open-source development world that another article on the same might seem not
-worth the time. However, our experiences are unique and offer a unique perspective even on topics that may have been read and written about countless times.</p>
-<p><strong>When a problem sparks an idea</strong></p>
-<p>A month or so ago, I was ready to submit updates to the <code>R</code> packages <a href="htpps://nelson-gon.github.io/manymodelr">manymodelr</a>
-and <a href="(htpps://nelson-gon.github.io/manymodelr)">mde</a> and thought the process would go just as smooth as it always does, if you ignore the usual issues with fixing tests and unidentified bugs that is. Surprisingly, I was met with <code>CRAN</code> notes about outdated website links which thankfully developers at <a href="https://github.com/r-lib">r-lib</a> had figured a way to solve, and that too very efficiently.</p>
-<p>Being the learn-by-doing person that I am, I decided that it was probably a good idea to start a small project that would aim to do what <code>urlchecker</code> (from <code>r-lib</code>) does, but in <code>python</code>. This led to the birth of an idea - <code>urlfix</code>, conveniently named to reflect the idea that we aim to fix broken web links (URLs). An idea is not really an idea unless it has been put out there, so a tweet &ldquo;advertising&rdquo; this new project was made.</p>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">After struggling with <a href="https://twitter.com/hashtag/url?src=hash&amp;ref_src=twsrc%5Etfw">#url</a> redirects for <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> CRAN submissions, I decided to work on urlfix, a <a href="https://twitter.com/hashtag/python?src=hash&amp;ref_src=twsrc%5Etfw">#python</a> package to fix outdated urls, inspired by r-lib&#39;s urlchecker. Currently beta, please provide ideas and criticism. Thanks! <a href="https://t.co/VW7WIAWOJw">https://t.co/VW7WIAWOJw</a></p>&mdash; NelsonGon (@bionelsongon) <a href="https://twitter.com/bionelsongon/status/1358420756682702853?ref_src=twsrc%5Etfw">February 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p><strong>Learning big by building small</strong></p>
-<p>When I initially had this idea, I thought it would take me a week or so and did not imagine how relatively complex it would become, one month later. For starters, I
-intended to simply &ldquo;grep&rdquo; for links in Markdown files (since I use Markdown mostly), visit these links, and finally update them.</p>
-<p>It has been a fun learning experience so far and below I list some of the lessons  from working on <code>urlfix</code>.</p>
-<p><strong>Collaborating with open-source developers</strong></p>
-<p>I was blown away by how much attention this got compared to other projects I have worked on. The project has now had six contributors each contributing something useful be it in the form of fixing issues, reporting bugs, or ensuring tests work as expected.</p>
-<p>This teamwork has given me a chance to see other developers&rsquo; thought processes via code review and discussions. This is something that I think someone who may not be working as part of a team in a professional setting gains from building open source software, however small they may be.</p>
-<p><strong>Speaking of code review&hellip;</strong></p>
-<p>When reviewing some of the code, I realized that I took more time to think of development best practices like efficiency which I would probably have ignored had I written most of the code alone. For example in one case, I realized that we had double loops which was not really efficient if one wanted to replace 700,000 broken links for example.</p>
-<p>Another important lesson from code review has been that sometimes bugs may be introduced unintentionally and if not enough tests are done could lead to a lot of wasted time in trying to figure out what exactly went wrong. Other developer best practices I have got to learn include branching out from main for features instead of having just main and dev, and setting a suitable threshold for code coverage workflows.</p>
-<p><strong>Efficiency or lack thereof</strong></p>
-<p>I recently talked to a senior developer and was asked about concepts like scaling, multi-threading, and containerization which admittedly I have not had much exposure to beyond reading about them. As I thought more about how to make this small project even better, learning about parallelism, asynchronous calls, and multi-threading is something that I have now put on my todo list. This is important even beyond this small project because if you have a pipeline that is reading millions of lines of data, you do not want a user to spend an entire day waiting for results. I intend to look at the <code>python</code> <code>async</code> and <code>threading</code> packages to see how these could further improve this relatively small project.</p>
-<p><strong>Tests, tests, and more tests</strong></p>
-<p>Often when one is working on a project, it is easy to imagine that features will work as expected. As I have come to learn, a program will almost always fail in one way or another. For <code>urlfix</code>, one of the earliest failures was that although we could replace outdated links, we lost anything that was not a link in the process.
-This was only brought to my attention by an issue which allowed me to fix this bug and write more comprehensive tests.</p>
-<p>The takeaway from this is that even tests should not simply test for some expected return value but should instead at least test each part of the process leading to the final return value.</p>
-<p><strong>Conclusion</strong></p>
-<p>It will be interesting to see how far the <code>urlfix</code> project goes but for now I can only predict that the lessons I have learned from this small project will be beneficial to me as a developer going forward. This has been a very short reflective post and hopefully it provided some inspiration for someone else who may be looking to build something but thinks it is too trivial or too small to spend time on.</p>
-<p>As always, if you would like to contribute to <a href="https://github.com/Nelson-Gon/urlfix">urlfix</a> or any of the other <a href="https://nelson-gon.github.io/projects">projects</a>, please feel free to contact me or open issues at the specific project, whichever may be easier.</p>
-<p><strong>Thank you and Keep Building!</strong></p>
+    <p><strong>Introduction</strong></p>
+<p>I am seated at Prague Castle on a slightly cold Saturday afternoon when a young
+man approaches me and starts a conversation.</p>
+<p>Person: Hi, what book are you reading?!
+Me: Noise, erm Noise, a flaw in human judgement.
+<strong>We both laugh</strong>
+Person: You&rsquo;re reading noise? <strong>more laughter</strong>.
+Me: Yes, it is a strange title I must agree.
+Person: What is it about?</p>
+<p>What follows is an attempt at describing what noise, the book is and a description
+of a few lessons/concepts I have learnt from reading the book, but first&hellip;</p>
+<p><strong>What is noise?</strong></p>
+<p>I think it is important to stress that we discuss noise, in the statistical sense
+as opposed to noise as we would describe for example a noisy stadium or noisy
+train station.</p>
+<p>Statistically, noise can be defined as any unexplained variability that is often random. In plain terms, this statistical noise can include for example the
+unexplained difference in repeated measurements of the length of a field.</p>
+<p><strong>Types of noise from the book</strong></p>
+<p>In the book, different types of noise are described. System noise and occasion noise.</p>
+<p><strong>System noise</strong> is perhaps the kind of noise that we can more easily &ldquo;notice&rdquo; as it
+often relates to internal or external sources of variability. The authors break
+down system noise into level noise and pattern noise.</p>
+<p><strong>Level noise</strong> can be thought of as the &ldquo;unexplained&rdquo; difference between a judge&rsquo;s
+average &ldquo;harshness&rdquo; compared to the average &ldquo;harshness&rdquo; of all judges. In the
+forecasting business, this can be thought of as the difference in the average
+predictions of a forecaster compared to the averages of other forecasters.</p>
+<p><strong>Pattern noise</strong>, on the other hand, can be thought of as the tendency of a specific
+judge to display specific patterns, resulting in differences in the judgement of
+cases. In the stock market, a broker who has previously gained by backing non-conventional companies may display increased likelihood of investing in stocks
+from companies that some may be more pessimistic about. Pattern noise can also
+be temporary for example due to recent events.</p>
+<p><strong>Occasion noise</strong>, like the name suggests, is variability due to random factors
+that may have no direct relation with the issue at hand. For example, the book
+presents studies linking judge leniency with the weather, with judges being more
+lenient on nicer days (less hot days). This could also be linked to mood as <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8174739">The temperature of emotions</a> explores. Briefly, research suggests a link between the weather and emotion(s), and it is established that people tend to associate hotter days with negative emotions.</p>
+<p>We have defined noise and broken it down into types, but what effect does noise have on our daily lives.</p>
+<p><strong>Cascades and social influence</strong></p>
+<p>Whether we realize it or not, we are all part of information cascades that are under heavy social influence. In organizations, these cascades can have profound effects on hiring processes, product approvals, and so on.</p>
+<p>In presenting information cascades, the authors highlight how influential persons within an organization can sway the decisions of other members and steer the decision process in completely different ways. Specifically, in a meeting for example, if a likable person happens to support hiring a given candidate, this may influence other members to agree with them leading to a loss of diversity in the decision process.</p>
+<p><strong>The power of first vote, group think, and group polarization</strong></p>
+<p>Related to the social influence described above is the power of the first vote. In studies on the popularity of music, it has been established that a song that gets early approval (first download for example or first listen) was more likely to go on to be the most popular as people tend to stick to what appears to be popular. Similarly at meetings, the person to speak first could influence the entire decision process by driving the decision process in their direction. This can be problematic as alternative ideas could be lost or early popularity could lead to other members to staying quiet so as to blend in or as a form of respect.</p>
+<p><strong>Wisdom of the crowd</strong></p>
+<p>When a group of people is asked to provide an estimate, the individual values may be less accurate but when these are averaged, the overall estimate of the group will be much closer to the real value. This is because averaging these estimates &ldquo;cancels&rdquo; out the noise, following the concept of the mean squared error.</p>
+<p><strong>One&rsquo;s a crowd</strong></p>
+<p>When tasked with providing an estimate, an individual&rsquo;s first guess has been found to be far off than their subsequent guesses. It is thought that on subsequent guesses, individuals taken into account more information that they may have missed the first time around, leading to less noisy &ldquo;predictions&rdquo;. This is the premise of the dialectical bootstrap.</p>
+<p><strong>Algorithms and decision making</strong></p>
+<p>An even more interesting concept presented in the book, is the surprising result that modeling a &ldquo;predictor&rdquo; (you) with a very simple model does just as well as and often beats the performance of predictor.</p>
+<p>If instead of having a judge make judgement, it is shown that a model of the same judge will often make better &ldquo;judgement&rdquo; as measured by correlation coefficients and percent concordance. With even more sophistication and data as machine learning models provide for example, the performance outweighs human judgement and is less noisy.</p>
+<p>While the authors present the possibility of reducing noise via ML and statistical models, they provide caution about making such a conclusion. For example, as might be expected, a ML model using a biased data set will only exaggerate the bias.</p>
+<p><strong>Closing remarks</strong></p>
+<p>At the time of this post, I have not yet completed the book but found it quite interesting and worth a read and hopefully this account can give someone else the motivation to check the book out. As always, let me know if you notice any flaws and or have any comments.</p>
+<p>Thank you,
+NelsonGon
+Prague 08.01.2023</p>
 
 </div>
 
@@ -194,26 +219,26 @@ This was only brought to my attention by an issue which allowed me to fix this b
             <span>Tagged:</span>
             
             
-                <a href="../../../../tags/python/">python</a>, 
+                <a href="../../../../tags/decisions/">decisions</a>, 
             
-                <a href="../../../../tags/dev-tools/">dev-tools</a>, 
+                <a href="../../../../tags/neuroscience/">neuroscience</a>, 
             
-                <a href="../../../../tags/developer/">developer</a>, 
+                <a href="../../../../tags/data-science/">data-science</a>, 
             
-                <a href="../../../../tags/open-source/">open-source</a>, 
+                <a href="../../../../tags/game-theory/">game theory</a>, 
             
-                <a href="../../../../tags/teaching/">teaching</a>, 
+                <a href="../../../../tags/decision-theory/">decision-theory</a>, 
             
-                <a href="../../../../tags/projects/">projects</a>, 
+                <a href="../../../../tags/bias/">bias</a>, 
             
-                <a href="../../../../tags/reflection/">reflection</a>
+                <a href="../../../../tags/noise/">noise</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=Growing%20big%20by%20building%20small.&url=%2f17%2f03%2f2021%2fsmall-projects-not-so-small-lessons%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Noise%3a%20A%20flaw%20in%20Human%20Judgement%20reviewed&url=%2f08%2f01%2f2023%2fnoise-a-review%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
   <i class="fab fa-twitter"></i>
    <span class="hidden">Twitter</span> 
@@ -222,7 +247,7 @@ This was only brought to my attention by an issue which allowed me to fix this b
 
         
        
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f17%2f03%2f2021%2fsmall-projects-not-so-small-lessons%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f08%2f01%2f2023%2fnoise-a-review%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fab fa-facebook"></i>
                 
@@ -231,7 +256,7 @@ This was only brought to my attention by an issue which allowed me to fix this b
 
  
         
-            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Growing%20big%20by%20building%20small.&url=%2f17%2f03%2f2021%2fsmall-projects-not-so-small-lessons%2f&summary=Small%20Open%20Source%20Projects%2c%20Not%20so%20Small%20Lessons"
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Noise%3a%20A%20flaw%20in%20Human%20Judgement%20reviewed&url=%2f08%2f01%2f2023%2fnoise-a-review%2f&summary=A%20review%20of%20Noise"
                onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
         
         
