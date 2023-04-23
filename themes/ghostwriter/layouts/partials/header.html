@@ -54,9 +54,9 @@
                              <i class="fa fa-home"></i>  
                             </a>
                         {{ end }}
-                        {{ with .Site.Params.twitter }}
-                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="{{ . }}" rel="me">
-                                <i class="fab fa-twitter"></i>
+                        {{ with .Site.Params.linkedin  }}
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}" rel="me">
+                              <i class="fab fa-linkedin"></i>
                             </a>
                         {{ end }}
                         
@@ -89,11 +89,6 @@
                    
                     {{ end }}
                       
-                        {{ with .Site.Params.linkedin }}
-                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}" rel="me">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        {{ end }}
                         {{ with .Site.Params.email }}
                             <a  class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:{{ . }}">
                                 <i class="fa fa-envelope"></i>
