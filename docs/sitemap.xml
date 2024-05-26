@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/bias/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
+    <loc>/tags/ai/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/25/05/2024/why-use-ai-visual-product-search/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/company/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/computer-vision/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/neuroscience/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/python/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/v5vision/</loc>
+    <lastmod>2024-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/bias/</loc>
     <lastmod>2023-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/data-science/</loc>
@@ -20,19 +47,10 @@
     <loc>/tags/game-theory/</loc>
     <lastmod>2023-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/neuroscience/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/noise/</loc>
     <lastmod>2023-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/08/01/2023/noise-a-review/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2023-01-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2023-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
@@ -57,9 +75,6 @@
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/open-source/</loc>
-    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/python/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/python/</loc>
@@ -163,9 +178,6 @@
   </url><url>
     <loc>/06/10/2020/open-source-student-involvement/</loc>
     <lastmod>2020-10-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/computer-vision/</loc>
-    <lastmod>2020-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/image-analysis/</loc>
     <lastmod>2020-09-14T00:00:00+00:00</lastmod>

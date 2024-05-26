@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Announcing v5vision.com and why Visual Product Search Works &middot; Nelson Gonzabato</title>
+        <meta name="description" content="Making the Case for Visual Product Search">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.122.0">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+        <link rel="manifest" href="../../../../site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <link rel="stylesheet" disabled id="dark-mode-theme" href="../../../../dist/darkmode.css">
+        <link rel="stylesheet" href="../../../../dist/site.css">
+        <link rel="stylesheet" href="../../../../dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <head>
+  
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+</head>
+        
+        
+        
+    </head>
+    <body>
+        
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3BZWLHV7B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-B3BZWLHV7B', { 'anonymize_ip': false });
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <a class="site-logo" title="" href="">
+                                <img src="#ZgotmplZ" alt="" />
+                            </a>
+                        
+                        <a class="button-square" href="../../../../index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Home" title="Home" href="../../../../" rel="me">
+                             <i class="fa fa-home"></i>  
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/nelsongon/" rel="me">
+                              <i class="fab fa-linkedin"></i>
+                            </a>
+                        
+                        
+                        
+                  
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/Nelson-Gon" rel="me">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                         
+                            <a class="button-square button-social hint--top" data-hint="Stack Overflow" title="Stack Overflow" href="https://stackoverflow.com/users/10323798/nelsongon" rel="me">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        
+                              
+                       
+                            
+       <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+      <a class="button-square button-social hint--top" data-hint="kaggle" title="Kaggle" href="https://Kaggle.com/gonnel" rel="me">
+<i class="fab fa-kaggle"></i>
+                   
+                    
+                      
+                        
+                            <a  class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:gonzabato@hotmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                        
+                         
+                         
+                       
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="../../../../">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="../../../../about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="../../../../projects/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="../../../../social">Contact</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="https://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Announcing v5vision.com and why Visual Product Search Works</h1>
+    
+        <p class="post-description" itemprop="description">Making the Case for Visual Product Search</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2024-05-25" itemprop="datePublished">Sat, May 25, 2024</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Nelson Gonzabato</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <p><strong>Introduction</strong></p>
+<p>Picture this, how do you find the objects you need for example your lost keys?
+As research and our daily lives show, humans rely heavily on visual cues. From
+<a href="https://www.nature.com/articles/s41467-023-43156-8">forming social interactions</a> to making decisions in the absence of the entire <a href="https://elifesciences.org/for-the-press/4421c8ef/humans-rely-more-on-inferred-visual-objects-than-real-ones">picture</a>.</p>
+<p>Clearly, visual stimuli play a major role in our lives and recently, there have
+been impressive advances in the implementation of artificial vision in form of
+AI generated videos. Open AI&rsquo;s <a href="https://openai.com/index/sora/">Sora</a> is one such
+example that takes user prompts and returns a video from the prompt.
+In basic terms, Sora begins with random noise, forms images from this noise, and combines these images into a video, frame by frame.</p>
+<p>One area that has huge potential for utilizing the power of our visual processing system, is
+online shopping, which at the time of writing still heavily relies on text based searches.</p>
+<p><strong>Why should we shift from text based search?</strong></p>
+<p>Historically, following the development of databases, most search implementations have focused heavily on text. How this works is that specific products are placed in categories or tagged. The user can then search for an item by typing some text for example &ldquo;a blue dress&rdquo;. The search algorithm might work like: find dresses -&gt; find dresses tagged blue.</p>
+<p>Alternatively, the text could be tokenized into [&ldquo;a&rdquo;, &ldquo;blue&rdquo;, &ldquo;dress&rdquo;] and with some processing, &lsquo;filler words&rsquo; like &lsquo;a&rsquo; a removed leaving us with only [&ldquo;blue&rdquo;, &ldquo;dress&rdquo;] and returning items that have these tokens.</p>
+<p>As one might guess, this has the disadvantage of being non-specific. The catalog could have 1000 blue dresses and the best product for the user could be hidden deep in the last results. In addition, a user then has to sift through lots of data to get to their actual products. This also opens up the database to lots of
+duplicity in terms of items.</p>
+<p><strong>What is the future of online shopping and e-commerce in the age of AI?</strong></p>
+<p>What if instead of text based searches, users could find the products they need the natural way, visually. As I build <a href="https://v5vision.com">V5 Vision</a>, I envision a future of online shopping and e-commerce that allows us to find the products we need in a more visual way.</p>
+<p>While giants like Google have these features, they are very limited and suffer from the same issues as text based searches - too many results and a lack of
+personalization.</p>
+<p>At <a href="https://v5vision.com">V5 Vision</a>, we envision a future where AI Visual Product Search is the standard for finding products online. By using the latest AI and computer vision algorithms, retailers and e-commerce businesses can allow users to find the exact products they need with minimal effort and reduced mindless scrolling. In addition, using an AI Visual Product Search by using images to search for products can lead to better personalized recommendations.</p>
+<p>Another key feature of an AI Visual Product Search is the ability to quickly filter duplicate listings, further reducing clutter.</p>
+<p><strong>Conclusion</strong></p>
+<p>This was a short blog to outline the benefits of an image based search compared to the defacto text based search. Agree or disagree? Let me know in the comments below.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="../../../../tags/ai/">ai</a>, 
+            
+                <a href="../../../../tags/python/">python</a>, 
+            
+                <a href="../../../../tags/neuroscience/">neuroscience</a>, 
+            
+                <a href="../../../../tags/computer-vision/">computer vision</a>, 
+            
+                <a href="../../../../tags/company/">company</a>, 
+            
+                <a href="../../../../tags/v5vision/">v5vision</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Announcing%20v5vision.com%20and%20why%20Visual%20Product%20Search%20Works&url=%2f25%2f05%2f2024%2fwhy-use-ai-visual-product-search%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+  <i class="fab fa-twitter"></i>
+   <span class="hidden">Twitter</span> 
+  </a>
+        
+
+        
+       
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?href=%2f25%2f05%2f2024%2fwhy-use-ai-visual-product-search%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fab fa-facebook"></i>
+                
+                </a>
+        
+
+ 
+        
+            <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&title=Announcing%20v5vision.com%20and%20why%20Visual%20Product%20Search%20Works&url=%2f25%2f05%2f2024%2fwhy-use-ai-visual-product-search%2f&summary=Making%20the%20Case%20for%20Visual%20Product%20Search"
+               onclick="window.open(this.href, 'linkedin-share', 'width=554,height=481');return false;"><i class="fab fa-linkedin"></i></a>
+        
+        
+
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nelsongon" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+    <footer class="footer">
+ 
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Biologically Plausible Programming" href="../../../../">Biologically Plausible Programming</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2024 Nelson Gonzabato / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="https://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../../../../js/jquery-1.11.3.min.js"></script>
+        <script src="../../../../js/jquery.fitvids.js"></script>
+        <script src="../../../../js/scripts.js"></script>
+    </body>
+</html>
+
